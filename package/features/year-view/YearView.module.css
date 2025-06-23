@@ -1,0 +1,49 @@
+.scrollWrapper {
+	height: 100%;
+	overflow: auto;
+	padding: 0.75rem 1rem 2rem 1rem;
+	margin: 0.125rem;
+}
+
+.yearView {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	column-gap: 2rem;
+	row-gap: 1rem;
+	flex-wrap: wrap;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.month {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.monthDates {
+	display: grid;
+	row-gap: 0.25rem;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.monthLabel {
+	width: 100%;
+	display: grid;
+	margin-top: 0.25rem;
+	place-content: center;
+	font-size: 0.875rem;
+	font-weight: 500;
+	user-select: none;
+}
+
+.monthHeaderDay {
+	width: 1.375rem;
+	height: 1.375rem;
+	display: grid;
+	place-content: center;
+	color: #868e96;
+	font-size: 0.75rem;
+	font-weight: 500;
+	user-select: none;
+}

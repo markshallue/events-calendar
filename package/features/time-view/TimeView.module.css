@@ -1,0 +1,25 @@
+.timeView {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.scrollWrapper {
+	height: 100%;
+	overflow: auto;
+	margin-right: 0.125rem;
+}
+
+.gridWrapper {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	flex-grow: 1;
+
+	&[data-isweekview='true'] {
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+	}
+}

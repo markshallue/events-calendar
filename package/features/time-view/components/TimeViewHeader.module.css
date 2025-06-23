@@ -1,0 +1,32 @@
+.headerRow {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	font-size: 0.875rem;
+	font-weight: 600;
+	margin-left: 2.25rem;
+	margin-right: 0.5rem;
+	&[data-sm='true'] {
+		font-size: 0.75rem;
+	}
+	&[data-isweekview='true'] {
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+	}
+}
+.headerCell {
+	text-align: center;
+
+	&[data-border='true'] {
+		border-bottom: 1px solid #ccc;
+	}
+}
+.headerLabel {
+	user-select: none;
+	padding: 0.25rem 0;
+	background: transparent;
+	color: #333;
+	&[data-today='true'] {
+		background: #329aef;
+		color: #fff;
+	}
+}

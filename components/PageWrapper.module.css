@@ -1,0 +1,21 @@
+.wrapper {
+	padding: 1rem 2.5rem 3rem 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	width: min(72em, 100%);
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		padding: 2rem 2.5rem 5rem 2.5rem;
+	}
+}
+
+@media (min-width: 1560px) {
+	.wrapper {
+		padding: 2rem 2.5rem 10rem 2.5rem;
+	}
+}
