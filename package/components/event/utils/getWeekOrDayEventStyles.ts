@@ -1,5 +1,5 @@
 import { OrderedCalendarEvent } from '~/types';
-import { DEFAULT_COLOR, splitColorCSS } from '~/utils';
+import { DEFAULT_COLOR, getBackgroundFromArray } from '~/utils';
 
 export const getWeekOrDayEventStyles = (
 	event: OrderedCalendarEvent,
@@ -17,11 +17,10 @@ export const getWeekOrDayEventStyles = (
 		gridRowStart: event.start && event.start.hour() * 4 + Math.round(event.start.minute() / 15) + 1,
 		gridRowEnd: event.end && event.end.hour() * 4 + Math.round(event.end.minute() / 15) + 1,
 		height: 12 * ((timeDuration || 60) / 15) - 2,
-		backgroundColor: colors[0],
-		backgroundImage: splitColorCSS(colors),
 		borderWidth: event.indent > 0 ? (timeDuration > 30 ? '1px' : '0.5px') : 0,
 		marginLeft: overlapOffset * event.indent + sundayOffset,
 		width: `calc(100% - ${overlapOffset * (event.indent + 1) + sundayOffset}px)`,
 		zIndex: isActive ? 100 : 1 + event.order,
+		...getBackgroundFromArray(colors),
 	};
 };

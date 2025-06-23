@@ -1,8 +1,8 @@
 import { Dayjs } from 'dayjs';
 import classes from './AllDayEvent.module.css';
 
-import { DEFAULT_COLOR, splitColorCSS } from '~/utils';
 import { CalendarEvent, MinMaxDatesInView } from '~/types';
+import { DEFAULT_COLOR, getBackgroundFromArray } from '~/utils';
 
 import { OverflowArrow } from '../overflow-arrow';
 
@@ -17,8 +17,7 @@ interface AllDayEventProps {
 export function AllDayEvent({ date, event, minMaxDatesInView, isCompact, isInOverflow }: AllDayEventProps) {
 	// Destructure event
 	const { title, start, end, groups } = event;
-	const colors = groups?.map(g => g.color).filter(Boolean) || [];
-	if (colors.length === 0) colors.push(DEFAULT_COLOR);
+	const colors = groups?.map(g => g.color).filter(Boolean) ?? [];
 
 	// Calculate arrows for display in overflow popover
 	const arrowLeft =
@@ -28,20 +27,19 @@ export function AllDayEvent({ date, event, minMaxDatesInView, isCompact, isInOve
 	const arrows = arrowLeft && arrowRight ? 'both' : arrowLeft ? 'left' : arrowRight ? 'right' : false;
 
 	// Event background color(s)
-	const colorstyles = {
-		backgroundColor: colors[0],
-		backgroundImage: splitColorCSS(colors),
-	};
+	const colorstyles = getBackgroundFromArray(colors);
+	const leftArrowColor = colors.length ? colors[0] : DEFAULT_COLOR;
+	const rightArrowColor = colors.length ? colors[colors.length - 1] : DEFAULT_COLOR;
 
 	return (
 		<div className={classes.allDayContainer} style={colorstyles}>
-			<OverflowArrow color={colors[0]} dir='left' isHidden={!arrowLeft} isCompact={isCompact} />
+			<OverflowArrow color={leftArrowColor} dir='left' isHidden={!arrowLeft} isCompact={isCompact} />
 			<div className={classes.allDayTextContainer} data-sm={isCompact}>
 				<span className={classes.allDayText} data-arrows={arrows}>
 					{title}
 				</span>
 			</div>
-			<OverflowArrow color={colors[colors.length - 1]} dir='right' isHidden={!arrowRight} isCompact={isCompact} />
+			<OverflowArrow color={rightArrowColor} dir='right' isHidden={!arrowRight} isCompact={isCompact} />
 		</div>
 	);
 }

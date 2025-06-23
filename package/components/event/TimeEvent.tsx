@@ -1,7 +1,7 @@
 import classes from './TimeEvent.module.css';
 
 import { CalendarEvent } from '~/types';
-import { DEFAULT_COLOR, splitColorCSS } from '~/utils';
+import { DEFAULT_COLOR, getBackgroundFromArray } from '~/utils';
 
 interface TimeEventProps {
 	event: CalendarEvent;
@@ -11,19 +11,15 @@ interface TimeEventProps {
 export function TimeEvent({ event, isCompact }: TimeEventProps) {
 	// Destructure event
 	const { title, start, groups } = event;
-	const colors = groups?.map(g => g.color).filter(Boolean) || [];
-	if (colors.length === 0) colors.push(DEFAULT_COLOR);
+	const colors = groups?.map(g => g.color).filter(Boolean) ?? [];
 
 	const timeStyles = {
-		border: `1px solid ${colors[0]}`,
+		border: `1px solid ${colors.length ? colors[0] : DEFAULT_COLOR}`,
 		width: '100%',
 	};
 
 	// Event background color(s)
-	const colorStyles = {
-		backgroundColor: colors[0],
-		backgroundImage: splitColorCSS(colors),
-	};
+	const colorStyles = getBackgroundFromArray(colors);
 
 	return (
 		<div className={`${classes.timeContainer}`} data-sm={isCompact} style={timeStyles}>

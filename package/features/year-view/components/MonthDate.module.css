@@ -10,7 +10,7 @@
 	user-select: none;
 
 	&:hover {
-		background-color: rgba(134, 142, 150, 0.12);
+		background-color: var(--ec-gray-1);
 	}
 
 	&[data-dimmed='true'] {

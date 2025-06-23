@@ -1,5 +1,5 @@
 :root {
-	--ec-color-background: #fff;
+	--ec-default-background: #fff;
 	--ec-gray-0: #f8f9fa;
 	--ec-gray-1: #f1f3f5;
 	--ec-gray-2: #e9ecef;
@@ -13,9 +13,9 @@
 }
 
 :root[data-mantine-color-scheme='dark'] {
-	--ec-color-background: #3a3a3a;
+	--ec-default-background: #3a3a3a;
 	--ec-gray-0: #242424;
-	--ec-gray-1: #2e2e2e;
+	--ec-gray-1: #353535;
 	--ec-gray-2: #3e3e3e;
 	--ec-gray-3: #424242;
 	--ec-gray-4: #444444;
@@ -28,9 +28,9 @@
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-mantine-color-scheme]) {
-		--ec-color-background: #3a3a3a;
+		--ec-default-background: #3a3a3a;
 		--ec-gray-0: #242424;
-		--ec-gray-1: #2e2e2e;
+		--ec-gray-1: #353535;
 		--ec-gray-2: #3e3e3e;
 		--ec-gray-3: #424242;
 		--ec-gray-4: #444444;

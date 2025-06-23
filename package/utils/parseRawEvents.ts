@@ -1,6 +1,11 @@
 import dayjs from 'dayjs';
 import { CalendarEvent, RawCalendarEvent } from '~/types';
 
+const getDayjs = (rawDate: dayjs.Dayjs, timeString: string) => {
+	const formatted = timeString.replace(/.{2}$/, ' $&').toUpperCase();
+	return dayjs(`${rawDate.format('DD-MMM-YYYY')} ${formatted}`);
+};
+
 export function parseRawEvents<T>(events: RawCalendarEvent<T>[]): CalendarEvent<T>[] {
 	return events
 		.filter(event => event.start || event.end)
@@ -8,23 +13,20 @@ export function parseRawEvents<T>(events: RawCalendarEvent<T>[]): CalendarEvent<
 			// Event start
 			let dayjsStart = event.start ? dayjs(event.start) : dayjs(event.end);
 			if (event.startTime) {
-				const formatted = event.startTime.replace(/.{2}$/, ' $&').toUpperCase();
-				dayjsStart = dayjs(`${dayjsStart.format('DD-MMM-YYYY')} ${formatted}`);
+				dayjsStart = getDayjs(dayjsStart, event.startTime);
 			}
 
-			// Event end
+			// Event end (default to event start)
 			let dayjsEnd = event.end ? dayjs(event.end) : dayjsStart;
+
+			// Add end time
 			if (event.startTime || event.endTime || event.isAllDay === false) {
 				if (!event.startTime && !event.endTime) {
-					dayjsEnd = dayjsStart.add(1, 'hour');
-				}
-				if (event.endTime) {
-					const formatted = event.endTime.replace(/.{2}$/, ' $&').toUpperCase();
-					dayjsEnd = dayjs(`${dayjsEnd.format('DD-MMM-YYYY')} ${formatted}`);
-				}
-				if (!event.endTime && event.startTime) {
-					const formatted = event.startTime.replace(/.{2}$/, ' $&').toUpperCase();
-					dayjsEnd = dayjs(`${dayjsEnd.format('DD-MMM-YYYY')} ${formatted}`).add(1, 'hour');
+					dayjsEnd = dayjsStart.add(1, 'hour'); // Neither start nor end time
+				} else if (event.endTime) {
+					dayjsEnd = getDayjs(dayjsEnd, event.endTime); // Only end Time
+				} else {
+					dayjsEnd = getDayjs(dayjsEnd, event.startTime!).add(1, 'hour'); // Only start time
 				}
 			}
 
@@ -34,7 +36,7 @@ export function parseRawEvents<T>(events: RawCalendarEvent<T>[]): CalendarEvent<
 				title: event.title ?? '',
 				start: dayjsStart,
 				end: dayjsEnd,
-				isAllDay: event.isAllDay === undefined ? true : event.isAllDay,
+				isAllDay: event.isAllDay !== false,
 			};
 
 			return parsedEvent;

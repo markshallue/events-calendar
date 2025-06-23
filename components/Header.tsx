@@ -48,7 +48,6 @@ export function Header() {
 							size='lg'
 							radius='md'
 							component='a'
-							target='_blank'
 							variant='default'
 							title='View on GitHub'
 							aria-label='View on GitHub'
