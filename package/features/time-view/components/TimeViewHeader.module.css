@@ -17,14 +17,13 @@
 	text-align: center;
 
 	&[data-border='true'] {
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid var(--ec-gray-4);
 	}
 }
 .headerLabel {
 	user-select: none;
 	padding: 0.25rem 0;
 	background: transparent;
-	color: #333;
 	&[data-today='true'] {
 		background: #329aef;
 		color: #fff;

@@ -1,13 +1,12 @@
 'use client';
 
+import dayjs from 'dayjs';
 import { Dispatch } from 'react';
 
-import classes from './EventCell.module.css';
+import classes from './CellHeader.module.css';
+import { CalendarAction, CalendarState, DateRecord } from '~/types';
 
 import { ShowMoreText } from './ShowMoreText';
-import { CalendarAction, CalendarState } from '~/types';
-import { DateRecord } from '~/types';
-import dayjs from 'dayjs';
 
 interface CellHeaderProps {
 	dayRecord: DateRecord;
@@ -30,15 +29,13 @@ export function CellHeader({ dayRecord, dispatch, isCompact, numOverflowEvents, 
 					{date.date()}
 				</span>
 			</div>
-			{numOverflowEvents > 0 && (
-				<ShowMoreText
-					date={date}
-					dispatch={dispatch}
-					isCompact={isCompact}
-					numOverflowEvents={numOverflowEvents}
-					state={state}
-				/>
-			)}
+			<ShowMoreText
+				date={date}
+				dispatch={dispatch}
+				isCompact={isCompact}
+				numOverflowEvents={numOverflowEvents}
+				state={state}
+			/>
 		</div>
 	);
 }

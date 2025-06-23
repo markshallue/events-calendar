@@ -7,10 +7,10 @@
 	max-height: 12px;
 	box-sizing: border-box;
 	&:nth-child(4n + 4) {
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid var(--ec-gray-3);
 	}
 
 	&[data-isweekview='true']:not(:nth-child(n + 577)) {
-		border-right: 1px solid #eee;
+		border-right: 1px solid var(--ec-gray-3);
 	}
 }

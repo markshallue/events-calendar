@@ -1,0 +1,38 @@
+.cellHeader {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	user-select: none;
+}
+
+.dateContainer {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	margin-left: 1px;
+	padding: 0.25rem;
+	border-radius: 9999px;
+	box-sizing: border-box;
+	pointer-events: none;
+	background: transparent;
+	&[data-today='true'] {
+		background: #329aef;
+	}
+}
+
+.dateLabel {
+	font-size: 0.75rem;
+	line-height: 1;
+	font-weight: 500;
+	&[data-color='white'] {
+		color: #fff;
+	}
+	&[data-color='dark'] {
+		color: var(--ec-gray-7);
+	}
+	&[data-color='dim'] {
+		color: var(--ec-gray-5);
+	}
+}

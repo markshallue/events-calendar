@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	color: #444;
+	color: var(--ec-gray-9);
 	gap: 0.25rem;
 	pointer-events: none;
 	height: 1.25rem;

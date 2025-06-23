@@ -8,7 +8,7 @@
 	font-size: 1.125rem;
 	padding: 0.5rem 0.75rem;
 	overflow: hidden;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid var(--ec-gray-4);
 }
 
 .controls {
@@ -32,9 +32,9 @@
 }
 
 .date {
+	color: var(--ec-gray-9);
 	white-space: nowrap;
 	font-weight: 500;
-	color: #333;
 	line-height: 1;
 	font-size: 1.25rem;
 	user-select: none;

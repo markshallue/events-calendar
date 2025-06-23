@@ -6,7 +6,7 @@ import { Header } from './Header';
 
 export function AppWrapper({ children }: React.PropsWithChildren) {
 	return (
-		<AppShell header={{ height: 60 }}>
+		<AppShell header={{ height: 54 }}>
 			<AppShell.Header zIndex={102}>
 				<Header />
 			</AppShell.Header>

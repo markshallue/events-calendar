@@ -1,9 +1,9 @@
 'use client';
 
-import { Dispatch, MouseEvent, useRef } from 'react';
 import { Dayjs } from 'dayjs';
-import classes from './EventCell.module.css';
+import { Dispatch, MouseEvent, useRef } from 'react';
 
+import classes from './ShowMoreText.module.css';
 import { CalendarAction, CalendarState } from '~/types';
 
 interface ShowMoreTextProps {
@@ -25,17 +25,19 @@ export function ShowMoreText({ date, dispatch, isCompact, numOverflowEvents, sta
 		}
 	};
 
+	if (!numOverflowEvents) return;
+
 	return (
 		<div
-			className={classes.showMoreText}
+			className={classes.container}
 			data-sm={isCompact}
 			data-date={date.format('DD-MMM-YYYY')}
 			onClick={handleClick}
 			onMouseDown={e => e.stopPropagation()}
 			ref={ref}
 		>
-			<span className={classes.smOnly}>{`+${numOverflowEvents}`}</span>
-			<span className={classes.lgOnly}>{numOverflowEvents} more</span>
+			<span className={`${classes.label} ${classes.smOnly}`}>{`+${numOverflowEvents}`}</span>
+			<span className={`${classes.label} ${classes.lgOnly}`}>{numOverflowEvents} more</span>
 		</div>
 	);
 }

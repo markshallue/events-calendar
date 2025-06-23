@@ -1,0 +1,44 @@
+.container {
+	position: relative;
+	z-index: 1;
+	white-space: nowrap;
+	display: flex;
+	color: var(--ec-gray-7);
+	font-size: 0.75rem;
+	padding: 2px 6px;
+	border-radius: 0.25rem;
+	font-weight: 600;
+	line-height: normal;
+	overflow: hidden;
+	cursor: pointer;
+	user-select: none;
+	&[data-sm='true'] {
+		font-size: 0.65rem;
+		padding: 1px 6px;
+		margin-bottom: 0px;
+	}
+	&:hover {
+		background: var(--ec-gray-2);
+		color: var(--ec-gray-8);
+	}
+	@media (max-width: 640px) {
+		outline: 1px solid var(--ec-gray-3);
+	}
+}
+
+.label {
+	display: none;
+	pointer-events: none;
+}
+
+.smOnly {
+	@media (max-width: 640px) {
+		display: block;
+	}
+}
+
+.lgOnly {
+	@media (min-width: 640px) {
+		display: block;
+	}
+}

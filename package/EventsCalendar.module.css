@@ -1,3 +1,47 @@
+:root {
+	--ec-color-background: #fff;
+	--ec-gray-0: #f8f9fa;
+	--ec-gray-1: #f1f3f5;
+	--ec-gray-2: #e9ecef;
+	--ec-gray-3: #dee2e6;
+	--ec-gray-4: #ced4da;
+	--ec-gray-5: #adb5bd;
+	--ec-gray-6: #868e96;
+	--ec-gray-7: #495057;
+	--ec-gray-8: #343a40;
+	--ec-gray-9: #212529;
+}
+
+:root[data-mantine-color-scheme='dark'] {
+	--ec-color-background: #3a3a3a;
+	--ec-gray-0: #242424;
+	--ec-gray-1: #2e2e2e;
+	--ec-gray-2: #3e3e3e;
+	--ec-gray-3: #424242;
+	--ec-gray-4: #444444;
+	--ec-gray-5: #868e96;
+	--ec-gray-6: #dee2e6;
+	--ec-gray-7: #e9ecef;
+	--ec-gray-8: #f1f3f5;
+	--ec-gray-9: #f8f9fa;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-mantine-color-scheme]) {
+		--ec-color-background: #3a3a3a;
+		--ec-gray-0: #242424;
+		--ec-gray-1: #2e2e2e;
+		--ec-gray-2: #3e3e3e;
+		--ec-gray-3: #424242;
+		--ec-gray-4: #444444;
+		--ec-gray-5: #868e96;
+		--ec-gray-6: #dee2e6;
+		--ec-gray-7: #e9ecef;
+		--ec-gray-8: #f1f3f5;
+		--ec-gray-9: #f8f9fa;
+	}
+}
+
 .calendarWrapper {
 	height: 100%;
 	width: 100%;
