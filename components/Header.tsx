@@ -4,7 +4,7 @@ import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useDisclosure } from '@mantine/hooks';
-import { ActionIcon, Box, Burger, Group, Title } from '@mantine/core';
+import { ActionIcon, Box, Burger, Group, Title, Tooltip } from '@mantine/core';
 
 import { pages } from '@/config';
 
@@ -43,18 +43,20 @@ export function Header() {
 				<Group gap='xs'>
 					{items}
 
-					<ActionIcon
-						size='lg'
-						radius='md'
-						component='a'
-						target='_blank'
-						variant='default'
-						title='View on GitHub'
-						aria-label='View on GitHub'
-						href='https://github.com/markshallue/events-calendar'
-					>
-						<IconBrandGithub size={20} strokeWidth={1.5} />
-					</ActionIcon>
+					<Tooltip label='Source code'>
+						<ActionIcon
+							size='lg'
+							radius='md'
+							component='a'
+							target='_blank'
+							variant='default'
+							title='View on GitHub'
+							aria-label='View on GitHub'
+							href='https://github.com/markshallue/events-calendar'
+						>
+							<IconBrandGithub size={22} strokeWidth={1.5} />
+						</ActionIcon>
+					</Tooltip>
 
 					<ColorSchemeToggle />
 				</Group>
