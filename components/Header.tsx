@@ -1,33 +1,15 @@
 'use client';
 
-import {
-	IconBook,
-	IconBrandGithub,
-	IconCalendar,
-	IconCalendarShare,
-	IconHome,
-	IconNumber123,
-	type TablerIcon,
-} from '@tabler/icons-react';
-import { Box, Burger, Button, Group, Title } from '@mantine/core';
-import { usePathname } from 'next/navigation';
+import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useDisclosure } from '@mantine/hooks';
+import { ActionIcon, Box, Burger, Group, Title } from '@mantine/core';
+
+import { pages } from '@/config';
+
 import classes from './Header.module.css';
 import { ColorSchemeToggle } from './ColorSchemeToggle';
-
-type Page = {
-	label: string;
-	href: string;
-	icon: TablerIcon;
-};
-
-const pages: Page[] = [
-	{ label: 'Home', href: '/', icon: IconHome },
-	{ label: 'Getting started', href: '/getting-started', icon: IconNumber123 },
-	{ label: 'Docs', href: '/docs', icon: IconBook },
-	{ label: 'Examples', href: '/examples', icon: IconCalendarShare },
-];
 
 export function Header() {
 	const pathname = usePathname();
@@ -61,17 +43,18 @@ export function Header() {
 				<Group gap='xs'>
 					{items}
 
-					<Button
-						size='xs'
-						variant='default'
-						leftSection={<IconBrandGithub size={16} />}
+					<ActionIcon
+						size='lg'
+						radius='md'
 						component='a'
-						href='https://github.com/markshallue/events-calendar'
 						target='_blank'
+						variant='default'
+						title='View on GitHub'
 						aria-label='View on GitHub'
+						href='https://github.com/markshallue/events-calendar'
 					>
-						Source code
-					</Button>
+						<IconBrandGithub size={20} strokeWidth={1.5} />
+					</ActionIcon>
 
 					<ColorSchemeToggle />
 				</Group>
