@@ -4,8 +4,9 @@ import { Dispatch, ReactNode, SetStateAction } from 'react';
 import classes from './Header.module.css';
 
 import { CalendarView } from '~/types';
+import { CALENDAR_VIEWS } from '~/utils';
+
 import { HeaderButton } from './HeaderButton';
-import { CALENDAR_VIEWS } from '~/constants';
 
 interface ControlsProps {
 	hideViewToggle?: boolean;

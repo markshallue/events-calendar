@@ -1,10 +1,11 @@
 import { Dayjs } from 'dayjs';
 import { MouseEvent, RefObject } from 'react';
 
-import { CALENDAR_VIEWS, MONTHS } from '~/constants';
+import { CALENDAR_VIEWS, MONTHS } from '~/utils';
 
-export type CalendarView = (typeof CALENDAR_VIEWS)[number];
 export type Month = (typeof MONTHS)[number];
+export type CalendarView = (typeof CALENDAR_VIEWS)[number];
+export type CalendarGroup = { label: string; color: string };
 
 export interface RawCalendarEventBase {
 	id?: number | null;
@@ -14,7 +15,7 @@ export interface RawCalendarEventBase {
 	startTime?: string | null;
 	endTime?: string | null;
 	isAllDay?: boolean;
-	groups?: { label: string; color: string }[];
+	groups?: CalendarGroup[];
 }
 
 export interface CalendarEventBase {

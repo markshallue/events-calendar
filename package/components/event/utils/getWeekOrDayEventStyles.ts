@@ -1,5 +1,5 @@
 import { OrderedCalendarEvent } from '~/types';
-import { DEFAULT_COLOR, getBackgroundFromArray } from '~/utils';
+import { getBackgroundFromGroups } from '~/utils';
 
 export const getWeekOrDayEventStyles = (
 	event: OrderedCalendarEvent,
@@ -8,9 +8,7 @@ export const getWeekOrDayEventStyles = (
 	overlapOffset: number,
 	isActive: boolean
 ) => {
-	const colors = event.groups?.map(g => g.color).filter(Boolean) || [];
-	const sundayOffset = dayIndex === 0 ? 6 : 0;
-	if (colors.length === 0) colors.push(DEFAULT_COLOR);
+	const timeColumnOffset = dayIndex === 0 ? 6 : 0;
 
 	return {
 		gridColumnStart: dayIndex + 1,
@@ -18,9 +16,9 @@ export const getWeekOrDayEventStyles = (
 		gridRowEnd: event.end && event.end.hour() * 4 + Math.round(event.end.minute() / 15) + 1,
 		height: 12 * ((timeDuration || 60) / 15) - 2,
 		borderWidth: event.indent > 0 ? (timeDuration > 30 ? '1px' : '0.5px') : 0,
-		marginLeft: overlapOffset * event.indent + sundayOffset,
-		width: `calc(100% - ${overlapOffset * (event.indent + 1) + sundayOffset}px)`,
+		marginLeft: overlapOffset * event.indent + timeColumnOffset,
+		width: `calc(100% - ${overlapOffset * (event.indent + 1) + timeColumnOffset}px)`,
 		zIndex: isActive ? 100 : 1 + event.order,
-		...getBackgroundFromArray(colors),
+		...getBackgroundFromGroups(event.groups),
 	};
 };

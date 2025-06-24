@@ -13,9 +13,8 @@ import {
 	EventsCalendarContextMenuProps,
 } from './types';
 
-import { CALENDAR_VIEWS } from './constants';
-import { filterByView, parseRawEvents } from './utils';
 import { EventsCalendarPopover, CircularLoader } from './components';
+import { CALENDAR_VIEWS, filterByView, parseRawEvents } from './utils';
 import { MonthView, Header, TimeView, OverflowCard, YearView } from './features';
 import { useMouseEvent, useInitEventsCalendar, EventsCalendarObject } from './hooks';
 

@@ -5,10 +5,10 @@ import { Dispatch, ReactNode, SetStateAction } from 'react';
 import classes from './Header.module.css';
 
 import { CalendarView } from '~/types';
-import { CALENDAR_VIEWS } from '~/constants';
+import { CALENDAR_VIEWS } from '~/utils';
 
-import { Navigation } from './Navigation';
 import { Controls } from './Controls';
+import { Navigation } from './Navigation';
 
 interface HeaderProps {
 	activeDate: dayjs.Dayjs;

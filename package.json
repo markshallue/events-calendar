@@ -6,7 +6,8 @@
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"check": "tsc"
 	},
 	"peerDependencies": {
 		"@floating-ui/core": "^1.7.1",

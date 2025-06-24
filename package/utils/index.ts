@@ -14,5 +14,5 @@ export * from './arrangeWeekEvents';
 export * from './getPlaceholderEvent';
 export * from './returnValidStartEnd';
 export * from './arrangeWeekdayEvents';
-export * from './getBackgroundFromArray';
 export * from './createDayjsObjFromTime';
+export * from './getBackgroundFromGroups';

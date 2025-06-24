@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
-import { MONTHS, DAYS_IN_FULL_MONTH } from '~/constants';
+
 import { CalendarEvent, Month } from '~/types';
+import { MONTHS, DAYS_IN_FULL_MONTH } from '~/utils';
 
 export type MonthDate = { date: dayjs.Dayjs; isToday: boolean; isCurrentMonth: boolean; isActive: boolean };
 export type YearDateRecord = Record<Month, MonthDate[]>;

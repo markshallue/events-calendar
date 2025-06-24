@@ -4,11 +4,11 @@ import dayjs from 'dayjs';
 import { Dispatch } from 'react';
 import classes from './YearView.module.css';
 
-import { DAY_LABELS_SHORT, MONTHS } from '~/constants';
+import { DAY_LABELS_SHORT, MONTHS } from '~/utils';
 import { CalendarAction, CalendarEvent, CalendarState } from '~/types';
 
-import { generateYearDates } from './utils';
 import { MonthDate } from './components';
+import { generateYearDates } from './utils';
 
 interface YearViewProps<T> {
 	activeDate: dayjs.Dayjs;
