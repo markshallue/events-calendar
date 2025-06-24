@@ -6,10 +6,18 @@ import classes from './OverflowCard.module.css';
 
 import { arrangeWeekEvents, filterByDate } from '~/utils';
 import { EventsCalendarPopover, Event } from '~/components';
-import { CalendarEvent, EventsCalendarContextMenuProps, CalendarAction, CalendarState, EventClickArgs } from '~/types';
+import {
+	ColorScheme,
+	CalendarEvent,
+	CalendarState,
+	CalendarAction,
+	EventClickArgs,
+	EventsCalendarContextMenuProps,
+} from '~/types';
 
 interface OverflowCardProps<T> {
 	compact: boolean;
+	colorScheme: ColorScheme;
 	dispatch: Dispatch<CalendarAction>;
 	events: CalendarEvent<T>[];
 	onEventClick?: ({ event, isDoubleClick }: EventClickArgs<T>) => void;
@@ -28,6 +36,7 @@ export function OverflowCard<T>({
 	compact,
 	dispatch,
 	events,
+	colorScheme,
 	onEventClick,
 	placeholderRef,
 	renderContextMenu,
@@ -41,7 +50,12 @@ export function OverflowCard<T>({
 	const orderedEvents = arrangeWeekEvents(filterByDate(events, date));
 
 	return (
-		<EventsCalendarPopover anchor={state.overflowAnchor} isOpen={state.overflowIsOpen} zIndex={2}>
+		<EventsCalendarPopover
+			zIndex={2}
+			anchor={state.overflowAnchor}
+			isOpen={state.overflowIsOpen}
+			colorScheme={colorScheme}
+		>
 			<div className={classes.overflowCard}>
 				<span className={classes.label}>{date.format('dddd, MMMM D')}</span>
 				{!orderedEvents.length && <div className={classes.empty}>No events scheduled for this date</div>}

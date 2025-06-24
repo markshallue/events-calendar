@@ -1,4 +1,4 @@
-.root {
+:root {
 	--ec-default-background: #fff;
 	--ec-gray-0: #f8f9fa;
 	--ec-gray-1: #f1f3f5;
@@ -12,7 +12,7 @@
 	--ec-gray-9: #212529;
 }
 
-.root[data-color-scheme='dark'] {
+:root [data-ec-color-scheme='dark'] {
 	--ec-default-background: #3a3a3a;
 	--ec-gray-0: #242424;
 	--ec-gray-1: #353535;
@@ -26,7 +26,7 @@
 	--ec-gray-9: #f8f9fa;
 }
 
-.root[data-color-scheme='light'] {
+:root [data-ec-color-scheme='light'] {
 	--ec-default-background: #fff;
 	--ec-gray-0: #f8f9fa;
 	--ec-gray-1: #f1f3f5;
@@ -41,7 +41,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.root[data-color-scheme='auto'] {
+	:root [data-ec-color-scheme='auto'] {
 		--ec-default-background: #3a3a3a;
 		--ec-gray-0: #242424;
 		--ec-gray-1: #353535;

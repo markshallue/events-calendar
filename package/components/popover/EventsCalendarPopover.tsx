@@ -1,22 +1,21 @@
 'use client';
 
+import { ColorScheme } from '~/types';
 import { PopoverContent } from './PopoverContent';
 
 interface PopoverProps {
 	anchor: HTMLDivElement;
 	isOpen: boolean;
 	zIndex?: number;
+	colorScheme: ColorScheme;
 	children: React.ReactNode;
 }
 
-export function EventsCalendarPopover({ anchor, isOpen, zIndex = 1, children }: PopoverProps) {
+export function EventsCalendarPopover({ anchor, colorScheme, isOpen, zIndex = 1, children }: PopoverProps) {
+	if (!isOpen || !anchor) return null;
 	return (
-		<>
-			{isOpen && anchor && (
-				<PopoverContent anchor={anchor} zIndex={zIndex}>
-					{children}
-				</PopoverContent>
-			)}
-		</>
+		<PopoverContent anchor={anchor} zIndex={zIndex} colorScheme={colorScheme}>
+			{children}
+		</PopoverContent>
 	);
 }

@@ -117,7 +117,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 	};
 
 	return (
-		<div className={classes.root} data-color-scheme={colorScheme}>
+		<div className={classes.root} data-ec-color-scheme={colorScheme}>
 			{noHeader ? null : (
 				<Header view={view} setActiveDate={setActiveDate} setView={setView} activeDate={activeDate} views={views} />
 			)}
@@ -126,7 +126,12 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 				{renderCurrentView()}
 
 				{renderPopover && eventAnchor && (
-					<EventsCalendarPopover isOpen={popoverIsOpen} anchor={eventAnchor} zIndex={popoverZIndex}>
+					<EventsCalendarPopover
+						isOpen={popoverIsOpen}
+						anchor={eventAnchor}
+						zIndex={popoverZIndex}
+						colorScheme={colorScheme}
+					>
 						{renderPopover({ onClose, clickedEvent, newEvent: placeholderEvent })}
 					</EventsCalendarPopover>
 				)}
@@ -136,6 +141,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 					compact={compact}
 					dispatch={dispatch}
 					events={overflowEvents}
+					colorScheme={colorScheme}
 					onEventClick={onEventClick}
 					placeholderRef={placeholderRef}
 					renderContextMenu={renderContextMenu}
