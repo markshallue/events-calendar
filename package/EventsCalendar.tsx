@@ -40,7 +40,7 @@ export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalenda
 export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase>({
 	calendar,
 	compact = false,
-	colorScheme = 'auto',
+	colorScheme = 'light',
 	enableDragCreation = false,
 	enableRescheduling = false,
 	events = [],
