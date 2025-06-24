@@ -19,6 +19,7 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@mantine/code-highlight": "^8.1.1",
 		"@mantine/core": "^8.1.1",
 		"@mantine/hooks": "^8.1.1",
 		"@tabler/icons-react": "^3.34.0",
@@ -31,6 +32,7 @@
 		"postcss": "^8.5.6",
 		"postcss-preset-mantine": "^1.17.0",
 		"postcss-simple-vars": "^7.0.1",
+		"shiki": "^3.7.0",
 		"typescript": "^5"
 	}
 }

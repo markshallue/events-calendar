@@ -1,10 +1,11 @@
 import '@mantine/core/styles.css';
+import '@mantine/code-highlight/styles.css';
 
 import React from 'react';
 import { cookies } from 'next/headers';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 
-import { AppWrapper } from '@/components';
+import { AppWrapper, ShikiAdapterProvider } from '@/components';
 
 export const metadata = {
 	title: 'Mantine Next.js template',
@@ -25,7 +26,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 			</head>
 			<body>
 				<MantineProvider defaultColorScheme={initialColorScheme}>
-					<AppWrapper>{children}</AppWrapper>
+					<ShikiAdapterProvider>
+						<AppWrapper>{children}</AppWrapper>
+					</ShikiAdapterProvider>
 				</MantineProvider>
 			</body>
 		</html>

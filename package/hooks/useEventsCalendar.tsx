@@ -1,7 +1,11 @@
-import { Dispatch, SetStateAction, useEffect, useReducer, useState } from 'react';
+'use client';
+
 import dayjs, { Dayjs } from 'dayjs';
-import { CalendarAction, CalendarState, CalendarView } from '../types';
+import { Dispatch, SetStateAction, useEffect, useReducer, useState } from 'react';
+
 import { DEFAULT_STATE, reducer } from '~/state';
+
+import { CalendarAction, CalendarState, CalendarView } from '../types';
 
 export type EventsCalendarObject = {
 	activeDate: Dayjs;

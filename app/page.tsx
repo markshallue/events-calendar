@@ -84,7 +84,7 @@ export default function Home() {
 			</ul>
 			<Title order={2}>Motivation</Title>
 			<CalendarWrapper>
-				<EventsCalendar colorScheme={computedColorScheme} events={events} />
+				<EventsCalendar colorScheme={computedColorScheme} events={events} enableDragCreation />
 			</CalendarWrapper>
 		</PageWrapper>
 	);
