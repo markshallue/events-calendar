@@ -26,6 +26,20 @@
 	--ec-gray-9: #f8f9fa;
 }
 
+.root[data-color-scheme='light'] {
+	--ec-default-background: #fff;
+	--ec-gray-0: #f8f9fa;
+	--ec-gray-1: #f1f3f5;
+	--ec-gray-2: #e9ecef;
+	--ec-gray-3: #dee2e6;
+	--ec-gray-4: #ced4da;
+	--ec-gray-5: #adb5bd;
+	--ec-gray-6: #868e96;
+	--ec-gray-7: #495057;
+	--ec-gray-8: #343a40;
+	--ec-gray-9: #212529;
+}
+
 @media (prefers-color-scheme: dark) {
 	.root[data-color-scheme='auto'] {
 		--ec-default-background: #3a3a3a;
