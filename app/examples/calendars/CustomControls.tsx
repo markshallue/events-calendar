@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import { CALENDAR_VIEWS } from '~/utils';
 import { EventsCalendarObject } from '~/index';
 
 import { getEvents } from '@/data/utils';
@@ -14,6 +15,11 @@ interface Props {
 }
 
 export function CustomControls({ calendar, setEvents, numOfEvents, dayRange }: Props) {
+	const handleToggleView = () => {
+		const currIndex = CALENDAR_VIEWS.indexOf(calendar.view);
+		calendar.setView(CALENDAR_VIEWS[(currIndex + 1) % CALENDAR_VIEWS.length]);
+	};
+
 	return (
 		<div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'space-between' }}>
 			<div style={{ display: 'flex', gap: '0.75rem' }}>
@@ -31,14 +37,7 @@ export function CustomControls({ calendar, setEvents, numOfEvents, dayRange }: P
 				<CustomButton color='grape' onClick={() => setEvents(getEvents(numOfEvents, dayRange))}>
 					Randomise events!
 				</CustomButton>
-				<CustomButton
-					color='teal'
-					onClick={() => {
-						if (calendar.view === 'month') calendar.setView('week');
-						if (calendar.view === 'week') calendar.setView('day');
-						if (calendar.view === 'day') calendar.setView('month');
-					}}
-				>
+				<CustomButton color='teal' onClick={handleToggleView}>
 					Toggle calendar view
 				</CustomButton>
 			</div>

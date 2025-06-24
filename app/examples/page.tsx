@@ -4,7 +4,16 @@ import { demoEvents } from '@/data';
 import { readExample } from '@/server-utils';
 import { CalendarWrapper, CodeBlock, PageHeading, PageWrapper } from '@/components';
 
-import { AsyncExample, BasicExample, PopoverExample, ResponsiveExample } from './calendars';
+import {
+	AsyncExample,
+	BasicExample,
+	ContextMenuExample,
+	CustomHeaderExample,
+	DragCreateExample,
+	KitchenSinkExample,
+	PopoverExample,
+	ResponsiveExample,
+} from './calendars';
 
 const PATH = 'app/examples/calendars';
 
@@ -14,7 +23,7 @@ export default function Examples() {
 			<Stack>
 				<PageHeading title='Basic' subtitle='To create a simple calendar, just pass in an events array.' />
 				<CodeBlock
-					defaultExpanded
+					withExpandButton
 					tabs={[
 						{ fileName: 'BasicExample.tsx', code: readExample(`${PATH}/BasicExample.tsx`) },
 						{ fileName: 'events.json', code: demoEvents },
@@ -34,7 +43,10 @@ export default function Examples() {
 						</Text>
 					}
 				/>
-				<CodeBlock tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`${PATH}/AsyncExample.tsx`) }]} />
+				<CodeBlock
+					withExpandButton
+					tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`${PATH}/AsyncExample.tsx`) }]}
+				/>
 				<CalendarWrapper title='Result'>
 					<AsyncExample />
 				</CalendarWrapper>
@@ -46,7 +58,10 @@ export default function Examples() {
 					subtitle='The calendar will grow to fill its container. Resize the container below to see the calendar automatically show/hide events
 					based on the available space.'
 				/>
-				<CodeBlock tabs={[{ fileName: 'ResponsiveExample.tsx', code: readExample(`${PATH}/ResponsiveExample.tsx`) }]} />
+				<CodeBlock
+					withExpandButton
+					tabs={[{ fileName: 'ResponsiveExample.tsx', code: readExample(`${PATH}/ResponsiveExample.tsx`) }]}
+				/>
 				<Stack gap='0'>
 					<Title order={3}>Result</Title>
 					<Text size='sm' c='dimmed'>
@@ -75,14 +90,73 @@ export default function Examples() {
 					}
 				/>
 				<CodeBlock
+					withExpandButton
 					tabs={[
-						{ fileName: 'PopoverExample.tsx', code: readExample(`${PATH}/PopoverExample.tsx`), language: 'tsx' },
-						{ fileName: 'events.json', code: demoEvents, language: 'ts' },
+						{ fileName: 'PopoverExample.tsx', code: readExample(`${PATH}/PopoverExample.tsx`) },
+						{ fileName: 'events.json', code: demoEvents },
 					]}
 				/>
 				<CalendarWrapper title='Result'>
 					<PopoverExample />
 				</CalendarWrapper>
+			</Stack>
+
+			<Stack>
+				<PageHeading
+					title='Custom header'
+					subtitle={
+						<Text size='sm'>
+							With the <Code>useEventsCalendar</Code> hook, we can manage the calendar state externally and create a custom
+							header element.
+						</Text>
+					}
+				/>
+				<CodeBlock
+					withExpandButton
+					tabs={[
+						{ fileName: 'CustomHeader.tsx', code: readExample(`${PATH}/CustomHeaderExample.tsx`) },
+						{ fileName: 'CustomHeaderElement.tsx', code: readExample(`${PATH}/CustomHeader.tsx`) },
+						{ fileName: 'CustomHeader.module.css', code: readExample(`${PATH}/CustomHeader.module.css`) },
+					]}
+				/>
+				<CalendarWrapper title='Result'>
+					<CustomHeaderExample />
+				</CalendarWrapper>
+			</Stack>
+
+			<Stack>
+				<PageHeading title='Drag event creation' />
+				<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`${PATH}/DragCreateExample.tsx`) }]} />
+				<CalendarWrapper title='Result'>
+					<DragCreateExample />
+				</CalendarWrapper>
+			</Stack>
+
+			<Stack>
+				<PageHeading
+					title='Context menu'
+					subtitle={
+						<Text size='sm'>
+							Use the <Code>useEventsCalendar</Code> prop to bind a context menu to events.
+						</Text>
+					}
+				/>
+				<CodeBlock tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`${PATH}/ContextMenuExample.tsx`) }]} />
+				<CalendarWrapper title='Result'>
+					<ContextMenuExample />
+				</CalendarWrapper>
+			</Stack>
+
+			<Stack>
+				<PageHeading title='Kitchen sink' />
+				<CodeBlock
+					tabs={[
+						{ fileName: 'KitchenSinkExample.tsx', code: readExample(`${PATH}/KitchenSinkExample.tsx`) },
+						{ fileName: 'CustomControls.tsx', code: readExample(`${PATH}/CustomControls.tsx`) },
+					]}
+				/>
+				<Title order={3}>Result</Title>
+				<KitchenSinkExample />
 			</Stack>
 		</PageWrapper>
 	);

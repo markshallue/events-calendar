@@ -6,7 +6,7 @@ import { createShikiAdapter, CodeHighlightAdapterProvider } from '@mantine/code-
 const shikiAdapter = createShikiAdapter(async () => {
 	const { createHighlighter } = await import('shiki');
 	return createHighlighter({
-		langs: ['tsx', 'scss', 'html', 'bash', 'json'],
+		langs: ['tsx', 'ts', 'css', 'html', 'shell', 'json'],
 		themes: [],
 	});
 });

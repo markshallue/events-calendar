@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useComputedColorScheme } from '@mantine/core';
 import { EventsCalendar, RawCalendarEvent, useEventsCalendar } from '~/index';
 
 import { PopoverType } from '@/types';
@@ -12,6 +13,8 @@ import fields from '@/data/form-fields.json';
 import initialEvents from '@/data/events.json';
 
 export function ContextMenuExample() {
+	const colorScheme = useComputedColorScheme('light');
+
 	const [events, setEvents] = useState<RawCalendarEvent[]>(initialEvents);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
 
@@ -24,6 +27,7 @@ export function ContextMenuExample() {
 		<EventsCalendar
 			calendar={calendar}
 			events={events}
+			colorScheme={colorScheme}
 			onEventClick={({ togglePopover }) => togglePopover()}
 			renderPopover={({ clickedEvent, newEvent, onClose }) => {
 				return popoverType === 'view' ? (

@@ -18,7 +18,7 @@ export function PageWrapper({ gap, withTableOfContents, children }: Props) {
 			</div>
 		);
 	return (
-		<div className={classes.wrapper}>
+		<div className={classes.wrapper} data-wide>
 			<Group wrap='nowrap' align='start' gap='3rem' maw='100%'>
 				<Stack gap={gap} style={{ flexGrow: 1 }}>
 					{children}
