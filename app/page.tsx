@@ -18,7 +18,6 @@ export default function Home() {
 				<li>Overflow handling</li>
 				<li>Context menu and popover handling</li>
 				<li>Importable views (import year, month, week, day or time views separately</li>
-				<li>Importable views (import year, month, week, day or time views separately</li>
 			</ul>
 			<Title order={2}>Motivation</Title>
 			<CalendarWrapper>
@@ -27,7 +26,38 @@ export default function Home() {
 						{ id: 1, start: new Date(), title: 'My first event' },
 						{
 							id: 2,
-							start: new Date(),
+							start: '22-Jun-2025',
+							end: '26-Jun-2025',
+							title: 'My event',
+							groups: [
+								{ label: 'blue', color: '#1c7ed6' },
+								{ label: 'pink', color: '#d61c70' },
+							],
+						},
+						{
+							id: 21,
+							start: '22-Jun-2025',
+							end: '26-Jun-2025',
+							title: 'My asfnio event',
+							groups: [
+								{ label: 'blue', color: '#1c7ed6' },
+								{ label: 'pink', color: '#d61c70' },
+							],
+						},
+						{
+							id: 22,
+							start: '22-Jun-2025',
+							end: '26-Jun-2025',
+							title: 'IUBFEIUN',
+							groups: [
+								{ label: 'blue', color: '#1c7ed6' },
+								{ label: 'pink', color: '#d61c70' },
+							],
+						},
+						{
+							id: 23,
+							start: '30-May-2025',
+							end: '4-Jun-2025',
 							title: 'My second event',
 							groups: [
 								{ label: 'blue', color: '#1c7ed6' },

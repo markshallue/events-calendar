@@ -1,13 +1,13 @@
-import { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import classes from './AllDayEvent.module.css';
 
+import { getBackgroundFromArray } from '~/utils';
 import { CalendarEvent, MinMaxDatesInView } from '~/types';
-import { DEFAULT_COLOR, getBackgroundFromArray } from '~/utils';
 
-import { OverflowArrow } from '../overflow-arrow';
+import { getClipPath, getOverflowArrows } from './utils';
 
 interface AllDayEventProps {
-	date: Dayjs;
+	date: dayjs.Dayjs;
 	event: CalendarEvent;
 	minMaxDatesInView?: MinMaxDatesInView;
 	isCompact: boolean;
@@ -20,26 +20,19 @@ export function AllDayEvent({ date, event, minMaxDatesInView, isCompact, isInOve
 	const colors = groups?.map(g => g.color).filter(Boolean) ?? [];
 
 	// Calculate arrows for display in overflow popover
-	const arrowLeft =
-		(isInOverflow && start.isBefore(date, 'd')) || (minMaxDatesInView && start.isBefore(minMaxDatesInView?.first, 'd'));
-	const arrowRight =
-		(isInOverflow && end.isAfter(date, 'd')) || (minMaxDatesInView && end.isAfter(minMaxDatesInView?.last, 'd'));
-	const arrows = arrowLeft && arrowRight ? 'both' : arrowLeft ? 'left' : arrowRight ? 'right' : false;
+	const overflowArrows = getOverflowArrows(isInOverflow, date, start, end, minMaxDatesInView);
 
 	// Event background color(s)
+	const clipPath = getClipPath(overflowArrows);
 	const colorstyles = getBackgroundFromArray(colors);
-	const leftArrowColor = colors.length ? colors[0] : DEFAULT_COLOR;
-	const rightArrowColor = colors.length ? colors[colors.length - 1] : DEFAULT_COLOR;
 
 	return (
-		<div className={classes.allDayContainer} style={colorstyles}>
-			<OverflowArrow color={leftArrowColor} dir='left' isHidden={!arrowLeft} isCompact={isCompact} />
-			<div className={classes.allDayTextContainer} data-sm={isCompact}>
-				<span className={classes.allDayText} data-arrows={arrows}>
+		<div className={classes.container} style={{ ...colorstyles, clipPath }}>
+			<div className={classes.content} data-sm={isCompact}>
+				<span className={classes.text} data-arrows={overflowArrows}>
 					{title}
 				</span>
 			</div>
-			<OverflowArrow color={rightArrowColor} dir='right' isHidden={!arrowRight} isCompact={isCompact} />
 		</div>
 	);
 }

@@ -5,12 +5,12 @@ import classes from './EventsCalendar.module.css';
 
 import {
 	CalendarView,
-	EventClickArgs,
 	EventEditProps,
-	EventsCalendarContextMenuProps,
-	EventsCalendarPopoverProps,
+	EventClickArgs,
 	RawCalendarEvent,
 	RawCalendarEventBase,
+	EventsCalendarPopoverProps,
+	EventsCalendarContextMenuProps,
 } from './types';
 
 import { CALENDAR_VIEWS } from './constants';

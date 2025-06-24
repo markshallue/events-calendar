@@ -52,6 +52,8 @@ export interface MinMaxDatesInView {
 	last: Dayjs;
 }
 
+export type OverflowArrowType = 'both' | 'left' | 'right' | 'none';
+
 export interface MonthDates extends MinMaxDatesInView {
 	weeks: DateRecord[][];
 }
