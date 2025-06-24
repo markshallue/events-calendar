@@ -1,8 +1,7 @@
 import { Code, Text, Title } from '@mantine/core';
 
-import { readExample } from '@/utils';
-import { CodeBlock } from '@/components';
-import { PageWrapper, CalendarWrapper } from '@/components';
+import { readExample } from '@/server-utils';
+import { CodeBlock, PageWrapper, CalendarWrapper } from '@/components';
 
 import { TimeExample } from './TimeExample';
 import { ColorsExample } from './ColorsExample';

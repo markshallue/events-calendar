@@ -18,8 +18,8 @@ export function PageWrapper({ withTableOfContents, children }: Props) {
 		);
 	return (
 		<div className={classes.wrapper}>
-			<Group wrap='nowrap' align='start' gap='xl'>
-				<Stack>{children}</Stack>
+			<Group wrap='nowrap' align='start' gap='3rem' maw='100%'>
+				<Stack style={{ flexGrow: 1 }}>{children}</Stack>
 				<Box w='16rem' style={{ flexShrink: 0 }} pos='sticky' top='var(--app-shell-header-height)' pt='lg'>
 					<Text fw={600} size='sm' pb='xs'>
 						On this page

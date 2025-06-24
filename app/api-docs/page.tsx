@@ -1,5 +1,3 @@
-'use client';
-
 import {
 	Anchor,
 	Code,
@@ -19,66 +17,12 @@ import Link from 'next/link';
 import { CodeBlock, PageWrapper } from '@/components';
 
 import { props } from './propsList';
-
-const calendarPropTypesCode = `
-export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
-    calendar?: EventsCalendarObject;
-    compact?: boolean;
-    colorScheme?: ColorScheme;
-    enableDragCreation?: boolean;
-    enableRescheduling?: boolean;
-    events?: RawCalendarEvent<T>[];
-    isFetching?: boolean;
-    noHeader?: boolean;
-    popoverZIndex?: number;
-    views?: CalendarView[];
-    onEventClick?: (props: EventClickArgs<T>) => void;
-    onEventCreate?: (props: EventEditProps) => void;
-    onEventReschedule?: (props: EventEditProps) => void;
-    renderPopover?: (props: EventsCalendarPopoverProps) => ReactNode;
-    renderContextMenu?: (props: EventsCalendarContextMenuProps) => ReactNode;
-}
-    
-`;
-
-const eventsObjectCode = `
-export type RawCalendarEvent = {
-  id?: number | null;
-  title?: string;
-  start?: string | number | Date | Dayjs;
-  end?: string | number | Date | Dayjs;
-  startTime?: string | null;
-  endTime?: string | null;
-  isAllDay?: boolean;
-  groups?: { label: string; color: string }[];
-}
-`;
-
-const useEventsCalendarCode = `
-export type useEventsCalendarProps {
-    initialDate?: string | number | Date | Dayjs;
-    initialView?: CalendarView;
-}
-`;
-
-const EventsCalendarObject = `
-export type EventsCalendarObject = {
-    activeDate: dayjs.Dayjs;
-    setActiveDate: Dispatch<SetStateAction<dayjs.Dayjs>>;
-    view: CalendarView;
-    setView: Dispatch<SetStateAction<CalendarView>>;
-};
-`;
+import { calendarPropTypesCode, EventsCalendarObject, eventsObjectCode, useEventsCalendarCode } from './codeSnippets';
 
 export default function APIDocs() {
-	console.log('Mantine Table:', Table);
-
 	const rows = props.map(prop => (
 		<TableTr key={prop.name}>
 			<TableTd w='20%'>{prop.name}</TableTd>
-			{/* <TableTd w='40%' c='blue'>
-				{prop.type}
-			</TableTd> */}
 			<TableTd>{prop.description}</TableTd>
 		</TableTr>
 	));
@@ -93,7 +37,6 @@ export default function APIDocs() {
 							<TableThead>
 								<TableTr>
 									<TableTh>Name</TableTh>
-									{/* <TableTh>Type</TableTh> */}
 									<TableTh>Description</TableTh>
 								</TableTr>
 							</TableThead>

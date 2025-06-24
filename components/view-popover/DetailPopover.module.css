@@ -1,0 +1,38 @@
+.DetailPopover {
+	width: 360px;
+	max-height: calc(100vh - 40px);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	/* overflow: hidden; */
+	/* max-height: 100vh; */
+	padding-top: 0px;
+	display: flex;
+	flex-direction: column;
+}
+.DetailPopoverSection {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 1;
+	overflow: hidden;
+	padding: 0.75rem 1rem 1rem 1rem;
+}
+.title {
+	flex-grow: 1;
+	display: -webkit-box;
+	line-clamp: 4;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.timeLabel {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin-top: 0.25rem;
+}
+.infoField {
+	display: -webkit-box;
+	line-clamp: 4;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
