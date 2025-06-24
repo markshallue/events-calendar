@@ -14,13 +14,15 @@ export function PageWrapper({ gap, withTableOfContents, children }: Props) {
 	if (!withTableOfContents)
 		return (
 			<div className={classes.wrapper}>
-				<Stack gap={gap}>{children}</Stack>
+				<Stack gap={gap} flex='1'>
+					{children}
+				</Stack>
 			</div>
 		);
 	return (
 		<div className={classes.wrapper} data-wide>
-			<Group wrap='nowrap' align='start' gap='3rem' maw='100%'>
-				<Stack gap={gap} style={{ flexGrow: 1 }}>
+			<Group wrap='nowrap' align='start' gap='3rem' w='100%'>
+				<Stack gap={gap} flex='1' style={{ minWidth: 0 }}>
 					{children}
 				</Stack>
 				<Box w='16rem' style={{ flexShrink: 0 }} pos='sticky' top='var(--app-shell-header-height)' pt='lg'>

@@ -2,10 +2,12 @@
 	padding: 1rem 2.5rem 3rem 2.5rem;
 	gap: 1rem;
 	width: min(72em, 100%);
+	max-width: min(72em, 100%);
 	margin: 0 auto;
 
 	&[data-wide] {
 		width: min(80em, 100%);
+		max-width: min(80em, 100%);
 	}
 }
 

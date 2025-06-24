@@ -36,7 +36,7 @@ export function FilterControl({ filterLabel = 'Groups', items, hiddenItems, setH
 					size={7}
 					style={{ height: 32 }}
 				>
-					<ActionIcon pos='relative' color='blue' size={32} variant='subtle' style={{ color: '#228be6 !important' }}>
+					<ActionIcon pos='relative' c='blue' size={32} variant='subtle'>
 						<IconAdjustmentsHorizontal size='1.375rem' />
 					</ActionIcon>
 				</Indicator>

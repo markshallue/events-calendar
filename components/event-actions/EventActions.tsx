@@ -56,7 +56,7 @@ export function EventActions({
 			{renderCustomEditControls && renderCustomEditControls(event, type, closeAll)}
 			<ConfirmationModal
 				title='Confirm delete'
-				text='Are you sure you want to delete this entry?'
+				text='Are you sure you want to delete this event?'
 				triggerButton={
 					<ActionButton buttonContext={type} color='red' icon={<IconTrash size='1.125rem' />} label='Delete event' />
 				}

@@ -75,7 +75,7 @@ export default function Examples() {
 
 			<Stack>
 				<PageHeading
-					title='Detail Popover'
+					title='Detail popover'
 					subtitle={
 						<>
 							<Text size='sm'>
