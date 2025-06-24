@@ -16,8 +16,8 @@ const PATH = 'app/getting-started';
 
 export default function GettingStarted() {
 	return (
-		<PageWrapper>
-			<Title>Installation</Title>
+		<PageWrapper withTableOfContents>
+			<Title order={2}>Installation</Title>
 			<CodeBlock
 				tabs={[
 					{ language: 'shell', fileName: 'npm', code: 'npm i events-calendar' },

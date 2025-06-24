@@ -18,7 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 	const initialColorScheme = theme ?? 'auto';
 
 	return (
-		<html lang='en' {...mantineHtmlProps}>
+		<html lang='en' {...mantineHtmlProps} style={{ scrollPaddingTop: 'calc(var(--app-shell-header-height) + 1rem)' }}>
 			<head>
 				<ColorSchemeScript defaultColorScheme={initialColorScheme} />
 				<link rel='shortcut icon' href='/favicon.svg' />
