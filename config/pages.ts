@@ -9,6 +9,6 @@ type Page = {
 export const pages: Page[] = [
 	{ label: 'Home', href: '/', icon: IconHome },
 	{ label: 'Getting started', href: '/getting-started', icon: IconNumber123 },
-	{ label: 'Docs', href: '/docs', icon: IconBook },
+	{ label: 'API Docs', href: '/docs', icon: IconBook },
 	{ label: 'Examples', href: '/examples', icon: IconCalendarShare },
 ];
