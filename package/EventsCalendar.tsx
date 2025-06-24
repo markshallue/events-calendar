@@ -44,7 +44,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 	enableDragCreation = false,
 	enableRescheduling = false,
 	events = [],
-	popoverZIndex = 2,
+	popoverZIndex = 9999,
 	isFetching = false,
 	noHeader = false,
 	onEventClick,

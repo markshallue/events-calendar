@@ -59,7 +59,7 @@ export function CodeBlock({
 			{tabs ? (
 				<CodeHighlightTabs
 					withExpandButton={withExpandButton}
-					defaultExpanded={withExpandButton ? defaultExpanded : true}
+					defaultExpanded={defaultExpanded}
 					code={tabs.map(({ language, fileName, code }) => {
 						language = language || getLanguage(fileName);
 						return {

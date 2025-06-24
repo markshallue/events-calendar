@@ -18,6 +18,7 @@ export default function GettingStarted() {
 		<PageWrapper withTableOfContents>
 			<Title order={2}>Installation</Title>
 			<CodeBlock
+				defaultExpanded
 				tabs={[
 					{ language: 'shell', fileName: 'npm', code: 'npm i events-calendar' },
 					{ language: 'shell', fileName: 'yarn', code: 'yarn add events-calendar' },

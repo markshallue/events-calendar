@@ -23,11 +23,7 @@
 				"content": ["Steven Herman", "Joel Lockman", "Beulah Kreiger"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-2.jpg",
-			"/src/data/images/demo-image-1.jpg",
-			"/src/data/images/demo-image-4.jpg"
-		]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-1.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 2,
@@ -75,7 +71,7 @@
 				"content": ["Erick Reynolds", "Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 4,
@@ -101,7 +97,7 @@
 				"content": ["Joel Lockman", "Steven Herman", "Erick Reynolds", "Herbert Cummerata", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 5,
@@ -125,11 +121,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Alvin Ernser", "Steven Herman"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-5.jpg",
-			"/src/data/images/demo-image-4.jpg",
-			"/src/data/images/demo-image-2.jpg"
-		]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 6,
@@ -155,7 +147,7 @@
 				"content": ["Herbert Cummerata", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 7,
@@ -181,7 +173,7 @@
 				"content": ["Herbert Cummerata", "Joel Lockman", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 8,
@@ -207,7 +199,7 @@
 				"content": ["Joel Lockman", "Melanie Armstrong-Nolan", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 9,
@@ -233,11 +225,7 @@
 				"content": ["Herbert Cummerata", "Steven Herman", "Joel Lockman", "Beulah Kreiger"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-1.jpg",
-			"/src/data/images/demo-image-2.jpg"
-		]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-1.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 10,
@@ -263,7 +251,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 11,
@@ -289,7 +277,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 12,
@@ -309,7 +297,7 @@
 				"content": "Fix bugs reported by the QA team and ensure that the application runs smoothly and efficiently."
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 13,
@@ -333,7 +321,7 @@
 				"content": ["Joel Lockman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 14,
@@ -385,7 +373,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 16,
@@ -407,7 +395,7 @@
 				"content": "Create engaging and informative content for the company blog, focusing on industry trends and insights."
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 17,
@@ -433,7 +421,7 @@
 				"content": ["Joel Lockman", "Erick Reynolds", "Steven Herman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 18,
@@ -459,7 +447,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 19,
@@ -485,7 +473,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 20,
@@ -511,7 +499,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 21,
@@ -537,7 +525,7 @@
 				"content": ["Steven Herman", "Melanie Armstrong-Nolan", "Herbert Cummerata", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 22,
@@ -561,7 +549,7 @@
 				"content": ["Joel Lockman", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 23,
@@ -585,7 +573,7 @@
 				"content": ["Ivan Wisozk", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 24,
@@ -611,7 +599,7 @@
 				"content": ["Joel Lockman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 25,
@@ -687,7 +675,7 @@
 				"content": ["Steven Herman", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 28,
@@ -713,7 +701,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 29,
@@ -737,7 +725,7 @@
 				"content": ["Erick Reynolds", "Melanie Armstrong-Nolan", "Steven Herman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 30,
@@ -761,7 +749,7 @@
 				"content": ["Beulah Kreiger", "Steven Herman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 31,
@@ -787,7 +775,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 32,
@@ -813,7 +801,7 @@
 				"content": ["Steven Herman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 33,
@@ -837,7 +825,7 @@
 				"content": ["Steven Herman", "Erick Reynolds", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 34,
@@ -861,7 +849,7 @@
 				"content": ["Ivan Wisozk", "Joel Lockman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 35,
@@ -887,7 +875,7 @@
 				"content": ["Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 36,
@@ -913,7 +901,7 @@
 				"content": ["Steven Herman", "Joel Lockman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 37,
@@ -939,7 +927,7 @@
 				"content": ["Steven Herman", "Beulah Kreiger", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 38,
@@ -965,7 +953,7 @@
 				"content": ["Herbert Cummerata", "Steven Herman", "Beulah Kreiger", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 39,
@@ -985,7 +973,7 @@
 				"content": "Create graphics for the upcoming event, including banners, flyers, and social media posts."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 40,
@@ -1011,7 +999,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Alvin Ernser", "Beulah Kreiger", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 41,
@@ -1061,7 +1049,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 43,
@@ -1129,7 +1117,7 @@
 				"content": "Allocate resources for the next project phase, ensuring that all teams have what they need to succeed."
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 46,
@@ -1149,7 +1137,7 @@
 				"content": "Onboard new customers to the platform, providing training and support during the initial setup."
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 47,
@@ -1173,7 +1161,7 @@
 				"content": ["Herbert Cummerata", "Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 48,
@@ -1199,11 +1187,7 @@
 				"content": ["Joel Lockman", "Steven Herman"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-4.jpg",
-			"/src/data/images/demo-image-2.jpg",
-			"/src/data/images/demo-image-1.jpg"
-		]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 49,
@@ -1279,7 +1263,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Beulah Kreiger", "Herbert Cummerata", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 52,
@@ -1305,7 +1289,7 @@
 				"content": ["Beulah Kreiger", "Alvin Ernser", "Ivan Wisozk", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 53,
@@ -1327,11 +1311,7 @@
 				"content": "Present the project progress to the client, covering all milestones achieved and upcoming tasks."
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-1.jpg",
-			"/src/data/images/demo-image-2.jpg",
-			"/src/data/images/demo-image-5.jpg"
-		]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-2.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 54,
@@ -1357,7 +1337,7 @@
 				"content": ["Herbert Cummerata", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 55,
@@ -1383,7 +1363,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 56,
@@ -1407,7 +1387,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 57,
@@ -1433,11 +1413,7 @@
 				"content": ["Steven Herman", "Alvin Ernser", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-4.jpg",
-			"/src/data/images/demo-image-1.jpg"
-		]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 58,
@@ -1463,7 +1439,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 59,
@@ -1487,7 +1463,7 @@
 				"content": ["Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 60,
@@ -1513,7 +1489,7 @@
 				"content": ["Beulah Kreiger", "Steven Herman", "Herbert Cummerata", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 61,
@@ -1539,7 +1515,7 @@
 				"content": ["Joel Lockman", "Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 62,
@@ -1561,7 +1537,7 @@
 				"content": "Post updates on social media platforms about the latest product features and company news."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 63,
@@ -1587,7 +1563,7 @@
 				"content": ["Ivan Wisozk", "Alvin Ernser", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 64,
@@ -1639,7 +1615,7 @@
 				"content": ["Beulah Kreiger", "Ivan Wisozk", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 66,
@@ -1663,7 +1639,7 @@
 				"content": ["Beulah Kreiger", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 67,
@@ -1689,7 +1665,7 @@
 				"content": ["Joel Lockman", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 68,
@@ -1713,11 +1689,7 @@
 				"content": ["Ivan Wisozk", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-2.jpg",
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-4.jpg"
-		]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 69,
@@ -1769,7 +1741,7 @@
 				"content": ["Joel Lockman", "Beulah Kreiger", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 71,
@@ -1795,7 +1767,7 @@
 				"content": ["Joel Lockman", "Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 72,
@@ -1819,7 +1791,7 @@
 				"content": ["Ivan Wisozk", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 73,
@@ -1843,7 +1815,7 @@
 				"content": ["Herbert Cummerata", "Melanie Armstrong-Nolan", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 74,
@@ -1893,7 +1865,7 @@
 				"content": ["Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 76,
@@ -1945,7 +1917,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 78,
@@ -1969,7 +1941,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 79,
@@ -1995,7 +1967,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Ivan Wisozk", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 80,
@@ -2021,7 +1993,7 @@
 				"content": ["Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 81,
@@ -2047,7 +2019,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 82,
@@ -2097,7 +2069,7 @@
 				"content": ["Alvin Ernser", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 84,
@@ -2121,7 +2093,7 @@
 				"content": ["Ivan Wisozk", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 85,
@@ -2145,7 +2117,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Beulah Kreiger", "Steven Herman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 86,
@@ -2167,7 +2139,7 @@
 				"content": "Conduct a financial audit for the last quarter to ensure compliance and accuracy in financial reporting."
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 87,
@@ -2191,7 +2163,7 @@
 				"content": ["Alvin Ernser", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 88,
@@ -2217,7 +2189,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 89,
@@ -2241,7 +2213,7 @@
 				"content": ["Beulah Kreiger", "Melanie Armstrong-Nolan", "Erick Reynolds", "Alvin Ernser", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 90,
@@ -2267,7 +2239,7 @@
 				"content": ["Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 91,
@@ -2293,7 +2265,7 @@
 				"content": ["Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 92,
@@ -2319,7 +2291,7 @@
 				"content": ["Herbert Cummerata", "Erick Reynolds", "Ivan Wisozk", "Joel Lockman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 93,
@@ -2345,7 +2317,7 @@
 				"content": ["Steven Herman", "Joel Lockman", "Beulah Kreiger", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 94,
@@ -2371,7 +2343,7 @@
 				"content": ["Beulah Kreiger", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 95,
@@ -2423,7 +2395,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 97,
@@ -2497,7 +2469,7 @@
 				"content": ["Ivan Wisozk", "Alvin Ernser", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 100,
@@ -2523,7 +2495,7 @@
 				"content": ["Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 101,
@@ -2547,7 +2519,7 @@
 				"content": ["Steven Herman", "Herbert Cummerata", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 102,
@@ -2591,7 +2563,7 @@
 				"content": ["Beulah Kreiger", "Alvin Ernser", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 104,
@@ -2617,7 +2589,7 @@
 				"content": ["Steven Herman", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 105,
@@ -2637,7 +2609,7 @@
 				"content": "Discuss marketing strategies for the next quarter, focusing on social media campaigns and SEO improvements."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 106,
@@ -2687,7 +2659,7 @@
 				"content": ["Herbert Cummerata", "Alvin Ernser", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 108,
@@ -2711,7 +2683,7 @@
 				"content": ["Ivan Wisozk", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 109,
@@ -2735,7 +2707,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 110,
@@ -2785,7 +2757,7 @@
 				"content": ["Ivan Wisozk", "Beulah Kreiger", "Steven Herman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 112,
@@ -2811,7 +2783,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 113,
@@ -2835,7 +2807,7 @@
 				"content": ["Ivan Wisozk", "Herbert Cummerata", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 114,
@@ -2861,7 +2833,7 @@
 				"content": ["Herbert Cummerata", "Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 115,
@@ -2885,7 +2857,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 116,
@@ -2911,7 +2883,7 @@
 				"content": ["Ivan Wisozk", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 117,
@@ -2961,7 +2933,7 @@
 				"content": ["Erick Reynolds", "Beulah Kreiger", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 119,
@@ -3013,7 +2985,7 @@
 				"content": ["Herbert Cummerata", "Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 121,
@@ -3035,7 +3007,7 @@
 				"content": "Prepare and send the weekly progress report to the stakeholders, highlighting key achievements and challenges."
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 122,
@@ -3055,7 +3027,7 @@
 				"content": "Analyze competitors' products and strategies to identify strengths, weaknesses, and opportunities for our product."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 123,
@@ -3079,7 +3051,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Alvin Ernser", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 124,
@@ -3103,7 +3075,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 125,
@@ -3129,11 +3101,7 @@
 				"content": ["Joel Lockman", "Erick Reynolds", "Melanie Armstrong-Nolan", "Herbert Cummerata"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-4.jpg",
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-2.jpg"
-		]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 126,
@@ -3157,7 +3125,7 @@
 				"content": ["Erick Reynolds", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 127,
@@ -3183,7 +3151,7 @@
 				"content": ["Alvin Ernser", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 128,
@@ -3209,7 +3177,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 129,
@@ -3257,7 +3225,7 @@
 				"content": ["Joel Lockman", "Steven Herman", "Ivan Wisozk", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 131,
@@ -3283,11 +3251,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Erick Reynolds"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-4.jpg",
-			"/src/data/images/demo-image-5.jpg",
-			"/src/data/images/demo-image-2.jpg"
-		]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-5.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 132,
@@ -3313,7 +3277,7 @@
 				"content": ["Beulah Kreiger", "Joel Lockman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 133,
@@ -3363,7 +3327,7 @@
 				"content": ["Joel Lockman", "Beulah Kreiger", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 135,
@@ -3405,7 +3369,7 @@
 				"content": "Discuss long-term strategy for the company, setting goals and defining action plans."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 137,
@@ -3431,7 +3395,7 @@
 				"content": ["Alvin Ernser", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 138,
@@ -3457,7 +3421,7 @@
 				"content": ["Steven Herman", "Erick Reynolds", "Joel Lockman", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 139,
@@ -3481,7 +3445,7 @@
 				"content": ["Herbert Cummerata", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 140,
@@ -3505,7 +3469,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 141,
@@ -3531,7 +3495,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Ivan Wisozk", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 142,
@@ -3555,7 +3519,7 @@
 				"content": ["Beulah Kreiger", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 143,
@@ -3579,7 +3543,7 @@
 				"content": ["Beulah Kreiger", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 144,
@@ -3605,7 +3569,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 145,
@@ -3681,7 +3645,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 148,
@@ -3705,7 +3669,7 @@
 				"content": ["Herbert Cummerata", "Joel Lockman", "Ivan Wisozk", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 149,
@@ -3729,7 +3693,7 @@
 				"content": ["Alvin Ernser", "Steven Herman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 150,
@@ -3753,7 +3717,7 @@
 				"content": ["Ivan Wisozk", "Steven Herman", "Alvin Ernser", "Beulah Kreiger", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 151,
@@ -3777,7 +3741,7 @@
 				"content": ["Beulah Kreiger", "Ivan Wisozk", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-5.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 152,
@@ -3801,7 +3765,7 @@
 				"content": ["Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 153,
@@ -3827,7 +3791,7 @@
 				"content": ["Ivan Wisozk", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 154,
@@ -3851,7 +3815,7 @@
 				"content": ["Beulah Kreiger", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 155,
@@ -3875,7 +3839,7 @@
 				"content": ["Steven Herman", "Ivan Wisozk", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg", "/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 156,
@@ -3901,7 +3865,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Erick Reynolds", "Herbert Cummerata", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 157,
@@ -3969,7 +3933,7 @@
 				"content": ["Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 160,
@@ -3993,7 +3957,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Herbert Cummerata", "Ivan Wisozk", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 161,
@@ -4019,11 +3983,7 @@
 				"content": ["Steven Herman", "Ivan Wisozk", "Joel Lockman"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-1.jpg",
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-5.jpg"
-		]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-3.jpg", "/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 162,
@@ -4049,7 +4009,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Alvin Ernser", "Steven Herman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 163,
@@ -4073,7 +4033,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Joel Lockman", "Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 164,
@@ -4093,7 +4053,7 @@
 				"content": "Respond to customer support tickets, resolving issues and answering queries promptly."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 165,
@@ -4119,7 +4079,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 166,
@@ -4193,7 +4153,7 @@
 				"content": ["Joel Lockman", "Ivan Wisozk", "Erick Reynolds", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 169,
@@ -4219,7 +4179,7 @@
 				"content": ["Alvin Ernser", "Herbert Cummerata", "Melanie Armstrong-Nolan", "Steven Herman", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 170,
@@ -4243,7 +4203,7 @@
 				"content": ["Steven Herman", "Beulah Kreiger", "Alvin Ernser", "Erick Reynolds"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-2.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 171,
@@ -4263,7 +4223,7 @@
 				"content": "Analyze competitors' products and strategies to identify strengths, weaknesses, and opportunities for our product."
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg", "/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-4.jpg", "/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 172,
@@ -4311,7 +4271,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Joel Lockman", "Beulah Kreiger", "Alvin Ernser"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 174,
@@ -4363,7 +4323,7 @@
 				"content": ["Beulah Kreiger", "Herbert Cummerata", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 176,
@@ -4387,7 +4347,7 @@
 				"content": ["Alvin Ernser", "Melanie Armstrong-Nolan", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 177,
@@ -4411,7 +4371,7 @@
 				"content": ["Ivan Wisozk", "Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 178,
@@ -4437,7 +4397,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 179,
@@ -4485,7 +4445,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 181,
@@ -4509,7 +4469,7 @@
 				"content": ["Steven Herman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 182,
@@ -4533,7 +4493,7 @@
 				"content": ["Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 183,
@@ -4559,7 +4519,7 @@
 				"content": ["Melanie Armstrong-Nolan", "Herbert Cummerata"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 184,
@@ -4611,7 +4571,7 @@
 				"content": ["Ivan Wisozk", "Erick Reynolds", "Joel Lockman", "Beulah Kreiger", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-5.jpg"]
+		"images": ["/images/demo-image-5.jpg"]
 	},
 	{
 		"id": 186,
@@ -4637,7 +4597,7 @@
 				"content": ["Herbert Cummerata", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-1.jpg"]
+		"images": ["/images/demo-image-1.jpg"]
 	},
 	{
 		"id": 187,
@@ -4661,7 +4621,7 @@
 				"content": ["Herbert Cummerata", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg", "/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 188,
@@ -4687,7 +4647,7 @@
 				"content": ["Joel Lockman", "Herbert Cummerata", "Steven Herman", "Beulah Kreiger"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-4.jpg"]
+		"images": ["/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 189,
@@ -4713,7 +4673,7 @@
 				"content": ["Alvin Ernser", "Steven Herman", "Beulah Kreiger", "Joel Lockman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 190,
@@ -4737,7 +4697,7 @@
 				"content": ["Erick Reynolds", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 191,
@@ -4757,7 +4717,7 @@
 				"content": "Write and submit a grant proposal to secure funding for a new project or initiative."
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 192,
@@ -4781,11 +4741,7 @@
 				"content": ["Joel Lockman", "Melanie Armstrong-Nolan", "Steven Herman", "Ivan Wisozk"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-1.jpg",
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-2.jpg"
-		]
+		"images": ["/images/demo-image-1.jpg", "/images/demo-image-3.jpg", "/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 193,
@@ -4809,7 +4765,7 @@
 				"content": ["Beulah Kreiger", "Ivan Wisozk", "Joel Lockman"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 194,
@@ -4853,11 +4809,7 @@
 				"content": ["Herbert Cummerata"]
 			}
 		],
-		"images": [
-			"/src/data/images/demo-image-3.jpg",
-			"/src/data/images/demo-image-2.jpg",
-			"/src/data/images/demo-image-4.jpg"
-		]
+		"images": ["/images/demo-image-3.jpg", "/images/demo-image-2.jpg", "/images/demo-image-4.jpg"]
 	},
 	{
 		"id": 196,
@@ -4907,7 +4859,7 @@
 				"content": ["Steven Herman", "Melanie Armstrong-Nolan", "Ivan Wisozk"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-3.jpg"]
+		"images": ["/images/demo-image-3.jpg"]
 	},
 	{
 		"id": 198,
@@ -4957,7 +4909,7 @@
 				"content": ["Herbert Cummerata", "Alvin Ernser", "Joel Lockman", "Melanie Armstrong-Nolan"]
 			}
 		],
-		"images": ["/src/data/images/demo-image-2.jpg"]
+		"images": ["/images/demo-image-2.jpg"]
 	},
 	{
 		"id": 200,

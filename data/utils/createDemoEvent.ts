@@ -5,14 +5,14 @@ import tasks from '@/data/tasks.json';
 import staff from '@/data/staff.json';
 import groups from '@/data/groups.json';
 
-import demoImage1Url from '../images/demo-image-1.jpg';
-import demoImage2Url from '../images/demo-image-2.jpg';
-import demoImage3Url from '../images/demo-image-3.jpg';
-import demoImage4Url from '../images/demo-image-4.jpg';
-import demoImage5Url from '../images/demo-image-5.jpg';
-
 const HOUR_OPTIONS = [8, 9, 10, 11, 12, 13, 14];
-const IMAGE_URLS = [demoImage1Url, demoImage2Url, demoImage3Url, demoImage4Url, demoImage5Url];
+const IMAGE_URLS = [
+	'/images/demo-image-1.jpg',
+	'/images/demo-image-2.jpg',
+	'/images/demo-image-3.jpg',
+	'/images/demo-image-4.jpg',
+	'/images/demo-image-5.jpg',
+];
 
 export interface DemoEvent extends RawCalendarEvent {
 	content: { label: string; content: string | string[] }[];
