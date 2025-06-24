@@ -4,6 +4,7 @@ import { ReactNode, useMemo, useRef } from 'react';
 import classes from './EventsCalendar.module.css';
 
 import {
+	ColorScheme,
 	CalendarView,
 	EventEditProps,
 	EventClickArgs,
@@ -21,6 +22,7 @@ import { useMouseEvent, useInitEventsCalendar, EventsCalendarObject } from './ho
 export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
 	calendar?: EventsCalendarObject;
 	compact?: boolean;
+	colorScheme?: ColorScheme;
 	enableDragCreation?: boolean;
 	enableRescheduling?: boolean;
 	events?: RawCalendarEvent<T>[];
@@ -38,6 +40,7 @@ export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalenda
 export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase>({
 	calendar,
 	compact = false,
+	colorScheme = 'auto',
 	enableDragCreation = false,
 	enableRescheduling = false,
 	events = [],
@@ -114,7 +117,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 	};
 
 	return (
-		<div className={classes.calendarWrapper}>
+		<div className={classes.root} data-color-scheme={colorScheme}>
 			{noHeader ? null : (
 				<Header view={view} setActiveDate={setActiveDate} setView={setView} activeDate={activeDate} views={views} />
 			)}

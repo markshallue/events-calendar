@@ -1,9 +1,10 @@
 'use client';
 
-import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 import { useDisclosure } from '@mantine/hooks';
+import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
 import { ActionIcon, Box, Burger, Group, Title, Tooltip } from '@mantine/core';
 
 import { pages } from '@/config';

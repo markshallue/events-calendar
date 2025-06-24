@@ -4,6 +4,7 @@ import { MouseEvent, RefObject } from 'react';
 import { CALENDAR_VIEWS, MONTHS } from '~/utils';
 
 export type Month = (typeof MONTHS)[number];
+export type ColorScheme = 'light' | 'dark' | 'auto';
 export type CalendarView = (typeof CALENDAR_VIEWS)[number];
 export type CalendarGroup = { label: string; color: string };
 

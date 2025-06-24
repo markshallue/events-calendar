@@ -1,9 +1,13 @@
-import { Title } from '@mantine/core';
+'use client';
+
+import { Title, useComputedColorScheme } from '@mantine/core';
 import { EventsCalendar } from '~/EventsCalendar';
 
 import { PageWrapper, CalendarWrapper } from '@/components';
 
 export default function Home() {
+	const computedColorScheme = useComputedColorScheme('light');
+
 	return (
 		<PageWrapper>
 			<Title>Fully featured React events Calendar</Title>
@@ -22,6 +26,7 @@ export default function Home() {
 			<Title order={2}>Motivation</Title>
 			<CalendarWrapper>
 				<EventsCalendar
+					colorScheme={computedColorScheme}
 					events={[
 						{ id: 1, start: new Date(), title: 'My first event' },
 						{
