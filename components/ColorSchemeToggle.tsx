@@ -4,10 +4,12 @@ import { IconMoon, IconSun } from '@tabler/icons-react';
 export function ColorSchemeToggle() {
 	const { colorScheme, setColorScheme } = useMantineColorScheme();
 
-	const computedColorScheme = useComputedColorScheme();
+	const computedColorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true });
 
 	const toggleColorScheme = () => {
-		setColorScheme(computedColorScheme === 'dark' ? 'light' : 'dark');
+		const nextScheme = computedColorScheme === 'dark' ? 'light' : 'dark';
+		setColorScheme(nextScheme);
+		document.cookie = `mantine-color-scheme=${nextScheme}; path=/; max-age=31536000`;
 	};
 
 	return (

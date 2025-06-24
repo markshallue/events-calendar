@@ -50,8 +50,8 @@ export function YearView<T extends object>({ activeDate, dispatch, events, state
 										date={date}
 										handleClick={handleClick}
 										isToday={isToday}
-										isDimmed={!isCurrentMonth}
 										isActive={isActive}
+										isDimmed={!isCurrentMonth}
 									/>
 								))}
 							</div>

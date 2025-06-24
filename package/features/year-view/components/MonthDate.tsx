@@ -18,7 +18,7 @@ export function MonthDate({ date, handleClick, isToday, isDimmed, isActive }: Mo
 		<div
 			ref={ref}
 			data-date={date.format('DD-MMM-YYYY')}
-			className={classes.monthDate}
+			className={classes.date}
 			data-today={isToday}
 			data-dimmed={isDimmed}
 			data-active={isActive}
