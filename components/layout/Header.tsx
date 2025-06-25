@@ -10,7 +10,7 @@ import { ActionIcon, Box, Burger, Group, Title, Tooltip } from '@mantine/core';
 import { pages } from '@/config';
 
 import classes from './Header.module.css';
-import { ColorSchemeToggle } from './ColorSchemeToggle';
+import { ColorSchemeToggle } from '../ColorSchemeToggle';
 
 export function Header() {
 	const pathname = usePathname();

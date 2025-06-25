@@ -83,8 +83,8 @@ export default function Examples() {
 							</Text>
 							<Text size='sm'>
 								The renderPopover function provides an object containing the <Code>clickedEvent</Code>, <Code>newEvent</Code>{' '}
-								(for event drag creation) and an <Code>onClose</Code> function. Make sure to call the <Code>onClose</Code>{' '}
-								function on your popover close event to reset the internal calendar state.
+								(for click & drag event creation) and an <Code>onClose</Code> function. Make sure to call the{' '}
+								<Code>onClose</Code> function on your popover close event to reset the internal calendar state.
 							</Text>
 						</>
 					}
@@ -125,7 +125,7 @@ export default function Examples() {
 			</Stack>
 
 			<Stack>
-				<PageHeading title='Drag event creation' />
+				<PageHeading title='Click & drag event creation' />
 				<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`${PATH}/DragCreateExample.tsx`) }]} />
 				<CalendarWrapper title='Result'>
 					<DragCreateExample />

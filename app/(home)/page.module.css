@@ -1,0 +1,35 @@
+.wrapper {
+	padding: 1rem 2.5rem 3rem 2.5rem;
+	gap: 1rem;
+	width: min(80em, 100%);
+	max-width: min(80em, 100%);
+	margin: 0 auto;
+}
+
+.heroSection {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: var(--mantine-color-body);
+	text-align: center;
+}
+
+.mainTitle {
+	font-size: 3.75rem;
+	font-weight: 800;
+	max-width: 72em;
+	text-align: center;
+}
+
+.demoSection {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: var(--mantine-color-body);
+	border-top: 1px solid var(--mantine-color-gray-2);
+}

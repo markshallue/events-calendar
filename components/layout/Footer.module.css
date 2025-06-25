@@ -1,0 +1,32 @@
+.root {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: var(--footer-height);
+	background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+}
+
+.content {
+	height: 100%;
+	padding: 0 2.5rem;
+	gap: 1rem;
+	width: min(80em, 100%);
+	max-width: min(80em, 100%);
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.content {
+		padding: 0 2.5rem;
+	}
+}
+
+@media (min-width: 1560px) {
+	.content {
+		width: min(92rem, 100%);
+		max-width: min(92rem, 100%);
+
+		padding: 0 2.5rem;
+	}
+}

@@ -9,8 +9,8 @@ import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/c
 import { AppWrapper, ShikiAdapterProvider } from '@/components';
 
 export const metadata = {
-	title: 'Mantine Next.js template',
-	description: 'I am using Mantine with Next.js!',
+	title: 'Events Calendar',
+	description: 'A fully featured react events calendar',
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

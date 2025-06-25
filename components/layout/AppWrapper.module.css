@@ -1,0 +1,8 @@
+.main {
+	position: relative;
+	z-index: 1;
+	background-color: var(--mantine-color-body);
+	margin-bottom: var(--footer-height);
+	box-shadow: var(--mantine-shadow-md);
+	min-height: calc(100vh - var(--footer-height) - var(--app-shell-header-height));
+}

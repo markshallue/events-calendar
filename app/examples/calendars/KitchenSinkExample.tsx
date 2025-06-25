@@ -16,8 +16,9 @@ import { ContextMenu, FormPopover, DetailPopover, FilterControl, CalendarWrapper
 import { CustomControls } from './CustomControls';
 
 // Stress test
-const numOfEvents = 500;
-const initialEvents = getEvents(numOfEvents);
+// TODO: Create useCreateEvents hook
+const numOfEvents = 750;
+const initialEvents = getEvents(numOfEvents, 365);
 
 export function KitchenSinkExample() {
 	const colorScheme = useComputedColorScheme('light');
