@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { useDisclosure } from '@mantine/hooks';
 import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
 import { ActionIcon, Box, Burger, Group, Title, Tooltip } from '@mantine/core';
 
@@ -12,10 +11,13 @@ import { pages } from '@/config';
 import classes from './Header.module.css';
 import { ColorSchemeToggle } from '../ColorSchemeToggle';
 
-export function Header() {
-	const pathname = usePathname();
+interface Props {
+	opened: boolean;
+	toggle: () => void;
+}
 
-	const [opened, { toggle }] = useDisclosure(false);
+export function Header({ opened, toggle }: Props) {
+	const pathname = usePathname();
 
 	const items = pages.map(page => {
 		const active = pathname === page.href;
@@ -42,7 +44,9 @@ export function Header() {
 				</Group>
 
 				<Group gap='xs'>
-					{items}
+					<Group gap='xs' visibleFrom='sm'>
+						{items}
+					</Group>
 
 					<Tooltip label='Source code'>
 						<ActionIcon
