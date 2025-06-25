@@ -13,4 +13,5 @@
 	transition-duration: 750ms;
 	user-select: none;
 	padding: 0.25rem 0;
+	color: var(--ec-gray-7);
 }

@@ -4,7 +4,7 @@ import classes from './AppWrapper.module.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
-const HEADER_HEIGHT = '3.25rem';
+const HEADER_HEIGHT = 56;
 const FOOTER_HEIGHT = '8rem';
 
 export function AppWrapper({ children }: React.PropsWithChildren) {

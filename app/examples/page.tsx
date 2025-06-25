@@ -141,7 +141,10 @@ export default function Examples() {
 						</Text>
 					}
 				/>
-				<CodeBlock tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`${PATH}/ContextMenuExample.tsx`) }]} />
+				<CodeBlock
+					withExpandButton
+					tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`${PATH}/ContextMenuExample.tsx`) }]}
+				/>
 				<CalendarWrapper title='Result'>
 					<ContextMenuExample />
 				</CalendarWrapper>
@@ -150,6 +153,7 @@ export default function Examples() {
 			<Stack>
 				<PageHeading title='Kitchen sink' />
 				<CodeBlock
+					withExpandButton
 					tabs={[
 						{ fileName: 'KitchenSinkExample.tsx', code: readExample(`${PATH}/KitchenSinkExample.tsx`) },
 						{ fileName: 'CustomControls.tsx', code: readExample(`${PATH}/CustomControls.tsx`) },

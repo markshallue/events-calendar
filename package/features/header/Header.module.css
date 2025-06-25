@@ -31,7 +31,7 @@
 }
 
 .date {
-	color: lightdark(var(--mantine-color-gray-9), var(--mantine-color-dark-0));
+	color: var(--ec-gray-9);
 	white-space: nowrap;
 	font-weight: 500;
 	line-height: 1;

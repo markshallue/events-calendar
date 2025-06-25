@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Stack, useComputedColorScheme } from '@mantine/core';
+import { Paper, Stack, useComputedColorScheme } from '@mantine/core';
+import classes from './LiveDemo.module.css';
+
 import { EventsCalendar, Header, useEventsCalendar } from '~/index';
 
 import groups from '@/data/groups.json';
@@ -11,15 +13,13 @@ import { getEvents } from '@/data/utils';
 import { exampleSubmitHandler } from '@/utils';
 import { useGetFilteredEvents } from '@/hooks';
 import { HandleSubmitArgs, PopoverType, RawDemoEvent } from '@/types';
-import { ContextMenu, FormPopover, DetailPopover, FilterControl, CalendarWrapper } from '@/components';
-
-import { CustomControls } from './CustomControls';
+import { ContextMenu, FormPopover, DetailPopover, FilterControl } from '@/components';
 
 // Stress test
 const numOfEvents = 1000;
 const initialEvents = getEvents(numOfEvents, 365);
 
-export function KitchenSinkExample() {
+export function LiveDemo() {
 	const colorScheme = useComputedColorScheme('light');
 
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
@@ -37,8 +37,8 @@ export function KitchenSinkExample() {
 
 	return (
 		<Stack data-ec-color-scheme={colorScheme}>
-			<CustomControls calendar={calendar} setEvents={setEvents} numOfEvents={numOfEvents} />
-			<CalendarWrapper>
+			{/* <LiveDemoControls setEvents={setEvents} /> */}
+			<Paper className={classes.wrapper} withBorder shadow='sm'>
 				<div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
 					<Header
 						{...calendar}
@@ -102,7 +102,7 @@ export function KitchenSinkExample() {
 						)}
 					/>
 				</div>
-			</CalendarWrapper>
+			</Paper>
 		</Stack>
 	);
 }

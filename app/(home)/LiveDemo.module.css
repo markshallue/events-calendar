@@ -1,0 +1,10 @@
+.wrapper {
+	height: 550px;
+	background-color: light-dark(var(----mantine-color-gray-1), var(--mantine-color-dark-6));
+}
+
+@media (min-width: 1568px) {
+	.wrapper {
+		height: 625px;
+	}
+}

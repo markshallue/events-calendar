@@ -20,3 +20,13 @@
 		padding: 2rem 2.5rem 10rem 2.5rem;
 	}
 }
+.control {
+	border-radius: 0;
+	border-left: 1px solid var(--mantine-color-gray-3);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+
+	&[data-active] {
+		border-left: 1px solid var(--mantine-color-blue-5);
+	}
+}
