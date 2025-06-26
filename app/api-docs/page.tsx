@@ -1,5 +1,4 @@
 import {
-	Anchor,
 	Code,
 	Paper,
 	Stack,
@@ -12,7 +11,6 @@ import {
 	Text,
 	Title,
 } from '@mantine/core';
-import Link from 'next/link';
 
 import { CodeBlock, PageHeading, PageWrapper } from '@/components';
 
@@ -69,13 +67,6 @@ export default function APIDocs() {
 						<CodeBlock code={`const calendar = useEventsCalendar({ initialDate: '01-Aug-2024', initialView: 'week' })`} />
 						<Text>The hook returns a object containing the following properties:</Text>
 						<CodeBlock code={EventsCalendarObject} />
-						<Text>
-							Check out the{' '}
-							<Anchor component={Link} href='/custom-header'>
-								Custom Header
-							</Anchor>{' '}
-							example to see the <Code>useEventsCalendar</Code> hook in action
-						</Text>
 					</Stack>
 				</Stack>
 			</PageWrapper>

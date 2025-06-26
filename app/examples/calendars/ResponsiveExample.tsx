@@ -10,7 +10,7 @@ export function ResponsiveExample() {
 	const colorScheme = useComputedColorScheme('light');
 
 	return (
-		<div style={{ height: '550px', resize: 'vertical', border: '1px solid #ccc', overflow: 'auto' }}>
+		<div style={{ height: '550px', resize: 'vertical', border: '1px solid #f00', overflow: 'auto' }}>
 			<EventsCalendar colorScheme={colorScheme} calendar={calendar} events={events} />
 		</div>
 	);
