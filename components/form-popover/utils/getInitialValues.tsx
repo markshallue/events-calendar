@@ -2,7 +2,9 @@ import { DemoEvent } from '@/types';
 import { FormPopoverValues } from '../types';
 
 export const getInitialValues = (event: DemoEvent | null, infoField?: string): FormPopoverValues => {
-	const eventInfo = infoField ? event?.content?.find((x: any) => x.label === infoField)?.content : '';
+	const eventInfo = infoField
+		? event?.content?.find((x: { label: string; content: string | string[] }) => x.label === infoField)?.content
+		: '';
 
 	return {
 		title: event?.title || 'Untitled',

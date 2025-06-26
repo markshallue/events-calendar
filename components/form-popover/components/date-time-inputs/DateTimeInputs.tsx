@@ -141,7 +141,7 @@ export function DateTimeInputs({ fields, lengthInDays, form, hasTime }: DateTime
 			const newEndDate = newDateDayjs.add(lengthInDays - 1, 'd').toDate();
 			form.setFieldValue('end', newEndDate);
 		}
-		form.setFieldValue('start', date);
+		form.setFieldValue('start', newDateDayjs.toDate());
 	};
 	const handleEndDateChange = (date: DateValue) => {
 		if (date === null) return;
@@ -151,7 +151,7 @@ export function DateTimeInputs({ fields, lengthInDays, form, hasTime }: DateTime
 			const defaultEndTime = startTimeIndex < times.length - 1 ? times[startTimeIndex + 1] : times[0];
 			if (startTimeIndex >= endTimeIndex) form.setFieldValue('endTime', defaultEndTime);
 		}
-		form.setFieldValue('end', date);
+		form.setFieldValue('end', dayjs(date).toDate());
 	};
 
 	return (
