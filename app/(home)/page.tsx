@@ -81,7 +81,7 @@ export default function Home() {
 							for your event-driven React applications
 						</Title>
 						<Text size='lg' c='dimmed'>
-							A flexible, responsive, and feature-packed calendar designed for seamless event handling
+							A flexible, responsive, and feature-packed calendar designed for modern React applications
 						</Text>
 						<Group mt='md'>
 							<Button
