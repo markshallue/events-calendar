@@ -47,7 +47,9 @@
 	height: 600px;
 	width: 1200px;
 	min-width: 1200px;
-	box-shadow: 0 0 60px alpha(var(--mantine-color-indigo-7), 0.25), 0 0 140px alpha(var(--mantine-color-indigo-5), 0.15);
+	box-shadow:
+		0 0 60px alpha(var(--mantine-color-indigo-7), 0.25),
+		0 0 140px alpha(var(--mantine-color-indigo-5), 0.15);
 	background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
 }
 
@@ -56,7 +58,7 @@
 	line-height: 4rem;
 	font-weight: 800;
 	max-width: 72em;
-	color: light-dark(var(----mantine-color-black), var(--mantine-color-white));
+	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .featuresSection {
