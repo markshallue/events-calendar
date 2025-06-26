@@ -9,9 +9,8 @@ import { DetailPopover } from '@/components';
 import { CustomHeader } from './CustomHeader';
 
 export function CustomHeaderExample() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const calendar = useEventsCalendar();
+	const colorScheme = useComputedColorScheme('light');
 
 	return (
 		<div className={classes.wrapper}>

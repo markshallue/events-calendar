@@ -1,25 +1,38 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useComputedColorScheme } from '@mantine/core';
-import { EventsCalendar, RawCalendarEvent, useEventsCalendar } from '~/index';
-import initialEvents from '@/data/events.json';
+import { useState } from 'react';
+import { IconRefresh } from '@tabler/icons-react';
+import { Button, useComputedColorScheme } from '@mantine/core';
+
+import { EventsCalendar, RawCalendarEvent } from '~/index';
+
+import { getEvents } from '@/data/utils';
+import { CalendarWrapper } from '@/components';
 
 export function AsyncExample() {
-	const [isFetching, setIsFetching] = useState(true);
+	const [isFetching, setIsFetching] = useState(false);
 	const [events, setEvents] = useState<RawCalendarEvent[] | undefined>(undefined);
-
 	const colorScheme = useComputedColorScheme('light');
 
-	// Optional: set inital calendar date
-	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
+	// Mock fetch from API
+	const fetchData = () => {
+		setIsFetching(true);
+		setEvents([]);
 
-	useEffect(() => {
 		setTimeout(() => {
-			setEvents(initialEvents);
+			setEvents(getEvents());
 			setIsFetching(false);
-		}, 2000);
-	}, []);
+		}, 500);
+	};
 
-	return <EventsCalendar colorScheme={colorScheme} calendar={calendar} events={events} isFetching={isFetching} />;
+	return (
+		<div>
+			<Button mb='md' color='indigo' leftSection={<IconRefresh size={20} />} onClick={fetchData}>
+				Fetch data
+			</Button>
+			<CalendarWrapper>
+				<EventsCalendar colorScheme={colorScheme} events={events} isFetching={isFetching} />
+			</CalendarWrapper>
+		</div>
+	);
 }

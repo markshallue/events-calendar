@@ -13,12 +13,11 @@ import fields from '@/data/form-fields.json';
 import initialEvents from '@/data/events.json';
 
 export function ContextMenuExample() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const [events, setEvents] = useState<RawCalendarEvent[]>(initialEvents);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
+	const colorScheme = useComputedColorScheme('light');
 
-	// Optional: set inital calendar date
+	// Optional: set initial calendar date
 	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
 
 	const handleSubmit = (args: ExampleHandleSubmitArgs) => exampleSubmitHandler(args, events, setEvents);

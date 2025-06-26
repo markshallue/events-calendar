@@ -13,10 +13,9 @@ import { FormPopover, DetailPopover } from '@/components';
 import { HandleSubmitArgs, PopoverType, RawDemoEvent } from '@/types';
 
 export function DragCreateExample() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
+	const colorScheme = useComputedColorScheme('light');
 
 	// Get calendar instance
 	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });

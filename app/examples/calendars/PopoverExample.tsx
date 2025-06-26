@@ -7,10 +7,9 @@ import events from '@/data/events.json';
 import { DetailPopover } from '@/components';
 
 export function PopoverExample() {
-	const colorScheme = useComputedColorScheme('light');
-
-	// Optional: set inital calendar date
+	// Optional: set initial calendar date
 	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
+	const colorScheme = useComputedColorScheme('light');
 
 	return (
 		<EventsCalendar

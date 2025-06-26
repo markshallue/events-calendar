@@ -20,11 +20,10 @@ const numOfEvents = 1000;
 const initialEvents = getEvents(numOfEvents, 365);
 
 export function KitchenSinkExample() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
+	const colorScheme = useComputedColorScheme('light');
 
 	// Get calendar instance
 	const calendar = useEventsCalendar();

@@ -38,7 +38,7 @@ export default function Examples() {
 				<PageHeading
 					title='Asynchronous data fetching'
 					subtitle={
-						<Text size='sm'>
+						<Text>
 							Set the <Code>isFetching</Code> prop to <Code>true</Code> to activate the loading overlay.
 						</Text>
 					}
@@ -47,9 +47,8 @@ export default function Examples() {
 					withExpandButton
 					tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`${PATH}/AsyncExample.tsx`) }]}
 				/>
-				<CalendarWrapper title='Result'>
-					<AsyncExample />
-				</CalendarWrapper>
+				<Title order={3}>Result</Title>
+				<AsyncExample />
 			</Stack>
 
 			<Stack>
@@ -64,9 +63,7 @@ export default function Examples() {
 				/>
 				<Stack gap='0'>
 					<Title order={3}>Result</Title>
-					<Text size='sm' c='dimmed'>
-						Resize the calendar by dragging the bottom-right corner
-					</Text>
+					<Text>Resize the calendar by dragging the bottom-right corner</Text>
 				</Stack>
 				<div style={{ minHeight: 550 }}>
 					<ResponsiveExample />
@@ -78,10 +75,10 @@ export default function Examples() {
 					title='Detail popover'
 					subtitle={
 						<>
-							<Text size='sm'>
+							<Text>
 								Use the <Code>onEventClick</Code> and <Code>renderPopover</Code> props to bind a popover to events.
 							</Text>
-							<Text size='sm'>
+							<Text>
 								The renderPopover function provides an object containing the <Code>clickedEvent</Code>, <Code>newEvent</Code>{' '}
 								(for click & drag event creation) and an <Code>onClose</Code> function. Make sure to call the{' '}
 								<Code>onClose</Code> function on your popover close event to reset the internal calendar state.
@@ -105,7 +102,7 @@ export default function Examples() {
 				<PageHeading
 					title='Custom header'
 					subtitle={
-						<Text size='sm'>
+						<Text>
 							With the <Code>useEventsCalendar</Code> hook, we can manage the calendar state externally and create a custom
 							header element.
 						</Text>
@@ -136,7 +133,7 @@ export default function Examples() {
 				<PageHeading
 					title='Context menu'
 					subtitle={
-						<Text size='sm'>
+						<Text>
 							Use the <Code>useEventsCalendar</Code> prop to bind a context menu to events.
 						</Text>
 					}
