@@ -1,4 +1,4 @@
-import { Group, Text } from '@mantine/core';
+import { Anchor, Group, Text } from '@mantine/core';
 import classes from './Footer.module.css';
 
 export function Footer() {
@@ -10,7 +10,10 @@ export function Footer() {
 						Events Calendar
 					</Text>
 					<Text size='sm' c='dimmed'>
-						Built by Mark Shallue
+						Built by{' '}
+						<Anchor c='dimmed' href='https://github.com/markshallue' underline='always'>
+							Mark Shallue
+						</Anchor>
 					</Text>
 				</Group>
 			</div>
