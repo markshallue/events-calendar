@@ -1,6 +1,8 @@
 .wrapper {
 	height: 550px;
+	border-radius: 0.5rem;
 	background-color: light-dark(var(----mantine-color-gray-1), var(--mantine-color-dark-6));
+	box-shadow: 0 0 40px alpha(var(--mantine-color-indigo-7), 0.25), 0 0 80px alpha(var(--mantine-color-indigo-5), 0.1);
 }
 
 @media (min-width: 1568px) {

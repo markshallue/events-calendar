@@ -38,7 +38,7 @@ export function LiveDemo() {
 	return (
 		<Stack data-ec-color-scheme={colorScheme}>
 			{/* <LiveDemoControls setEvents={setEvents} /> */}
-			<Paper className={classes.wrapper} withBorder shadow='sm'>
+			<Paper className={classes.wrapper} withBorder>
 				<div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
 					<Header
 						{...calendar}

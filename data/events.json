@@ -3087,7 +3087,7 @@
 		"groups": [
 			{
 				"label": "In progress",
-				"color": "#FAB005"
+				"color": "#ef4444"
 			}
 		],
 		"isAllDay": false,
@@ -4282,7 +4282,7 @@
 		"endTime": "6:00pm",
 		"groups": [
 			{
-				"label": "In progress",
+				"label": "Pending",
 				"color": "#FAB005"
 			}
 		],

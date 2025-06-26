@@ -17,6 +17,12 @@
 	color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-gray-0));
 }
 
+.titleText {
+	font-family: var(--font-space-grotesk), var(--mantine-font-family);
+	font-weight: 600;
+	letter-spacing: -0.25px;
+}
+
 .link {
 	display: block;
 	line-height: 1;

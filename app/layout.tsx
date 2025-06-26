@@ -8,9 +8,20 @@ import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/c
 
 import { AppWrapper, ShikiAdapterProvider } from '@/components';
 
+import { Space_Grotesk } from 'next/font/google';
+
+const spaceGrotesk = Space_Grotesk({
+	subsets: ['latin'],
+	weight: ['400', '600', '700'],
+	variable: '--font-space-grotesk',
+});
+
 export const metadata = {
 	title: 'Events Calendar',
 	description: 'A fully featured react events calendar',
+	icons: {
+		icon: '/calendar-event-white.svg',
+	},
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -19,7 +30,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 	const initialColorScheme = theme ?? 'auto';
 
 	return (
-		<html lang='en' {...mantineHtmlProps} style={{ scrollPaddingTop: 'calc(var(--app-shell-header-height) + 2rem)' }}>
+		<html
+			lang='en'
+			{...mantineHtmlProps}
+			style={{ scrollPaddingTop: 'calc(var(--app-shell-header-height) + 2rem)' }}
+			className={spaceGrotesk.variable}
+		>
 			<head>
 				<ColorSchemeScript defaultColorScheme={initialColorScheme} />
 				<link rel='shortcut icon' href='/favicon.svg' />

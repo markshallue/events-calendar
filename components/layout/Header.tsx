@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { IconCalendar, IconBrandGithub } from '@tabler/icons-react';
-import { ActionIcon, Box, Burger, Group, Title, Tooltip } from '@mantine/core';
+import { IconBrandGithub } from '@tabler/icons-react';
+import { ActionIcon, Box, Burger, Group, ThemeIcon, Title, Tooltip } from '@mantine/core';
 
 import { pages } from '@/config';
 
@@ -35,8 +36,10 @@ export function Header({ opened, toggle }: Props) {
 					<Burger opened={opened} onClick={toggle} size='sm' hiddenFrom='sm' />
 					<Box component={Link} href='/' td='none' className={classes.title}>
 						<Group gap={8} align='center'>
-							<IconCalendar size={20} />
-							<Title order={3} fw={600}>
+							<ThemeIcon color='indigo' radius='md'>
+								<Image src='/calendar-event-white.svg' alt='Calendar icon' width={18} height={18} />
+							</ThemeIcon>
+							<Title order={3} fw={600} className={classes.titleText}>
 								Events Calendar
 							</Title>
 						</Group>

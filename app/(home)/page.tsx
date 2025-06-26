@@ -53,7 +53,7 @@ const features = [
 	{
 		icon: IconLayoutNavbarCollapse,
 		title: 'Overflow handling',
-		description: 'Gracefully handles days with many events using smart overflow controls.',
+		description: 'Gracefully handles event-heavy dates with smart overflow controls.',
 	},
 	{
 		icon: IconLayersSubtract,
@@ -118,17 +118,17 @@ export default function Home() {
 			<Divider />
 
 			<Box className={classes.featuresSection}>
-				<Container size='xl'>
+				<Container size='lg'>
 					<Stack gap='xs' mb='3.5rem'>
 						<Title className={classes.sectionTitle}>Fully packed with features</Title>
 						<Text size='lg' c='dimmed' ta='center'>
-							Everything you need to build a powerful and elegant calendar experience.
+							Everything you need to build a powerful and seamless calendar interface.
 						</Text>
 					</Stack>
 					<SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing='xl'>
 						{features.map(feature => (
 							<Stack key={feature.title} gap='sm'>
-								<ThemeIcon variant='light' size='3rem' radius='md'>
+								<ThemeIcon variant='light' size='3rem' radius='md' color='indigo'>
 									<feature.icon size='1.625rem' strokeWidth={1.75} />
 								</ThemeIcon>
 								<Text c='lg' fw={600}>
@@ -142,8 +142,8 @@ export default function Home() {
 			</Box>
 
 			<Box className={classes.demoSection}>
-				<Container size='xl' id='demo'>
-					<Title order={2} className={classes.sectionTitle} mb='xl'>
+				<Container size='lg' id='demo'>
+					<Title order={2} className={classes.sectionTitle} mb='3rem'>
 						Try it in action
 					</Title>
 					<LiveDemo />

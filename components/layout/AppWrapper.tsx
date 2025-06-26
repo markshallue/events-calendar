@@ -20,7 +20,7 @@ export function AppWrapper({ children }: React.PropsWithChildren) {
 			navbar={{ width: 240, breakpoint: 'sm', collapsed: { mobile: !opened, desktop: true } }}
 			style={{ '--footer-height': FOOTER_HEIGHT }}
 		>
-			<AppShellHeader zIndex={102}>
+			<AppShellHeader zIndex={99}>
 				<Header opened={opened} toggle={toggle} />
 			</AppShellHeader>
 			<AppShell.Navbar zIndex={102}>
