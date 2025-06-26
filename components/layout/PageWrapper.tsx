@@ -2,49 +2,34 @@
 
 import React from 'react';
 import classes from './PageWrapper.module.css';
-import { Box, Group, MantineSpacing, Stack, TableOfContents, Text } from '@mantine/core';
+import { Box, BoxProps, Group, MantineSpacing, Stack } from '@mantine/core';
 
-interface Props {
+import { TableOfContents } from '../TableOfContents';
+
+interface Props extends BoxProps {
 	gap?: MantineSpacing;
 	withTableOfContents?: boolean;
 	children: React.ReactNode;
 }
 
-export function PageWrapper({ gap, withTableOfContents, children }: Props) {
+export function PageWrapper({ gap, withTableOfContents, children, ...props }: Props) {
 	if (!withTableOfContents)
 		return (
-			<div className={classes.wrapper}>
+			<Box className={classes.wrapper} {...props}>
 				<Stack gap={gap} flex='1'>
 					{children}
 				</Stack>
-			</div>
+			</Box>
 		);
+
 	return (
-		<div className={classes.wrapper} data-wide>
+		<Box className={classes.wrapper} {...props}>
 			<Group wrap='nowrap' align='start' gap='3rem' w='100%'>
 				<Stack gap={gap} flex='1' style={{ minWidth: 0 }}>
 					{children}
 				</Stack>
-				<Box w='16rem' style={{ flexShrink: 0 }} pos='sticky' top='var(--app-shell-header-height)' pt='lg'>
-					<Text fw={600} size='sm' pb='xs'>
-						On this page
-					</Text>
-					<TableOfContents
-						classNames={classes}
-						variant='light'
-						color='blue'
-						size='sm'
-						radius='sm'
-						scrollSpyOptions={{
-							selector: 'h2',
-						}}
-						getControlProps={({ data }) => ({
-							onClick: () => data.getNode().scrollIntoView(),
-							children: data.value,
-						})}
-					/>
-				</Box>
+				<TableOfContents />
 			</Group>
-		</div>
+		</Box>
 	);
 }

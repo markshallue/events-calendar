@@ -1,16 +1,23 @@
-import { Stack, Title, Text } from '@mantine/core';
-import React from 'react';
+import { Text, Title } from '@mantine/core';
 
-interface Props {
+import { PageWrapper } from './PageWrapper';
+
+interface PageHeadingProps {
 	title: string;
-	subtitle?: string | React.ReactNode;
+	subtitle?: string;
 }
 
-export function PageHeading({ title, subtitle }: Props) {
+export function PageHeading({ title, subtitle }: PageHeadingProps) {
 	return (
-		<Stack gap='xs'>
-			<Title order={2}>{title}</Title>
-			{subtitle && typeof subtitle === 'string' ? <Text>{subtitle}</Text> : subtitle}
-		</Stack>
+		<PageWrapper pb='xs'>
+			<Title order={1} fz='2.5rem'>
+				{title}
+			</Title>
+			{subtitle && (
+				<Text size='lg' c='dimmed'>
+					{subtitle}
+				</Text>
+			)}
+		</PageWrapper>
 	);
 }

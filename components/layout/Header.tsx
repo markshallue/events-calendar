@@ -35,7 +35,7 @@ export function Header({ opened, toggle }: Props) {
 				<Group>
 					<Burger opened={opened} onClick={toggle} size='sm' hiddenFrom='sm' />
 					<Box component={Link} href='/' td='none' className={classes.title}>
-						<Group gap={8} align='center'>
+						<Group gap='sm' align='center'>
 							<ThemeIcon color='indigo' radius='md'>
 								<Image src='/calendar-event-white.svg' alt='Calendar icon' width={18} height={18} />
 							</ThemeIcon>
