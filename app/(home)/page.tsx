@@ -16,7 +16,7 @@ import {
 } from '@mantine/core';
 import classes from './page.module.css';
 
-import { ContextMenuExample } from '@/app/examples/calendars';
+import { ContextMenuExample } from '@/examples';
 import {
 	IconArrowDown,
 	IconLayoutNavbarCollapse,

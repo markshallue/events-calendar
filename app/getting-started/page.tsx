@@ -1,13 +1,8 @@
 import { Code, Text, Title } from '@mantine/core';
 
 import { readExample } from '@/server-utils';
+import { TimeExample, ColorsExample, FirstCalendarExample } from '@/examples';
 import { CodeBlock, PageWrapper, CalendarWrapper, PageHeading } from '@/components';
-
-import { TimeExample } from './TimeExample';
-import { ColorsExample } from './ColorsExample';
-import { FirstCalendarExample } from './FirstCalendarExample';
-
-const PATH = 'app/getting-started';
 
 export default function GettingStarted() {
 	return (
@@ -28,7 +23,7 @@ export default function GettingStarted() {
 				<Title order={2} mt='lg'>
 					Creating your first calendar
 				</Title>
-				<CodeBlock code={readExample(`${PATH}/FirstCalendarExample.tsx`)} />
+				<CodeBlock code={readExample(`examples/FirstCalendarExample.tsx`)} />
 				<CalendarWrapper title='Result'>
 					<FirstCalendarExample />
 				</CalendarWrapper>
@@ -42,7 +37,10 @@ export default function GettingStarted() {
 					event will be shown with multiple colors.
 				</Text>
 				<Text>To display multi-day events, add an end to the event.</Text>
-				<CodeBlock withExpandButton tabs={[{ fileName: 'Calendar.tsx', code: readExample(`${PATH}/ColorsExample.tsx`) }]} />
+				<CodeBlock
+					withExpandButton
+					tabs={[{ fileName: 'Calendar.tsx', code: readExample(`examples/ColorsExample.tsx`) }]}
+				/>
 				<CalendarWrapper title='Result'>
 					<ColorsExample />
 				</CalendarWrapper>
@@ -63,7 +61,7 @@ export default function GettingStarted() {
 					The following calendar demonstrates how different permutations of <Code>isAllDay</Code>, <Code>start</Code>,{' '}
 					<Code>end</Code>, <Code>startTime</Code> and <Code>endTime</Code> are parsed into valid event objects.
 				</Text>
-				<CodeBlock withExpandButton tabs={[{ fileName: 'Calendar.tsx', code: readExample(`${PATH}/TimeExample.tsx`) }]} />
+				<CodeBlock withExpandButton tabs={[{ fileName: 'Calendar.tsx', code: readExample(`examples/TimeExample.tsx`) }]} />
 				<CalendarWrapper title='Result'>
 					<TimeExample />
 				</CalendarWrapper>

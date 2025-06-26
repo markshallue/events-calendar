@@ -13,9 +13,7 @@ import {
 	KitchenSinkExample,
 	PopoverExample,
 	ResponsiveExample,
-} from './calendars';
-
-const PATH = 'app/examples/calendars';
+} from '@/examples';
 
 export default function Examples() {
 	return (
@@ -27,7 +25,7 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'BasicExample.tsx', code: readExample(`${PATH}/BasicExample.tsx`) },
+							{ fileName: 'BasicExample.tsx', code: readExample(`examples/BasicExample.tsx`) },
 							{ fileName: 'events.json', code: demoEvents },
 						]}
 					/>
@@ -47,7 +45,7 @@ export default function Examples() {
 					/>
 					<CodeBlock
 						withExpandButton
-						tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`${PATH}/AsyncExample.tsx`) }]}
+						tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`examples/AsyncExample.tsx`) }]}
 					/>
 					<Title order={3}>Result</Title>
 					<AsyncExample />
@@ -61,7 +59,7 @@ export default function Examples() {
 					/>
 					<CodeBlock
 						withExpandButton
-						tabs={[{ fileName: 'ResponsiveExample.tsx', code: readExample(`${PATH}/ResponsiveExample.tsx`) }]}
+						tabs={[{ fileName: 'ResponsiveExample.tsx', code: readExample(`examples/ResponsiveExample.tsx`) }]}
 					/>
 					<Stack gap='0'>
 						<Title order={3}>Result</Title>
@@ -91,7 +89,7 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'PopoverExample.tsx', code: readExample(`${PATH}/PopoverExample.tsx`) },
+							{ fileName: 'PopoverExample.tsx', code: readExample(`examples/PopoverExample.tsx`) },
 							{ fileName: 'events.json', code: demoEvents },
 						]}
 					/>
@@ -113,9 +111,9 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'CustomHeader.tsx', code: readExample(`${PATH}/CustomHeaderExample.tsx`) },
-							{ fileName: 'CustomHeaderElement.tsx', code: readExample(`${PATH}/CustomHeader.tsx`) },
-							{ fileName: 'CustomHeader.module.css', code: readExample(`${PATH}/CustomHeader.module.css`) },
+							{ fileName: 'CustomHeader.tsx', code: readExample(`examples/CustomHeaderExample.tsx`) },
+							{ fileName: 'CustomHeaderElement.tsx', code: readExample(`examples/CustomHeader.tsx`) },
+							{ fileName: 'CustomHeader.module.css', code: readExample(`examples/CustomHeader.module.css`) },
 						]}
 					/>
 					<CalendarWrapper title='Result'>
@@ -134,7 +132,7 @@ export default function Examples() {
 							</Text>
 						}
 					/>
-					<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`${PATH}/DragCreateExample.tsx`) }]} />
+					<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`examples/DragCreateExample.tsx`) }]} />
 					<CalendarWrapper title='Result'>
 						<DragCreateExample />
 					</CalendarWrapper>
@@ -152,7 +150,7 @@ export default function Examples() {
 					/>
 					<CodeBlock
 						withExpandButton
-						tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`${PATH}/ContextMenuExample.tsx`) }]}
+						tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`examples/ContextMenuExample.tsx`) }]}
 					/>
 					<CalendarWrapper title='Result'>
 						<ContextMenuExample />
@@ -167,8 +165,8 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'KitchenSinkExample.tsx', code: readExample(`${PATH}/KitchenSinkExample.tsx`) },
-							{ fileName: 'CustomControls.tsx', code: readExample(`${PATH}/CustomControls.tsx`) },
+							{ fileName: 'KitchenSinkExample.tsx', code: readExample(`examples/KitchenSinkExample.tsx`) },
+							{ fileName: 'CustomControls.tsx', code: readExample(`examples/CustomControls.tsx`) },
 						]}
 					/>
 					<Title order={3}>Result</Title>
