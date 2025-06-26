@@ -4,12 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { IconBrandGithub } from '@tabler/icons-react';
-import { ActionIcon, Box, Burger, Group, ThemeIcon, Title, Tooltip } from '@mantine/core';
+import { Box, Burger, Group, ThemeIcon, Title } from '@mantine/core';
 
 import { pages } from '@/config';
 
 import classes from './Header.module.css';
+
+import { GithubButton } from '../GithubButton';
 import { ColorSchemeToggle } from '../ColorSchemeToggle';
 
 interface Props {
@@ -51,20 +52,7 @@ export function Header({ opened, toggle }: Props) {
 						{items}
 					</Group>
 
-					<Tooltip label='Source code'>
-						<ActionIcon
-							size='lg'
-							radius='md'
-							component='a'
-							variant='default'
-							title='View on GitHub'
-							aria-label='View on GitHub'
-							href='https://github.com/markshallue/events-calendar'
-						>
-							<IconBrandGithub size={22} strokeWidth={1.5} />
-						</ActionIcon>
-					</Tooltip>
-
+					<GithubButton hidden />
 					<ColorSchemeToggle />
 				</Group>
 			</div>

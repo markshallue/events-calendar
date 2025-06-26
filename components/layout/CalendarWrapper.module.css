@@ -1,5 +1,5 @@
 .wrapper {
-	height: 550px;
+	height: 560px;
 	border-radius: 0.5rem;
 
 	background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));

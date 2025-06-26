@@ -124,7 +124,16 @@ export default function Examples() {
 				</Stack>
 
 				<Stack>
-					<ContentHeading title='Click & drag event creation' />
+					<ContentHeading
+						title='Click & drag event creation'
+						subtitle={
+							<Text>
+								To enable click & drag event creation, set <Code>enableDragCreation</Code> to <Code>true</Code>. You can then
+								use the <Code>onEventCreate</Code> callback to handle when the user finishes dragging (for example by opening a
+								popover).
+							</Text>
+						}
+					/>
 					<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`${PATH}/DragCreateExample.tsx`) }]} />
 					<CalendarWrapper title='Result'>
 						<DragCreateExample />
@@ -136,7 +145,8 @@ export default function Examples() {
 						title='Context menu'
 						subtitle={
 							<Text>
-								Use the <Code>useEventsCalendar</Code> prop to bind a context menu to events.
+								Use the <Code>renderContextMenu</Code> prop to bind a context menu to events. Right click on an event below to
+								see it in action.
 							</Text>
 						}
 					/>
@@ -150,7 +160,10 @@ export default function Examples() {
 				</Stack>
 
 				<Stack>
-					<ContentHeading title='Kitchen sink' />
+					<ContentHeading
+						title='Kitchen sink'
+						subtitle='Kitchen sink implementation with popover & context menu rendering, click & drag event creation, custom header component and external calendar state management.'
+					/>
 					<CodeBlock
 						withExpandButton
 						tabs={[

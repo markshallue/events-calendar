@@ -29,8 +29,8 @@ export function CustomControls({ calendar, setEvents, numOfEvents, dayRange }: P
 				<CustomButton color='pink' onClick={() => calendar.setActiveDate(p => p.add(1, 'month'))}>
 					Next month
 				</CustomButton>
-				<CustomButton color='indigo' onClick={() => calendar.setActiveDate(dayjs().add(4, 'M'))}>
-					4 months from now
+				<CustomButton color='indigo' onClick={() => calendar.setActiveDate(dayjs().add(3, 'M'))}>
+					3 months from now
 				</CustomButton>
 			</div>
 			<div style={{ display: 'flex', gap: '0.75rem' }}>

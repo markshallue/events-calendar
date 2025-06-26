@@ -2,6 +2,7 @@ export * from './layout';
 export * from './CodeBlock';
 export * from './ContextMenu';
 export * from './form-popover';
+export * from './GithubButton';
 export * from './view-popover';
 export * from './event-actions';
 export * from './FilterControl';
