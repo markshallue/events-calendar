@@ -1,6 +1,6 @@
 import '@mantine/core/styles.layer.css';
 import '@mantine/carousel/styles.layer.css';
-import '@mantine/code-highlight/styles.layer.css';
+import '@mantine/code-highlight/styles.css';
 
 import React from 'react';
 import { cookies } from 'next/headers';
