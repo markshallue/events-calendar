@@ -1,19 +1,29 @@
 import { Text, Stack, Code, Title } from '@mantine/core';
 
 import { demoEvents } from '@/data';
-import { readExample } from '@/server-utils';
 import { CalendarWrapper, CodeBlock, ContentHeading, PageHeading, PageWrapper } from '@/components';
 
 import {
 	AsyncExample,
+	asyncExampleCode,
 	BasicExample,
+	basicExampleCode,
 	ContextMenuExample,
 	CustomHeaderExample,
-	DragCreateExample,
+	customHeaderExampleCode,
+	customHeaderCode,
+	customHeaderCss,
+	ClickNDragExample,
 	KitchenSinkExample,
 	PopoverExample,
+	popoverExampleCode,
 	ResponsiveExample,
-} from '@/examples';
+	responsiveExampleCode,
+	contextMenuExampleCode,
+	kitchenSinkExampleCode,
+	clickNDragExampleCode,
+} from '@/demos';
+import { customControlsCode } from '@/demos/CustomControls';
 
 export default function Examples() {
 	return (
@@ -25,7 +35,7 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'BasicExample.tsx', code: readExample(`examples/BasicExample.tsx`) },
+							{ fileName: 'BasicExample.tsx', code: basicExampleCode },
 							{ fileName: 'events.json', code: demoEvents },
 						]}
 					/>
@@ -43,24 +53,18 @@ export default function Examples() {
 							</Text>
 						}
 					/>
-					<CodeBlock
-						withExpandButton
-						tabs={[{ fileName: 'AsnycExample.tsx', code: readExample(`examples/AsyncExample.tsx`) }]}
-					/>
+					<CodeBlock withExpandButton tabs={[{ fileName: 'AsnycExample.tsx', code: asyncExampleCode }]} />
 					<Title order={3}>Result</Title>
 					<AsyncExample />
 				</Stack>
 
 				<Stack>
 					<ContentHeading
-						title='Responsive'
+						title='Responsive overflow handling'
 						subtitle='The calendar will grow to fill its container. Resize the container below to see the calendar automatically show/hide events
 					based on the available space.'
 					/>
-					<CodeBlock
-						withExpandButton
-						tabs={[{ fileName: 'ResponsiveExample.tsx', code: readExample(`examples/ResponsiveExample.tsx`) }]}
-					/>
+					<CodeBlock withExpandButton tabs={[{ fileName: 'ResponsiveExample.tsx', code: responsiveExampleCode }]} />
 					<Stack gap='0'>
 						<Title order={3}>Result</Title>
 						<Text>Resize the calendar by dragging the bottom-right corner</Text>
@@ -89,7 +93,7 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'PopoverExample.tsx', code: readExample(`examples/PopoverExample.tsx`) },
+							{ fileName: 'PopoverExample.tsx', code: popoverExampleCode },
 							{ fileName: 'events.json', code: demoEvents },
 						]}
 					/>
@@ -111,9 +115,9 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'CustomHeader.tsx', code: readExample(`examples/CustomHeaderExample.tsx`) },
-							{ fileName: 'CustomHeaderElement.tsx', code: readExample(`examples/CustomHeader.tsx`) },
-							{ fileName: 'CustomHeader.module.css', code: readExample(`examples/CustomHeader.module.css`) },
+							{ fileName: 'CustomHeader.tsx', code: customHeaderExampleCode },
+							{ fileName: 'CustomHeaderElement.tsx', code: customHeaderCode },
+							{ fileName: 'CustomHeader.module.css', code: customHeaderCss },
 						]}
 					/>
 					<CalendarWrapper title='Result'>
@@ -132,9 +136,9 @@ export default function Examples() {
 							</Text>
 						}
 					/>
-					<CodeBlock tabs={[{ fileName: 'DragCreateExample.tsx', code: readExample(`examples/DragCreateExample.tsx`) }]} />
+					<CodeBlock tabs={[{ fileName: 'ClickNDragExample.tsx', code: clickNDragExampleCode }]} />
 					<CalendarWrapper title='Result'>
-						<DragCreateExample />
+						<ClickNDragExample />
 					</CalendarWrapper>
 				</Stack>
 
@@ -148,10 +152,7 @@ export default function Examples() {
 							</Text>
 						}
 					/>
-					<CodeBlock
-						withExpandButton
-						tabs={[{ fileName: 'ContentMenuExample.tsx', code: readExample(`examples/ContextMenuExample.tsx`) }]}
-					/>
+					<CodeBlock withExpandButton tabs={[{ fileName: 'ContentMenuExample.tsx', code: contextMenuExampleCode }]} />
 					<CalendarWrapper title='Result'>
 						<ContextMenuExample />
 					</CalendarWrapper>
@@ -165,8 +166,8 @@ export default function Examples() {
 					<CodeBlock
 						withExpandButton
 						tabs={[
-							{ fileName: 'KitchenSinkExample.tsx', code: readExample(`examples/KitchenSinkExample.tsx`) },
-							{ fileName: 'CustomControls.tsx', code: readExample(`examples/CustomControls.tsx`) },
+							{ fileName: 'KitchenSinkExample.tsx', code: kitchenSinkExampleCode },
+							{ fileName: 'CustomControls.tsx', code: customControlsCode },
 						]}
 					/>
 					<Title order={3}>Result</Title>

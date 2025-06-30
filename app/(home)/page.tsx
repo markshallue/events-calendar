@@ -16,7 +16,6 @@ import {
 } from '@mantine/core';
 import classes from './page.module.css';
 
-import { ContextMenuExample } from '@/examples';
 import {
 	IconArrowDown,
 	IconLayoutNavbarCollapse,
@@ -27,7 +26,9 @@ import {
 	IconMoonStars,
 	IconRocket,
 } from '@tabler/icons-react';
+
 import { LiveDemo } from './LiveDemo';
+import { ContextMenuExample } from '@/demos';
 
 const features = [
 	{

@@ -72,7 +72,13 @@ export function CodeBlock({
 					radius='md'
 				/>
 			) : (
-				<CodeHighlight code={code} language={fileName ? getLanguage(fileName) : language || 'tsx'} radius='md' />
+				<CodeHighlight
+					code={code}
+					withExpandButton={withExpandButton}
+					defaultExpanded={defaultExpanded}
+					language={fileName ? getLanguage(fileName) : language || 'tsx'}
+					radius='md'
+				/>
 			)}
 		</Paper>
 	);

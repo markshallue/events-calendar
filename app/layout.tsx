@@ -33,7 +33,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 		<html
 			lang='en'
 			{...mantineHtmlProps}
-			style={{ scrollPaddingTop: 'calc(var(--app-shell-header-height) + 2rem)' }}
+			style={{ scrollPaddingTop: 'calc(var(--app-shell-header-height) + 1.75rem)' }}
 			className={spaceGrotesk.variable}
 		>
 			<head>

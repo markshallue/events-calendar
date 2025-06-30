@@ -64,7 +64,10 @@ export default function APIDocs() {
 							the calendar state externally. A common use-case is for creating custom header elements.
 						</Text>
 						<CodeBlock code={useEventsCalendarCode} />
-						<CodeBlock code={`const calendar = useEventsCalendar({ initialDate: '01-Aug-2024', initialView: 'week' })`} />
+						<CodeBlock
+							defaultExpanded
+							code={`const calendar = useEventsCalendar({ initialDate: '01-Aug-2024', initialView: 'week' })`}
+						/>
 						<Text>The hook returns a object containing the following properties:</Text>
 						<CodeBlock code={EventsCalendarObject} />
 					</Stack>
