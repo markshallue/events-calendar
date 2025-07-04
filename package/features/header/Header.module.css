@@ -8,6 +8,17 @@
 	font-size: 1.125rem;
 	padding: 0.5rem 0.75rem;
 	overflow: hidden;
+	border-bottom: 1px solid #ced4da;
+}
+
+[data-ec-color-scheme='dark'] .header {
+	border-bottom: 1px solid #424242;
+}
+
+@media (prefers-color-scheme: dark) {
+	[data-ec-color-scheme='auto'] .header {
+		border-bottom: 1px solid #424242;
+	}
 }
 
 .controls {

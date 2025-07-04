@@ -18,14 +18,19 @@
 		"typescript",
 		"calendar-component"
 	],
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.mjs"
+			},
+			"require": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			}
 		}
 	},
 	"files": [
@@ -37,7 +42,7 @@
 	],
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build:lib": "tsup package/index.ts --format cjs,esm --dts --out-dir dist",
+		"build:package": "rm -rf dist; tsup --config scripts/tsup.esm.ts; tsup --config scripts/tsup.cjs.ts; tsup --config scripts/tsup.dts.ts;",
 		"build:docs": "next build",
 		"build": "npm run build:lib && npm run build:docs",
 		"start": "next start",
