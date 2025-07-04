@@ -38,6 +38,7 @@ export function ImageCarousel({ images }: { images: string[] }) {
 					classNames={{
 						root: classes.carousel,
 						indicator: classes.carouselIndicator,
+						control: classes.carouselControl,
 					}}
 					emblaOptions={{ loop: true }}
 					withIndicators

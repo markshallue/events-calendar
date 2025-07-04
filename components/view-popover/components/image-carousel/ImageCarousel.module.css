@@ -14,6 +14,10 @@
 	opacity: 0;
 }
 
+.carouselControl {
+	background-color: #fff;
+}
+
 .carouselIndicator {
 	width: 0.25rem;
 	height: 0.25rem;
