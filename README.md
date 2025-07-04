@@ -44,11 +44,11 @@ The calendar expands to fill its parent container. Make sure the parent has a de
 import { EventsCalendar } from 'events-calendar';
 
 export function MyCalendar() {
-	return (
-		<div style={{ height: '560px' }}>
-			<EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />
-		</div>
-	);
+  return (
+    <div style={{ height: '560px' }}>
+      <EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />
+    </div>
+  );
 }
 ```
 
