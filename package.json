@@ -1,10 +1,45 @@
 {
 	"name": "events-calendar",
-	"version": "0.1.0",
-	"private": true,
+	"version": "1.4.0",
+	"private": false,
+	"description": "A flexible, responsive, and feature-rich calendar component for modern React applications.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/markshallue/events-calendar.git"
+	},
+	"license": "MIT",
+	"keywords": [
+		"calendar",
+		"react-calendar",
+		"events",
+		"event-calendar",
+		"react",
+		"react-component",
+		"typescript",
+		"calendar-component"
+	],
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"sideEffects": [
+		"**/*.css"
+	],
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build": "next build",
+		"build:lib": "tsup package/index.ts --format cjs,esm --dts --out-dir dist",
+		"build:docs": "next build",
+		"build": "npm run build:lib && npm run build:docs",
 		"start": "next start",
 		"lint": "next lint",
 		"check": "tsc"
@@ -37,6 +72,7 @@
 		"postcss-simple-vars": "^7.0.1",
 		"prettier": "^3.6.1",
 		"shiki": "^3.7.0",
+		"tsup": "^8.5.0",
 		"typescript": "^5"
 	}
 }
