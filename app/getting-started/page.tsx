@@ -1,6 +1,6 @@
 'use client';
 
-import { Code, Text, Title } from '@mantine/core';
+import { Alert, Code, Text, Title } from '@mantine/core';
 
 import { CodeBlock, PageWrapper, CalendarWrapper, PageHeading } from '@/components';
 import {
@@ -13,6 +13,7 @@ import {
 	timeExampleEvents,
 	colorsExampleEvents,
 } from '@/demos';
+import { IconInfoCircle } from '@tabler/icons-react';
 
 export default function GettingStarted() {
 	return (
@@ -33,7 +34,11 @@ export default function GettingStarted() {
 				<Title order={2} mt='lg'>
 					Creating your first calendar
 				</Title>
-				<CodeBlock code={firstCalendarExampleCode} />
+				<Alert variant='light' color='blue' title='Important!' icon={<IconInfoCircle />}>
+					The calendar expands to fill its parent container. Always ensure that the parent has an explicit height.
+				</Alert>
+				<CodeBlock defaultExpanded code={firstCalendarExampleCode} />
+				<Title order={3}>Result</Title>
 				<CalendarWrapper title='Result'>
 					<FirstCalendarExample />
 				</CalendarWrapper>

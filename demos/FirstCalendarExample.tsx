@@ -7,7 +7,11 @@ export const firstCalendarExampleCode = `
 import { EventsCalendar } from 'events-calendar';
 
 export function FirstCalendarExample() {
-    return <EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />;
+    return (
+        <div style={{ height: '560px' }}>
+            <EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />
+        </div>
+    );
 }
 `;
 

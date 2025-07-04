@@ -18,7 +18,7 @@ Fully written in TypeScript, easy to customize, and designed for event-heavy UIs
 
 ---
 
-## 🚀 Getting Started
+## 📦 Installation
 
 Install the package with your package manager of choice:
 
@@ -32,3 +32,28 @@ yarn add events-calendar
 # pnpm
 pnpm add events-calendar
 ```
+
+---
+
+## ⚡ Quick Start
+
+💡 **Important:**  
+The calendar expands to fill its parent container. Make sure the parent has a defined height.
+
+```tsx
+import { EventsCalendar } from 'events-calendar';
+
+export function MyCalendar() {
+	return (
+		<div style={{ height: '560px' }}>
+			<EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />
+		</div>
+	);
+}
+```
+
+---
+
+## 📖 Documentation
+
+For full documentation, see the [official docs](https://events-calendar-beta.vercel.app/getting-started).
