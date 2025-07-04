@@ -9,6 +9,7 @@
 	}
 }
 .carouselControls {
+	background-color: #fff;
 	transition: opacity 150ms ease;
 	opacity: 0;
 }
@@ -17,6 +18,7 @@
 	width: 0.25rem;
 	height: 0.25rem;
 	transition: width 250ms ease;
+	background-color: #fff;
 
 	&[data-active] {
 		width: 1rem;
