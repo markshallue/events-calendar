@@ -51,7 +51,6 @@ export function LiveDemo() {
 					/>
 					<EventsCalendar
 						enableDragCreation
-						enableRescheduling
 						noHeader
 						calendar={calendar}
 						events={filteredEvents}

@@ -3,7 +3,6 @@ export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalenda
     calendar?: EventsCalendarObject;
     compact?: boolean;
     enableDragCreation?: boolean;
-    enableRescheduling?: boolean;
     events?: RawCalendarEvent<T>[];
     isFetching?: boolean;
     noHeader?: boolean;

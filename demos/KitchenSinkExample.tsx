@@ -67,7 +67,6 @@ export function KitchenSinkExample() {
                     />
                     <EventsCalendar
                         enableDragCreation
-                        enableRescheduling
                         noHeader
                         calendar={calendar}
                         events={filteredEvents}
@@ -149,7 +148,6 @@ export function KitchenSinkExample() {
 					/>
 					<EventsCalendar
 						enableDragCreation
-						enableRescheduling
 						noHeader
 						calendar={calendar}
 						events={filteredEvents}

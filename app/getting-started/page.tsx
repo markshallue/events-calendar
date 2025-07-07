@@ -44,9 +44,9 @@ export default function GettingStarted() {
 				</Alert>
 				<CodeBlock defaultExpanded code={firstCalendarExampleCode} />
 				<Title order={3}>Result</Title>
-				<CalendarWrapper title='Result'>
+				<div style={{ height: '560px', border: '1px solid #ccc' }}>
 					<FirstCalendarExample />
-				</CalendarWrapper>
+				</div>
 
 				{/* Colors */}
 				<Title order={2} mt='lg'>
