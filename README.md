@@ -43,6 +43,9 @@ The calendar expands to fill its parent container. Make sure the parent has a de
 ```tsx
 import { EventsCalendar } from 'events-calendar';
 
+// Import CSS
+import 'events-calendar/styles.css'
+
 export function MyCalendar() {
   return (
     <div style={{ height: '560px' }}>
