@@ -53,7 +53,6 @@ declare const createDayjsObjFromTime: (startTime: string | null, endTime: string
 declare function getBackgroundFromGroups(groups?: CalendarGroup[]): react__default.CSSProperties;
 
 type Month = (typeof MONTHS)[number];
-type ColorScheme = 'light' | 'dark' | 'auto';
 type CalendarView = (typeof CALENDAR_VIEWS)[number];
 type CalendarGroup = {
     label: string;
@@ -176,7 +175,6 @@ declare function useEventsCalendar({ isInitialised, initialDate, initialView, cl
 interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
     calendar?: EventsCalendarObject;
     compact?: boolean;
-    colorScheme?: ColorScheme;
     enableDragCreation?: boolean;
     enableRescheduling?: boolean;
     events?: RawCalendarEvent<T>[];
@@ -190,7 +188,7 @@ interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventB
     renderPopover?: (props: EventsCalendarPopoverProps) => ReactNode;
     renderContextMenu?: (props: EventsCalendarContextMenuProps) => ReactNode;
 }
-declare function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase>({ calendar, compact, colorScheme, enableDragCreation, enableRescheduling, events, popoverZIndex, isFetching, noHeader, onEventClick, onEventCreate, onEventReschedule, renderPopover, renderContextMenu, views, }: EventsCalendarProps<T>): react.JSX.Element;
+declare function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase>({ calendar, compact, enableDragCreation, enableRescheduling, events, popoverZIndex, isFetching, noHeader, onEventClick, onEventCreate, onEventReschedule, renderPopover, renderContextMenu, views, }: EventsCalendarProps<T>): react.JSX.Element;
 
 interface HeaderProps {
     activeDate: dayjs.Dayjs;
@@ -206,4 +204,4 @@ interface HeaderProps {
 }
 declare function Header({ activeDate, onClick, hideViewToggle, setActiveDate, setView, views, view, customControls, }: HeaderProps): react.JSX.Element;
 
-export { CALENDAR_VIEWS, type CalendarAction, type CalendarEvent, type CalendarEventBase, type CalendarGroup, type CalendarState, type CalendarView, type ColorScheme, DAYS_IN_FULL_MONTH, DAY_LABELS_SHORT, DEFAULT_COLOR, type DateRecord, type EventClickArgs, type EventEditProps, EventsCalendar, type EventsCalendarContextMenuProps, type EventsCalendarObject, type EventsCalendarPopoverProps, type EventsCalendarProps, HOURS, Header, MONTHS, type MinMaxDatesInView, type Month, type MonthDates, type MouseEventHandler, type OrderedCalendarEvent, type OrderedCalendarEventBase, type OverflowArrowType, type RawCalendarEvent, type RawCalendarEventBase, type SubmitType, arrangeWeekEvents, arrangeWeekdayEvents, createDayjsObjFromTime, filterByDate, filterByView, filterByWeek, getBackgroundFromGroups, getPlaceholderEvent, getTimeDiff, getTimeLabel, getVisibleEvents, hasOverlap, isBetween, parseRawEvents, returnValidStartEnd, setTime, updateEvent, useEventsCalendar, type useEventsCalendarProps };
+export { CALENDAR_VIEWS, type CalendarAction, type CalendarEvent, type CalendarEventBase, type CalendarGroup, type CalendarState, type CalendarView, DAYS_IN_FULL_MONTH, DAY_LABELS_SHORT, DEFAULT_COLOR, type DateRecord, type EventClickArgs, type EventEditProps, EventsCalendar, type EventsCalendarContextMenuProps, type EventsCalendarObject, type EventsCalendarPopoverProps, type EventsCalendarProps, HOURS, Header, MONTHS, type MinMaxDatesInView, type Month, type MonthDates, type MouseEventHandler, type OrderedCalendarEvent, type OrderedCalendarEventBase, type OverflowArrowType, type RawCalendarEvent, type RawCalendarEventBase, type SubmitType, arrangeWeekEvents, arrangeWeekdayEvents, createDayjsObjFromTime, filterByDate, filterByView, filterByWeek, getBackgroundFromGroups, getPlaceholderEvent, getTimeDiff, getTimeLabel, getVisibleEvents, hasOverlap, isBetween, parseRawEvents, returnValidStartEnd, setTime, updateEvent, useEventsCalendar, type useEventsCalendarProps };

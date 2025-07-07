@@ -1,5 +1,6 @@
 .events-calendar-overflow-card {
 	width: 13rem;
+	box-sizing: border-box;
 	background: var(--ec-default-background);
 	padding: 0.5rem 0.5rem 0.625rem 0.5rem;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -9,6 +10,10 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+}
+
+.events-calendar-overflow-card * {
+	box-sizing: border-box;
 }
 
 .events-calendar-overflow-card-content {

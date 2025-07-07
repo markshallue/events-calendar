@@ -47,6 +47,7 @@
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	box-sizing: border-box;
 
 	::-webkit-scrollbar-track {
 		background-color: transparent;
@@ -75,4 +76,8 @@
 	&[data-withheader='true'] {
 		height: calc(100% - 52px);
 	}
+}
+
+.events-calendar * {
+	box-sizing: border-box;
 }
