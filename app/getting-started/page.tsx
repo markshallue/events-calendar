@@ -30,6 +30,11 @@ export default function GettingStarted() {
 					]}
 				/>
 
+				<Title order={2} mt='lg'>
+					Import CSS
+				</Title>
+				<CodeBlock defaultExpanded code="import 'events-calendar/styles.css';" />
+
 				{/* First Calendar */}
 				<Title order={2} mt='lg'>
 					Creating your first calendar

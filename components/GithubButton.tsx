@@ -2,7 +2,7 @@ import { ActionIcon, Tooltip } from '@mantine/core';
 import { IconBrandGithub } from '@tabler/icons-react';
 
 interface Props {
-	hidden: boolean;
+	hidden?: boolean;
 }
 
 export function GithubButton({ hidden }: Props) {

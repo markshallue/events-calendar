@@ -52,7 +52,8 @@ export function Header({ opened, toggle }: Props) {
 						{items}
 					</Group>
 
-					<GithubButton hidden />
+					<GithubButton />
+
 					<ColorSchemeToggle />
 				</Group>
 			</div>
