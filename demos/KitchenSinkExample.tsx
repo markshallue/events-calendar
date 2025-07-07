@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useComputedColorScheme } from '@mantine/core';
 import { EventsCalendar, Header, useEventsCalendar } from '~/index';
 
 import groups from '@/data/groups.json';
@@ -122,7 +121,6 @@ export function KitchenSinkExample() {
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
-	const colorScheme = useComputedColorScheme('light');
 
 	// Get calendar instance
 	const calendar = useEventsCalendar();
@@ -134,7 +132,7 @@ export function KitchenSinkExample() {
 	const handleSubmit = (args: HandleSubmitArgs) => exampleSubmitHandler(args, events, setEvents);
 
 	return (
-		<div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }} data-ec-color-scheme={colorScheme}>
+		<div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
 			<CustomControls calendar={calendar} setEvents={setEvents} numOfEvents={numOfEvents} />
 			<CalendarWrapper>
 				<div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -153,7 +151,6 @@ export function KitchenSinkExample() {
 						enableDragCreation
 						enableRescheduling
 						noHeader
-						colorScheme={colorScheme}
 						calendar={calendar}
 						events={filteredEvents}
 						onEventClick={({ togglePopover }) => {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Paper, Stack, useComputedColorScheme } from '@mantine/core';
+import { Paper, Stack } from '@mantine/core';
 import classes from './LiveDemo.module.css';
 
 import { EventsCalendar, Header, useEventsCalendar } from '~/index';
@@ -20,8 +20,6 @@ const numOfEvents = 1000;
 const initialEvents = getEvents(numOfEvents, 365);
 
 export function LiveDemo() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
@@ -36,7 +34,7 @@ export function LiveDemo() {
 	const handleSubmit = (args: HandleSubmitArgs) => exampleSubmitHandler(args, events, setEvents);
 
 	return (
-		<Stack data-ec-color-scheme={colorScheme}>
+		<Stack>
 			{/* <LiveDemoControls setEvents={setEvents} /> */}
 			<Paper className={classes.wrapper} withBorder>
 				<div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -55,7 +53,6 @@ export function LiveDemo() {
 						enableDragCreation
 						enableRescheduling
 						noHeader
-						colorScheme={colorScheme}
 						calendar={calendar}
 						events={filteredEvents}
 						onEventClick={({ togglePopover }) => {

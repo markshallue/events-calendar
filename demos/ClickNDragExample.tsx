@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useComputedColorScheme } from '@mantine/core';
 import { EventsCalendar, useEventsCalendar } from '~/index';
 
 import groups from '@/data/groups.json';
@@ -75,7 +74,6 @@ export function ClickNDragExample() {
 export function ClickNDragExample() {
 	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
-	const colorScheme = useComputedColorScheme('light');
 
 	// Get calendar instance
 	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
@@ -85,7 +83,6 @@ export function ClickNDragExample() {
 
 	return (
 		<EventsCalendar<RawDemoEvent>
-			colorScheme={colorScheme}
 			enableDragCreation
 			calendar={calendar}
 			events={events}

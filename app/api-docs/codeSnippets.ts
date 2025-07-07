@@ -2,7 +2,6 @@ export const calendarPropTypesCode = `
 export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
     calendar?: EventsCalendarObject;
     compact?: boolean;
-    colorScheme?: ColorScheme;
     enableDragCreation?: boolean;
     enableRescheduling?: boolean;
     events?: RawCalendarEvent<T>[];

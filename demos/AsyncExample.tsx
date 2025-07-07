@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { IconRefresh } from '@tabler/icons-react';
-import { Button, useComputedColorScheme } from '@mantine/core';
+import { Button } from '@mantine/core';
 
 import { EventsCalendar, RawCalendarEvent } from '~/index';
 
@@ -49,7 +49,6 @@ export function AsyncExample() {
 export function AsyncExample() {
 	const [isFetching, setIsFetching] = useState(false);
 	const [events, setEvents] = useState<RawCalendarEvent[]>([]);
-	const colorScheme = useComputedColorScheme('light');
 
 	// Mock fetch from API
 	const fetchData = () => {
@@ -68,7 +67,7 @@ export function AsyncExample() {
 				Fetch data
 			</Button>
 			<CalendarWrapper>
-				<EventsCalendar colorScheme={colorScheme} events={events} isFetching={isFetching} />
+				<EventsCalendar events={events} isFetching={isFetching} />
 			</CalendarWrapper>
 		</div>
 	);

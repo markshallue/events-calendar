@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useComputedColorScheme } from '@mantine/core';
 
 import { EventsCalendar } from '~/index';
 import { RawCalendarEvent } from '~/types';
@@ -73,8 +72,6 @@ export function EditableExample() {
 `;
 
 export function EditableExample() {
-	const colorScheme = useComputedColorScheme('light');
-
 	const [events, setEvents] = useState<RawCalendarEvent[]>(initialEvents);
 
 	// Get calendar instance
@@ -86,7 +83,6 @@ export function EditableExample() {
 		<EventsCalendar
 			calendar={calendar}
 			events={events}
-			colorScheme={colorScheme}
 			onEventClick={({ openPopover, isDoubleClick, closePopover }) => {
 				if (isDoubleClick) {
 					closePopover();
