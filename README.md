@@ -3,8 +3,6 @@
 **A flexible, responsive, and feature-rich calendar component for modern React applications.**  
 Fully written in TypeScript, easy to customize, and designed for event-heavy UIs.
 
----
-
 ## ✨ Features
 
 - **Day, week, month and year views**
@@ -15,8 +13,6 @@ Fully written in TypeScript, easy to customize, and designed for event-heavy UIs
 - **Supports timed and all-day events**
 - **Multi-day and overlapping events**
 - Fully **typed API** with autocompletion and IntelliSense support
-
----
 
 ## 📦 Installation
 
@@ -33,8 +29,6 @@ yarn add events-calendar
 pnpm add events-calendar
 ```
 
----
-
 ## ⚡ Quick Start
 
 💡 **Important:**  
@@ -42,6 +36,9 @@ The calendar expands to fill its parent container. Make sure the parent has a de
 
 ```tsx
 import { EventsCalendar } from 'events-calendar';
+
+// Import CSS
+import 'events-calendar/styles.css'
 
 export function MyCalendar() {
   return (
@@ -51,8 +48,6 @@ export function MyCalendar() {
   );
 }
 ```
-
----
 
 ## 📖 Documentation
 
