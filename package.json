@@ -45,7 +45,7 @@
 		"dev": "next dev --turbopack",
 		"build:package": "rm -rf dist && tsup --config scripts/tsup.esm.ts && tsup --config scripts/tsup.cjs.ts && tsup --config scripts/tsup.dts.ts && postcss package/styles*.css --dir dist",
 		"build:docs": "next build",
-		"build": "npm run build:lib && npm run build:docs",
+		"build": "npm run build:package && npm run build:docs",
 		"start": "next start",
 		"lint": "next lint",
 		"check": "tsc"
