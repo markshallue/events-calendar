@@ -3,18 +3,15 @@
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, ReactNode } from 'react';
 
-import { ColorScheme } from '~/types';
-
 import { useBindPopover } from './useBindPopover';
 
 interface PopoverContentProps {
 	anchor: Element;
 	zIndex: number;
-	colorScheme: ColorScheme;
 	children: ReactNode;
 }
 
-export function PopoverContent({ anchor, zIndex, colorScheme, children }: PopoverContentProps) {
+export function PopoverContent({ anchor, zIndex, children }: PopoverContentProps) {
 	const styles = useRef({});
 	const { refs, floatingStyles } = useBindPopover({ anchor });
 
@@ -26,11 +23,7 @@ export function PopoverContent({ anchor, zIndex, colorScheme, children }: Popove
 	}, []);
 
 	return createPortal(
-		<div
-			ref={refs.setFloating}
-			style={{ ...floatingStyles, ...styles.current, zIndex }}
-			data-ec-color-scheme={colorScheme}
-		>
+		<div ref={refs.setFloating} style={{ ...floatingStyles, ...styles.current, zIndex }}>
 			<div onClick={e => e.stopPropagation()}>{children}</div>
 		</div>,
 		document.body

@@ -1,11 +1,11 @@
-.monthHeader {
+.events-calendar-month-header {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(7, minmax(0, 1fr));
 	font-size: 0.875rem;
 	font-weight: 600;
 }
-.headerCell {
+.events-calendar-month-header-cell {
 	text-align: center;
 	border-bottom: 1px solid var(--ec-gray-4);
 	transition-property: background;

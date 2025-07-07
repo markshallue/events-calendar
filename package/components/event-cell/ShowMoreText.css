@@ -1,4 +1,4 @@
-.container {
+.events-calendar-show-more-text-container {
 	position: relative;
 	z-index: 1;
 	white-space: nowrap;
@@ -26,18 +26,18 @@
 	}
 }
 
-.label {
+.events-calendar-show-more-text-label {
 	display: none;
 	pointer-events: none;
 }
 
-.smOnly {
+.events-calendar-sm-only {
 	@media (max-width: 640px) {
 		display: block;
 	}
 }
 
-.lgOnly {
+.events-calendar-lg-only {
 	@media (min-width: 640px) {
 		display: block;
 	}

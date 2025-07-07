@@ -1,4 +1,4 @@
-.monthItemContainer {
+.events-calendar-month-item-container {
 	z-index: 1;
 	display: flex;
 	border-radius: 0.25rem;
@@ -26,11 +26,11 @@
 		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 	}
 }
-.monthItemContainer[data-interactive='true']:not([data-placeholder='true']):hover {
+.events-calendar-month-item-container[data-interactive='true']:not([data-placeholder='true']):hover {
 	filter: brightness(0.9);
 	cursor: pointer;
 }
-.weekItemContainer {
+.events-calendar-week-item-container {
 	position: relative;
 	box-sizing: border-box;
 	filter: brightness(1);
@@ -57,11 +57,11 @@
 		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 	}
 }
-.weekItemContainer[data-interactive='true']:not([data-placeholder='true']):hover {
+.events-calendar-week-item-container[data-interactive='true']:not([data-placeholder='true']):hover {
 	filter: brightness(0.9);
 	cursor: pointer;
 }
-.itemLabelWrapper {
+.events-calendar-item-label {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0.125rem 0.25rem;
@@ -83,7 +83,7 @@
 		line-height: 0.55rem;
 	}
 }
-.timeText {
+.events-calendar-time-text {
 	min-height: 12.5;
 	font-weight: 400;
 	white-space: nowrap;

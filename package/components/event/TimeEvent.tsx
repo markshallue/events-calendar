@@ -1,4 +1,4 @@
-import classes from './TimeEvent.module.css';
+import './TimeEvent.css';
 
 import { CalendarEvent } from '~/types';
 import { DEFAULT_COLOR, getBackgroundFromGroups } from '~/utils';
@@ -18,10 +18,10 @@ export function TimeEvent({ event, isCompact }: TimeEventProps) {
 	const borderStyle = { border: `1px solid ${eventColors[0] ?? DEFAULT_COLOR}` };
 
 	return (
-		<div className={`${classes.timeContainer}`} data-sm={isCompact} style={borderStyle}>
-			<div className={`${classes.timeDot}`} style={colorStyles}></div>
-			<div className={`${classes.timeText}`}>{start.format('h:mma')}</div>
-			<span className={`${classes.timeLabel}`}>{title}</span>
+		<div className='events-calendar-time' data-sm={isCompact} style={borderStyle}>
+			<div className='events-calendar-time-dot' style={colorStyles}></div>
+			<div className='events-calendar-time-text'>{start.format('h:mma')}</div>
+			<span className='events-calendar-time-label'>{title}</span>
 		</div>
 	);
 }

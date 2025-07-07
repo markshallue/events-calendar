@@ -2,7 +2,7 @@
 
 import { Dispatch, SetStateAction } from 'react';
 import dayjs from 'dayjs';
-import classes from './Header.module.css';
+import './Header.css';
 
 import { CalendarView } from '~/types';
 
@@ -15,10 +15,10 @@ const getHeaderTitle = (currDate: dayjs.Dayjs, view: CalendarView) => {
 	return view === 'year'
 		? currDate.format('YYYY')
 		: view === 'month'
-		? currDate.format('MMMM YYYY')
-		: view === 'week'
-		? `${weekStart.format('MMM DD')} - ${weekEnd.format('MMM DD, YYYY')}`
-		: currDate.format('D MMMM, YYYY');
+			? currDate.format('MMMM YYYY')
+			: view === 'week'
+				? `${weekStart.format('MMM DD')} - ${weekEnd.format('MMM DD, YYYY')}`
+				: currDate.format('D MMMM, YYYY');
 };
 
 interface NavigationProps {
@@ -34,11 +34,11 @@ export function Navigation({ activeDate, setActiveDate, view }: NavigationProps)
 	const handlePrev = (increment: CalendarView) => setActiveDate(currDate => currDate.subtract(1, increment));
 
 	return (
-		<div className={classes.navigation}>
+		<div className='events-calendar-nav'>
 			<HeaderButton variant='outline' onClick={handleToday}>
 				Today
 			</HeaderButton>
-			<div className={classes.actions}>
+			<div className='events-calendar-nav-actions'>
 				<HeaderButton variant='subtle' onClick={() => handlePrev(view)}>
 					<IconChevronLeft size='1.5rem' />
 				</HeaderButton>
@@ -46,7 +46,7 @@ export function Navigation({ activeDate, setActiveDate, view }: NavigationProps)
 					<IconChevronRight size='1.5rem' />
 				</HeaderButton>
 			</div>
-			<span className={classes.date}>{getHeaderTitle(activeDate, view)}</span>
+			<span className='events-calendar-title'>{getHeaderTitle(activeDate, view)}</span>
 		</div>
 	);
 }

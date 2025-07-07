@@ -1,4 +1,4 @@
-.container {
+.events-calendar-all-day-event {
 	position: relative;
 	width: 100%;
 	border-radius: 0.25rem;
@@ -6,7 +6,7 @@
 	overflow: hidden;
 }
 
-.content {
+.events-calendar-all-day-event-content {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -23,7 +23,7 @@
 	}
 }
 
-.text {
+.events-calendar-all-day-event-text {
 	line-height: 1;
 	font-weight: 600;
 	color: #fff;

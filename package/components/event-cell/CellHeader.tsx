@@ -2,8 +2,8 @@
 
 import dayjs from 'dayjs';
 import { Dispatch } from 'react';
+import './CellHeader.css';
 
-import classes from './CellHeader.module.css';
 import { CalendarAction, CalendarState, DateRecord } from '~/types';
 
 import { ShowMoreText } from './ShowMoreText';
@@ -23,9 +23,9 @@ export function CellHeader({ dayRecord, dispatch, isCompact, numOverflowEvents, 
 	const textColour = isToday ? 'white' : isCurrentMonth ? 'dark' : 'dim';
 
 	return (
-		<div className={classes.cellHeader}>
-			<div className={classes.dateContainer} data-today={isToday}>
-				<span className={classes.dateLabel} data-color={textColour} data-sm={isCompact}>
+		<div className='events-calendar-month-cell-header'>
+			<div className='events-calendar-month-cell-date-container' data-today={isToday}>
+				<span className='events-calendar-month-cell-date-label' data-color={textColour} data-sm={isCompact}>
 					{date.date()}
 				</span>
 			</div>

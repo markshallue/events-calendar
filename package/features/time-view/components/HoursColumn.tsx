@@ -1,12 +1,12 @@
 import { HOURS } from '~/utils';
-import classes from './HoursColumn.module.css';
+import './HoursColumn.css';
 
 export function HoursColumn() {
 	return (
-		<div className={classes.hoursColumn}>
+		<div className='events-calendar-hours-column'>
 			{HOURS.map(hour => (
-				<div className={classes.hour} key={hour}>
-					<span className={classes.hourLabel}>{hour}</span>
+				<div className='events-calendar-hour' key={hour}>
+					<span className='events-calendar-hour-label'>{hour}</span>
 				</div>
 			))}
 		</div>

@@ -1,4 +1,4 @@
-.header {
+.events-calendar-header {
 	height: 52px;
 	display: flex;
 	flex-shrink: 0;
@@ -8,40 +8,23 @@
 	font-size: 1.125rem;
 	padding: 0.5rem 0.75rem;
 	overflow: hidden;
-	border-bottom: 1px solid #ced4da;
+	border-bottom: 1px solid var(--ec-gray-3);
 }
 
-[data-ec-color-scheme='dark'] .header {
-	border-bottom: 1px solid #424242;
-}
-
-@media (prefers-color-scheme: dark) {
-	[data-ec-color-scheme='auto'] .header {
-		border-bottom: 1px solid #424242;
-	}
-}
-
-.controls {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	justify-self: flex-end;
-}
-
-.navigation {
+.events-calendar-nav {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
 	gap: 0.75rem;
 }
 
-.actions {
+.events-calendar-nav-actions {
 	display: flex;
 	align-items: center;
 	gap: 0.25rem;
 }
 
-.date {
+.events-calendar-title {
 	color: var(--ec-gray-9);
 	white-space: nowrap;
 	font-weight: 500;
@@ -50,6 +33,13 @@
 	user-select: none;
 }
 
-.buttonGroup {
+.events-calendar-button-group {
 	display: flex;
+}
+
+.events-calendar-header-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	justify-self: flex-end;
 }

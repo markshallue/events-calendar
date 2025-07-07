@@ -1,4 +1,4 @@
-import classes from './MonthHeader.module.css';
+import './MonthHeader.css';
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -8,9 +8,9 @@ interface MonthHeaderProps {
 
 export function MonthHeader({ isCompact }: MonthHeaderProps) {
 	return (
-		<div className={classes.monthHeader} data-sm={isCompact}>
+		<div className='events-calendar-month-header' data-sm={isCompact}>
 			{DAYS.map((day, i) => (
-				<div className={classes.headerCell} key={i}>
+				<div className='events-calendar-month-header-cell' key={i}>
 					{day}
 				</div>
 			))}

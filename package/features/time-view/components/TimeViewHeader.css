@@ -1,4 +1,4 @@
-.headerRow {
+.events-calendar-time-view-header {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -13,14 +13,14 @@
 		grid-template-columns: repeat(7, minmax(0, 1fr));
 	}
 }
-.headerCell {
+.events-calendar-time-view-header-cell {
 	text-align: center;
 
 	&[data-border='true'] {
 		border-bottom: 1px solid var(--ec-gray-4);
 	}
 }
-.headerLabel {
+.events-calendar-time-view-header-label {
 	user-select: none;
 	padding: 0.25rem 0;
 	background: transparent;

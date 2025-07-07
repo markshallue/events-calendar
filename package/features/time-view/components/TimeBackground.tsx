@@ -2,7 +2,7 @@
 
 import { Dayjs } from 'dayjs';
 import { Dispatch, RefObject } from 'react';
-import classes from './TimeBackground.module.css';
+import './TimeBackground.css';
 
 import { updateEvent } from '~/utils';
 import { MouseEventHandler, CalendarAction, CalendarState, EventEditProps, CalendarView } from '~/types';
@@ -54,7 +54,7 @@ export function TimeBackground({
 						const date = getActiveDateTime(activeDate, day, hour, timeBlock, view);
 						return (
 							<div
-								className={classes.gridCell}
+								className='events-calendar-time-background-cell'
 								data-isweekview={view === 'week'}
 								key={`${day}${hour}${timeBlock}`}
 								onMouseDown={e => handleMouseEvent(e, date, true, placeholderRef)}

@@ -2,7 +2,7 @@
 
 import { Dispatch, ReactNode, RefObject, useMemo } from 'react';
 import { Dayjs } from 'dayjs';
-import classes from './MonthView.module.css';
+import './MonthView.css';
 
 import {
 	CalendarAction,
@@ -62,15 +62,15 @@ export function MonthView<T = object>({
 	const weekMap = useMemo(() => getEventsByWeekMap<T>(monthDates.weeks, events), [events, monthDates.weeks]);
 
 	return (
-		<div className={classes.monthView}>
+		<div className='events-calendar-month-view'>
 			<MonthHeader isCompact={compact} />
-			<div className={classes.grid} onMouseLeave={handleStopDrag} ref={gridRef}>
+			<div className='events-calendar-month-view-grid' onMouseLeave={handleStopDrag} ref={gridRef}>
 				{monthDates.weeks.map((week, weekIndex) => {
 					// Get this week's events (if calendar has height)
 					const orderedEvents = gridHeight > 0 ? weekMap[weekIndex] : [];
 
 					return (
-						<div key={weekIndex} className={classes.row}>
+						<div key={weekIndex} className='events-calendar-month-view-row'>
 							{week.map((dayRecord, dayIndex) => (
 								<CellContainer
 									key={dayIndex}

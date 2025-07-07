@@ -1,7 +1,7 @@
 'use client';
 
 import { Dispatch, ReactNode, RefObject } from 'react';
-import classes from './TimeViewHeader.module.css';
+import './TimeViewHeader.css';
 
 import {
 	DateRecord,
@@ -70,14 +70,18 @@ export function TimeViewHeader<T>({
 	const headerHeight = heightOfEvent * numEventsToShow + bottomPadding;
 
 	return (
-		<div className={classes.headerRow} data-isweekview={view === 'week'} onMouseLeave={handleStopDrag}>
+		<div className='events-calendar-time-view-header' data-isweekview={view === 'week'} onMouseLeave={handleStopDrag}>
 			{weekDatesArray.map((dayRecord, dayIndex) => {
 				const { date } = dayRecord;
 				const withHeaderBorder = view === 'week' || filteredEvents.length > 0;
 				return (
-					<div className={classes.headerCell} data-border={withHeaderBorder} key={dayIndex}>
+					<div className='events-calendar-time-view-header-cell' data-border={withHeaderBorder} key={dayIndex}>
 						{view === 'week' && (
-							<div className={classes.headerLabel} data-today={date.isSame(dayjs(), 'day')} onMouseEnter={handleStopDrag}>
+							<div
+								className='events-calendar-time-view-header-label'
+								data-today={date.isSame(dayjs(), 'day')}
+								onMouseEnter={handleStopDrag}
+							>
 								{`${date.format('ddd')} ${date.format('DD')}`}
 							</div>
 						)}

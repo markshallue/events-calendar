@@ -2,7 +2,7 @@
 
 import dayjs from 'dayjs';
 import { Dispatch } from 'react';
-import classes from './YearView.module.css';
+import './YearView.css';
 
 import { DAY_LABELS_SHORT, MONTHS } from '~/utils';
 import { CalendarAction, CalendarEvent, CalendarState } from '~/types';
@@ -31,15 +31,15 @@ export function YearView<T extends object>({ activeDate, dispatch, events, state
 	};
 
 	return (
-		<div className={classes.scrollWrapper}>
-			<div className={classes.yearView} onMouseDown={handleMouseDown}>
+		<div className='events-calendar-year-view-scroll-wrapper'>
+			<div className='events-calendar-year-view' onMouseDown={handleMouseDown}>
 				{MONTHS.map(month => {
 					return (
-						<div key={month} className={classes.month}>
-							<div className={classes.monthLabel}>{month}</div>
-							<div className={classes.monthDates}>
+						<div key={month} className='events-calendar-year-view-month'>
+							<div className='events-calendar-year-view-month-label'>{month}</div>
+							<div className='events-calendar-year-view-month-dates'>
 								{DAY_LABELS_SHORT.map((day, i) => (
-									<div key={`${month}-${i}`} className={classes.monthHeaderDay}>
+									<div key={`${month}-${i}`} className='events-calendar-year-view-month-header'>
 										{day}
 									</div>
 								))}

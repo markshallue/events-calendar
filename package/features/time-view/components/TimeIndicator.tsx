@@ -1,7 +1,5 @@
-'use client';
-
 import dayjs from 'dayjs';
-import classes from './TimeIndicator.module.css';
+import './TimeIndicator.css';
 
 const NOW = dayjs();
 
@@ -12,9 +10,9 @@ export function TimeIndicator({ activeDate, isDayView }: { activeDate: dayjs.Day
 	const gridRow = NOW.hour() * 4 + Math.round(NOW.minute() / 15) + 1;
 
 	return (
-		<div className={classes.wrapper} style={{ gridColumn, gridRow }}>
-			<div className={classes.dot}></div>
-			<div className={classes.line}></div>
+		<div className='events-calendar-time-indicator' style={{ gridColumn, gridRow }}>
+			<div className='events-calendar-time-indicator-dot'></div>
+			<div className='events-calendar-time-indicator-line'></div>
 		</div>
 	);
 }

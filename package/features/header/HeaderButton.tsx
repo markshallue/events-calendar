@@ -1,6 +1,4 @@
-'use client';
-
-import classes from './HeaderButton.module.css';
+import './HeaderButton.css';
 
 interface HeaderButtonProps {
 	isGroupButton?: boolean;
@@ -24,7 +22,7 @@ export function HeaderButton({
 			data-group={isGroupButton}
 			data-active={active}
 			data-variant={variant}
-			className={classes.button}
+			className='events-calendar-header-button'
 		>
 			{children}
 		</button>

@@ -1,7 +1,7 @@
 'use client';
 
 import { Dispatch, ReactNode, SetStateAction } from 'react';
-import classes from './Header.module.css';
+import './Header.css';
 
 import { CalendarView } from '~/types';
 import { CALENDAR_VIEWS } from '~/utils';
@@ -22,9 +22,9 @@ export function Controls({ hideViewToggle, views, setView, view, children }: Con
 	const viewsToDisplay = CALENDAR_VIEWS.filter(validView => views.includes(validView));
 
 	return (
-		<div className={classes.controls}>
+		<div className='events-calendar-header-controls'>
 			{!hideViewToggle && viewsToDisplay.length > 1 && (
-				<div className={classes.buttonGroup}>
+				<div className='events-calendar-button-group'>
 					{viewsToDisplay.map(viewLabel => (
 						<HeaderButton key={viewLabel} isGroupButton active={view === viewLabel} onClick={() => setView(viewLabel)}>
 							{viewLabel}

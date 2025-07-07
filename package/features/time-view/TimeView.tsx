@@ -3,7 +3,7 @@
 import { Dayjs } from 'dayjs';
 import { Dispatch, ReactNode, RefObject, useMemo } from 'react';
 
-import classes from './TimeView.module.css';
+import './TimeView.css';
 
 import {
 	CalendarAction,
@@ -75,7 +75,7 @@ export function TimeView<T>({
 	const dayMap = useMemo(() => getEventsByDayMap<T>(weekDatesArray, timeEvents), [timeEvents, weekDatesArray]);
 
 	return (
-		<div className={classes.timeView}>
+		<div className='events-calendar-time-view'>
 			<TimeViewHeader
 				allDayEvents={allDayEvents}
 				compact={compact}
@@ -92,12 +92,12 @@ export function TimeView<T>({
 				view={view}
 				weekDatesArray={weekDatesArray}
 			/>
-			<div ref={viewportRef} className={classes.scrollWrapper}>
-				<div className={classes.gridWrapper}>
+			<div ref={viewportRef} className='events-calendar-time-view-scroll-wrapper'>
+				<div className='events-calendar-time-view-grid-wrapper'>
 					<HoursColumn />
 
 					<div
-						className={classes.grid}
+						className='events-calendar-time-view-grid'
 						data-isweekview={isWeekView}
 						onMouseEnter={handleStopDrag}
 						onMouseLeave={handleStopDrag}

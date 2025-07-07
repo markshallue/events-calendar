@@ -8,7 +8,7 @@
 	}
 }
 
-.loaderWrapper {
+.events-calendar-loader-wrapper {
 	z-index: 1000;
 	width: 100%;
 	height: 100%;
@@ -22,7 +22,7 @@
 	justify-content: center;
 }
 
-.loader {
+.events-calendar-loader {
 	display: inline-block;
 	width: 36px;
 	height: 36px;

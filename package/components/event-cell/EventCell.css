@@ -1,4 +1,4 @@
-.cell {
+.events-calendar-month-cell {
 	display: flex;
 	flex-direction: column;
 	user-select: none;
@@ -11,7 +11,7 @@
 	}
 }
 
-.cellContent {
+.events-calendar-month-cell-content {
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;

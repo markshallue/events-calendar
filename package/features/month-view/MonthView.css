@@ -1,10 +1,11 @@
-.monthView,
-.grid {
+.events-calendar-month-view,
+.events-calendar-month-view-grid {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
-.row {
+
+.events-calendar-month-view-row {
 	position: relative;
 	display: grid;
 	flex-grow: 1;
@@ -13,16 +14,4 @@
 	&:last-child {
 		border-bottom: none;
 	}
-}
-.datePopoverTitle {
-	margin-bottom: 0.5rem;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 600;
-}
-.dropdown {
-	pointer-events: auto;
-	cursor: auto;
-	padding: 0;
-	border: none;
 }

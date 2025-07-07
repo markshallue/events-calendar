@@ -2,7 +2,7 @@
 
 import dayjs from 'dayjs';
 import { useRef } from 'react';
-import classes from './MonthDate.module.css';
+import './MonthDate.css';
 
 interface MonthDateProps {
 	date: dayjs.Dayjs;
@@ -18,7 +18,7 @@ export function MonthDate({ date, handleClick, isToday, isDimmed, isActive }: Mo
 		<div
 			ref={ref}
 			data-date={date.format('DD-MMM-YYYY')}
-			className={classes.date}
+			className='events-calendar-year-view-month-date'
 			data-today={isToday}
 			data-dimmed={isDimmed}
 			data-active={isActive}

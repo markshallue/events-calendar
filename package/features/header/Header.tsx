@@ -2,7 +2,7 @@
 
 import dayjs from 'dayjs';
 import { Dispatch, ReactNode, SetStateAction } from 'react';
-import classes from './Header.module.css';
+import './Header.css';
 
 import { CalendarView } from '~/types';
 import { CALENDAR_VIEWS } from '~/utils';
@@ -33,7 +33,7 @@ export function Header({
 	customControls,
 }: HeaderProps) {
 	return (
-		<div className={classes.header} onClick={onClick}>
+		<div className='events-calendar-header' onClick={onClick}>
 			<Navigation activeDate={activeDate} setActiveDate={setActiveDate} view={view} />
 			<Controls hideViewToggle={hideViewToggle} views={views} setView={setView} view={view}>
 				{customControls}

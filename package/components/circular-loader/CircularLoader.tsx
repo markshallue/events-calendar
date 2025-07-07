@@ -1,10 +1,10 @@
-import classes from './CircularLoader.module.css';
+import './CircularLoader.css';
 
 export function CircularLoader({ visible }: { visible: boolean }) {
 	if (!visible) return;
 	return (
-		<div className={classes.loaderWrapper}>
-			<span className={classes.loader}></span>
+		<div className='events-calendar-loader-wrapper'>
+			<span className='events-calendar-loader'></span>
 		</div>
 	);
 }

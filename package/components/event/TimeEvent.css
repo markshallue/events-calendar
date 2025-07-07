@@ -1,4 +1,4 @@
-.timeContainer {
+.events-calendar-time {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -18,13 +18,13 @@
 		font-size: 0.65rem;
 	}
 }
-.timeDot {
+.events-calendar-time-dot {
 	flex-shrink: 0;
 	border-radius: 9999px;
 	width: 8px;
 	height: 8px;
 }
-.timeText {
+.events-calendar-time-text {
 	flex-shrink: 0;
 	line-height: normal;
 	font-weight: 400;
@@ -32,7 +32,7 @@
 	cursor: pointer;
 	user-select: none;
 }
-.timeLabel {
+.events-calendar-time-label {
 	line-height: normal;
 	font-weight: 500;
 	overflow: hidden;

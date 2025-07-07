@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import classes from './AllDayEvent.module.css';
+import './AllDayEvent.css';
 
 import { getBackgroundFromGroups } from '~/utils';
 import { CalendarEvent, MinMaxDatesInView } from '~/types';
@@ -23,9 +23,9 @@ export function AllDayEvent({ date, event, minMaxDatesInView, isCompact, isInOve
 	const colorstyles = getBackgroundFromGroups(event.groups);
 
 	return (
-		<div className={classes.container} style={{ ...colorstyles, clipPath }}>
-			<div className={classes.content} data-sm={isCompact}>
-				<span className={classes.text} data-arrows={overflowArrows}>
+		<div className='events-calendar-all-day-event' style={{ ...colorstyles, clipPath }}>
+			<div className='events-calendar-all-day-event-content' data-sm={isCompact}>
+				<span className='events-calendar-all-day-event-text' data-arrows={overflowArrows}>
 					{event.title}
 				</span>
 			</div>

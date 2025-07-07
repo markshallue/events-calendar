@@ -1,13 +1,13 @@
-.hoursColumn {
+.events-calendar-hours-column {
 	flex-shrink: 0;
 	display: grid;
 	grid-template-rows: repeat(24, minmax(0, 1fr));
 	width: 2.25rem;
 }
-.hour {
+.events-calendar-hour {
 	position: relative;
 }
-.hourLabel {
+.events-calendar-hour-label {
 	position: absolute;
 	bottom: -7.25px;
 	right: 4px;

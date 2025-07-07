@@ -1,4 +1,4 @@
-.button {
+.events-calendar-header-button {
 	user-select: none;
 	font-weight: 600;
 	position: relative;
@@ -50,10 +50,10 @@
 	}
 }
 
-.button:not([data-active='true']):hover {
+.events-calendar-header-button:not([data-active='true']):hover {
 	background-color: var(--ec-gray-1);
 }
 
-.button[data-variant='subtle']:hover {
+.events-calendar-header-button[data-variant='subtle']:hover {
 	background-color: var(--ec-gray-1);
 }

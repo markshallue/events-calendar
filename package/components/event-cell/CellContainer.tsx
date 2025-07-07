@@ -1,7 +1,7 @@
 import React, { Dispatch, ReactNode, RefObject } from 'react';
 import { Dayjs } from 'dayjs';
 
-import classes from './EventCell.module.css';
+import './EventCell.css';
 
 import { Event } from '~/components';
 import {
@@ -111,7 +111,7 @@ export function CellContainer<T>({
 	return (
 		<>
 			<div
-				className={classes.cell}
+				className='events-calendar-month-cell'
 				data-border={!isInDayHeader && date.day() !== 6}
 				onMouseDown={handleMouseDown}
 				onMouseEnter={handleMouseEnter}
@@ -128,7 +128,7 @@ export function CellContainer<T>({
 						numOverflowEvents={numOverflowEvents}
 					/>
 				)}
-				<div className={classes.cellContent} data-week={isInWeekHeader || isInDayHeader}>
+				<div className='events-calendar-month-cell-content' data-week={isInWeekHeader || isInDayHeader}>
 					{showOverflowButton && (
 						<ShowMoreText
 							date={date}

@@ -1,10 +1,9 @@
 'use client';
 
 import { ReactNode, useMemo, useRef } from 'react';
-import classes from './EventsCalendar.module.css';
+import './EventsCalendar.css';
 
 import {
-	ColorScheme,
 	CalendarView,
 	EventEditProps,
 	EventClickArgs,
@@ -22,7 +21,6 @@ import { useMouseEvent, useInitEventsCalendar, EventsCalendarObject } from './ho
 export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
 	calendar?: EventsCalendarObject;
 	compact?: boolean;
-	colorScheme?: ColorScheme;
 	enableDragCreation?: boolean;
 	enableRescheduling?: boolean;
 	events?: RawCalendarEvent<T>[];
@@ -40,7 +38,6 @@ export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalenda
 export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase>({
 	calendar,
 	compact = false,
-	colorScheme = 'light',
 	enableDragCreation = false,
 	enableRescheduling = false,
 	events = [],
@@ -117,21 +114,16 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 	};
 
 	return (
-		<div className={classes.root} data-ec-color-scheme={colorScheme}>
+		<div className='events-calendar-wrapper'>
 			{noHeader ? null : (
 				<Header view={view} setActiveDate={setActiveDate} setView={setView} activeDate={activeDate} views={views} />
 			)}
-			<div className={classes.calendar} data-withheader={!noHeader} onClick={e => e.stopPropagation()}>
+			<div className='events-calendar' data-withheader={!noHeader} onClick={e => e.stopPropagation()}>
 				<CircularLoader visible={isFetching} />
 				{renderCurrentView()}
 
 				{renderPopover && eventAnchor && (
-					<EventsCalendarPopover
-						isOpen={popoverIsOpen}
-						anchor={eventAnchor}
-						zIndex={popoverZIndex}
-						colorScheme={colorScheme}
-					>
+					<EventsCalendarPopover isOpen={popoverIsOpen} anchor={eventAnchor} zIndex={popoverZIndex}>
 						{renderPopover({ onClose, clickedEvent, newEvent: placeholderEvent })}
 					</EventsCalendarPopover>
 				)}
@@ -141,7 +133,6 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
 					compact={compact}
 					dispatch={dispatch}
 					events={overflowEvents}
-					colorScheme={colorScheme}
 					onEventClick={onEventClick}
 					placeholderRef={placeholderRef}
 					renderContextMenu={renderContextMenu}

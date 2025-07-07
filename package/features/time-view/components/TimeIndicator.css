@@ -1,4 +1,4 @@
-.wrapper {
+.events-calendar-time-indicator {
 	display: flex;
 	align-items: center;
 	margin-left: -0.25rem;
@@ -6,14 +6,14 @@
 	pointer-events: none;
 }
 
-.dot {
+.events-calendar-time-indicator-dot {
 	background-color: red;
 	width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 9999px;
 }
 
-.line {
+.events-calendar-time-indicator-line {
 	background-color: red;
 	height: 1px;
 	width: 100%;

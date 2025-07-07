@@ -1,11 +1,11 @@
-.scrollWrapper {
+.events-calendar-year-view-scroll-wrapper {
 	height: 100%;
 	overflow: auto;
 	padding: 0.75rem 1rem 2rem 1rem;
 	margin: 0.125rem;
 }
 
-.yearView {
+.events-calendar-year-view {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: 2rem;
@@ -15,19 +15,19 @@
 	margin: 0 auto;
 }
 
-.month {
+.events-calendar-year-view-month {
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
 }
 
-.monthDates {
+.events-calendar-year-view-month-dates {
 	display: grid;
 	row-gap: 0.25rem;
 	grid-template-columns: repeat(7, 1fr);
 }
 
-.monthLabel {
+.events-calendar-year-view-month-label {
 	width: 100%;
 	display: grid;
 	margin-top: 0.25rem;
@@ -37,7 +37,7 @@
 	user-select: none;
 }
 
-.monthHeaderDay {
+.events-calendar-year-view-month-header {
 	width: 1.375rem;
 	height: 1.375rem;
 	display: grid;

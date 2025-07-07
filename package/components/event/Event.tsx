@@ -2,7 +2,7 @@
 
 import { Dispatch, ReactNode, RefObject, useRef } from 'react';
 import { Dayjs } from 'dayjs';
-import classes from './Event.module.css';
+import './Event.css';
 
 import { getTimeDiff, getTimeLabel } from '~/utils';
 import { useCalendarEvent } from '~/hooks';
@@ -141,7 +141,7 @@ export function Event<T>({
 	return (
 		<>
 			<div
-				className={isMonthView ? classes.monthItemContainer : classes.weekItemContainer}
+				className={isMonthView ? 'events-calendar-month-item-container' : 'events-calendar-week-item-container'}
 				data-interactive={isInteractive}
 				data-active={isInteractive && isActive}
 				data-anchorday={date.format('DD-MMM-YYYY')}
@@ -170,9 +170,9 @@ export function Event<T>({
 						/>
 					)
 				) : (
-					<div className={classes.itemLabelWrapper} data-short={isShort}>
+					<div className='events-calendar-item-label' data-short={isShort}>
 						<span style={isShort ? undefined : { width: '100%' }}>{event.title}</span>
-						<span className={classes.timeText}>{getTimeLabel(event, timeDuration)}</span>
+						<span className='events-calendar-time-text'>{getTimeLabel(event, timeDuration)}</span>
 					</div>
 				)}
 			</div>
