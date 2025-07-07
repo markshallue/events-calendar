@@ -131,10 +131,10 @@ export function KitchenSinkExample() {
 	const handleSubmit = (args: HandleSubmitArgs) => exampleSubmitHandler(args, events, setEvents);
 
 	return (
-		<div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+		<div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', flexWrap: 'wrap', width: '100%' }}>
 			<CustomControls calendar={calendar} setEvents={setEvents} numOfEvents={numOfEvents} />
 			<CalendarWrapper>
-				<div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+				<div style={{ height: '100%', display: 'flex', flexDirection: 'column', width: '100%' }}>
 					<Header
 						{...calendar}
 						customControls={

@@ -70,8 +70,8 @@ export function CustomControls({ calendar, setEvents, numOfEvents, dayRange }: P
 	};
 
 	return (
-		<div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'space-between' }}>
-			<div style={{ display: 'flex', gap: '0.75rem' }}>
+		<div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'space-between', flexWrap: 'wrap', width: '100%' }}>
+			<div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', width: '100%' }}>
 				<CustomButton color='pink' onClick={() => calendar.setActiveDate(p => p.subtract(1, 'month'))}>
 					Prev month
 				</CustomButton>
@@ -82,7 +82,7 @@ export function CustomControls({ calendar, setEvents, numOfEvents, dayRange }: P
 					3 months from now
 				</CustomButton>
 			</div>
-			<div style={{ display: 'flex', gap: '0.75rem' }}>
+			<div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', width: '100%' }}>
 				<CustomButton color='grape' onClick={() => setEvents(getEvents(numOfEvents, dayRange))}>
 					Randomise events!
 				</CustomButton>

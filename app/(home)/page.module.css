@@ -1,7 +1,10 @@
 .wrapper {
-	gap: 1rem;
 	margin: 0 auto;
-	padding-bottom: 10rem;
+	padding-bottom: 4rem;
+
+	@media (min-width: 64em) {
+		padding-bottom: 6rem;
+	}
 }
 
 .heroSection {
@@ -54,11 +57,16 @@
 }
 
 .mainTitle {
-	font-size: 3.75rem;
-	line-height: 4rem;
+	font-size: 3rem;
+	line-height: 3rem;
 	font-weight: 800;
 	max-width: 72em;
 	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+	@media (min-width: 64em) {
+		font-size: 3.75rem;
+		line-height: 4rem;
+	}
 }
 
 .featuresSection {
@@ -85,7 +93,7 @@
 	border-top: 1px solid var(--mantine-color-gray-2);
 }
 
-@media (max-width: 1536px) {
+@media (max-width: 96em) {
 	.heroContent {
 		padding: 0 4rem;
 	}
@@ -101,9 +109,10 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
 	.heroContent {
 		margin-top: 2rem;
+		gap: 2rem;
 		flex-direction: column;
 		align-items: stretch;
 	}
@@ -121,5 +130,51 @@
 	.demoCalendarWrapper {
 		width: 100%;
 		min-width: unset;
+	}
+}
+
+@media (max-width: 48em) {
+	.heroContent {
+		padding: 0 1.5rem;
+		gap: 2rem;
+	}
+
+	.mainTitle {
+		font-size: 2rem;
+		line-height: 2.5rem;
+		text-align: center;
+	}
+
+	.heroText {
+		padding: 0;
+		align-items: center;
+		text-align: center;
+	}
+
+	.calendarContainer {
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.demoCalendarWrapper {
+		height: auto;
+		width: 100%;
+		min-width: unset;
+		box-shadow: none;
+	}
+
+	.sectionTitle {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+	.featuresSection,
+	.demoSection {
+		padding: 2rem 1rem;
+	}
+
+	.featuresSection .mantine-Stack-root {
+		align-items: center;
+		text-align: center;
 	}
 }

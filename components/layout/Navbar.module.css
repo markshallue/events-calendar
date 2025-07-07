@@ -11,3 +11,8 @@
 	background-color: var(--mantine-color-gray-0);
 	color: var(--mantine-color-black);
 }
+.link[data-active='true'] {
+	background-color: var(--mantine-color-indigo-0);
+	border-left: 3px solid var(--mantine-color-indigo-6);
+	color: var(--mantine-color-indigo-7);
+}
