@@ -68,6 +68,10 @@
 	}
 }
 
+.events-calendar-wrapper * {
+	box-sizing: border-box;
+}
+
 .events-calendar {
 	position: relative;
 	width: 100%;
@@ -76,8 +80,4 @@
 	&[data-withheader='true'] {
 		height: calc(100% - 52px);
 	}
-}
-
-.events-calendar * {
-	box-sizing: border-box;
 }
