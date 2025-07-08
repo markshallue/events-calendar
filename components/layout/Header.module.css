@@ -21,6 +21,7 @@
 	font-family: var(--font-space-grotesk), var(--mantine-font-family);
 	font-weight: 600;
 	letter-spacing: -0.25px;
+	line-height: 1.5rem;
 }
 
 .link {
@@ -32,6 +33,7 @@
 	color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
 	font-size: var(--mantine-font-size-sm);
 	font-weight: 500;
+	white-space: nowrap;
 
 	&:hover,
 	&[data-active='true'] {
