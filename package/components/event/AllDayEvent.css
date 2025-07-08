@@ -24,10 +24,10 @@
 }
 
 .events-calendar-all-day-event-text {
-	height: 100%;
-	font-weight: 600;
 	color: #fff;
+	font-weight: 600;
 	overflow: hidden;
+	line-height: normal;
 	text-overflow: clip;
 	white-space: nowrap;
 	user-select: none;
