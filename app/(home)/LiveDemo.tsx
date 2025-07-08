@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Paper, Stack } from '@mantine/core';
 import classes from './LiveDemo.module.css';
 
@@ -8,27 +8,20 @@ import { EventsCalendar, Header, useEventsCalendar } from '~/index';
 
 import groups from '@/data/groups.json';
 import fields from '@/data/form-fields.json';
-import { getEvents } from '@/data/utils';
+import initialEvents from '@/data/events.json';
 
 import { exampleSubmitHandler } from '@/utils';
 import { useGetFilteredEvents } from '@/hooks';
 import { HandleSubmitArgs, PopoverType, RawDemoEvent } from '@/types';
 import { ContextMenu, FormPopover, DetailPopover, FilterControl } from '@/components';
 
-// Generate demo events
-const numOfEvents = 100;
-const dayRange = 60;
-
 export function LiveDemo() {
-	const eventsRef = useRef<RawDemoEvent[] | null>(null);
-	if (!eventsRef.current) eventsRef.current = getEvents(numOfEvents, dayRange);
-
-	const [events, setEvents] = useState<RawDemoEvent[]>(eventsRef.current);
+	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
 
 	// Get calendar instance
-	const calendar = useEventsCalendar();
+	const calendar = useEventsCalendar({ initialDate: '05-Aug-2024' });
 
 	// Filter events
 	const filteredEvents = useGetFilteredEvents({ data: events, inactiveGroups });
