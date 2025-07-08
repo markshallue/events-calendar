@@ -15,12 +15,12 @@ import { useGetFilteredEvents } from '@/hooks';
 import { HandleSubmitArgs, PopoverType, RawDemoEvent } from '@/types';
 import { ContextMenu, FormPopover, DetailPopover, FilterControl } from '@/components';
 
-// Stress test
-const numOfEvents = 1000;
-const initialEvents = getEvents(numOfEvents, 365);
+// Generate demo events
+const numOfEvents = 100;
+const dayRange = 60;
 
 export function LiveDemo() {
-	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
+	const [events, setEvents] = useState<RawDemoEvent[]>(() => getEvents(numOfEvents, dayRange));
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
 

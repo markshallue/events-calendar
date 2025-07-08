@@ -28,7 +28,6 @@ import {
 } from '@tabler/icons-react';
 
 import { LiveDemo } from './LiveDemo';
-import { ContextMenuExample } from '@/demos';
 
 const features = [
 	{
@@ -110,7 +109,7 @@ export default function Home() {
 					</Stack>
 					<Box className={classes.calendarContainer}>
 						<Paper withBorder radius='md' className={classes.demoCalendarWrapper} style={{ flexGrow: 1 }}>
-							<ContextMenuExample />
+							<LiveDemo />
 						</Paper>
 					</Box>
 				</Group>

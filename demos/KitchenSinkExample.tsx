@@ -14,8 +14,9 @@ import { ContextMenu, FormPopover, DetailPopover, FilterControl, CalendarWrapper
 
 import { CustomControls } from './CustomControls';
 
-const numOfEvents = 1000;
-const initialEvents = getEvents(numOfEvents, 365);
+// Event generation parameters
+const numOfEvents = 200;
+const dayRange = 90;
 
 export const kitchenSinkExampleCode = `
 import { useState } from 'react';
@@ -32,11 +33,12 @@ import { ContextMenu, FormPopover, DetailPopover, FilterControl, CalendarWrapper
 
 import { CustomControls } from './CustomControls';
 
-const numOfEvents = 1000;
-const initialEvents = getEvents(numOfEvents, 365);
+// Event generation parameters
+const numOfEvents = 200;
+const dayRange = 90;
 
 export function KitchenSinkExample() {
-    const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
+    const [events, setEvents] = useState<RawDemoEvent[]>(() => getEvents(numOfEvents, dayRange));
     const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
     const [popoverType, setPopoverType] = useState<PopoverType>('view');
 
@@ -117,7 +119,7 @@ export function KitchenSinkExample() {
 `;
 
 export function KitchenSinkExample() {
-	const [events, setEvents] = useState<RawDemoEvent[]>(initialEvents);
+	const [events, setEvents] = useState<RawDemoEvent[]>(() => getEvents(numOfEvents, dayRange));
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
 

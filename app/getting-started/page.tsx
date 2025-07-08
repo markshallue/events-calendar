@@ -30,9 +30,7 @@ export default function GettingStarted() {
 					]}
 				/>
 
-				<Title order={2} mt='lg'>
-					Import CSS
-				</Title>
+				<Text mt='xs'>Make sure to also import the css somewhere in your application</Text>
 				<CodeBlock defaultExpanded code="import 'events-calendar/styles.css';" />
 
 				{/* First Calendar */}

@@ -24,7 +24,7 @@
 }
 
 .events-calendar-all-day-event-text {
-	line-height: 1;
+	height: 100%;
 	font-weight: 600;
 	color: #fff;
 	overflow: hidden;
