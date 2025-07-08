@@ -28,7 +28,7 @@ export function createDemoEvent(index: number, dayRange = 90): DemoEvent {
 
 	// Time
 	const IS_ALLDAY = Math.round(Math.random()) === 0;
-	const START_HOUR = IS_ALLDAY ? 0 : HOUR_OPTIONS[Math.round(Math.random() * (HOUR_OPTIONS.length - 1))];
+	const START_HOUR = IS_ALLDAY ? 0 : HOUR_OPTIONS[Math.floor(Math.random() * HOUR_OPTIONS.length)];
 	const START_DATE = dayjs().subtract(START_DAY, 'day').hour(START_HOUR).minute(0).second(0).millisecond(0);
 	const END_DATE = IS_ALLDAY ? START_DATE.add(DAY_DIFF, 'day') : START_DATE.add(Math.ceil(Math.random() * 8), 'hour');
 
@@ -57,7 +57,7 @@ export function createDemoEvent(index: number, dayRange = 90): DemoEvent {
 		: {
 				startTime: START_DATE.format('h:mma'),
 				endTime: END_DATE.format('h:mma'),
-		  };
+			};
 
 	return {
 		id: index + 1,

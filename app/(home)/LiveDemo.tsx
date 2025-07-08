@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Paper, Stack } from '@mantine/core';
 import classes from './LiveDemo.module.css';
 
@@ -20,7 +20,10 @@ const numOfEvents = 100;
 const dayRange = 60;
 
 export function LiveDemo() {
-	const [events, setEvents] = useState<RawDemoEvent[]>(() => getEvents(numOfEvents, dayRange));
+	const eventsRef = useRef<RawDemoEvent[] | null>(null);
+	if (!eventsRef.current) eventsRef.current = getEvents(numOfEvents, dayRange);
+
+	const [events, setEvents] = useState<RawDemoEvent[]>(eventsRef.current);
 	const [inactiveGroups, setInactiveGroups] = useState<string[]>([]);
 	const [popoverType, setPopoverType] = useState<PopoverType>('view');
 
@@ -53,6 +56,7 @@ export function LiveDemo() {
 						enableDragCreation
 						noHeader
 						calendar={calendar}
+						// isFetching={isLoading}
 						events={filteredEvents}
 						onEventClick={({ togglePopover }) => {
 							setPopoverType('view');
