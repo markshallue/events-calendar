@@ -19,19 +19,76 @@ import { MonthView, Header, TimeView, OverflowCard, YearView } from './features'
 import { useMouseEvent, useInitEventsCalendar, EventsCalendarObject } from './hooks';
 
 export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalendarEventBase> {
+	/**
+	 * Shared calendar state and methods, returned by `useEventsCalendar`.
+	 */
 	calendar?: EventsCalendarObject;
+
+	/**
+	 * Renders a more compact layout, useful in constrained spaces.
+	 * Affects padding, font size, and layout density.
+	 */
 	compact?: boolean;
+
+	/**
+	 * Enables drag-to-create behavior for new events.
+	 */
 	enableDragCreation?: boolean;
+
+	/**
+	 * Allows users to reschedule events by dragging.
+	 */
 	enableRescheduling?: boolean;
+
+	/**
+	 * Array of event objects to be rendered in the calendar.
+	 */
 	events?: RawCalendarEvent<T>[];
+
+	/**
+	 * Whether to show a loading spinner overlay on the calendar.
+	 */
 	isFetching?: boolean;
+
+	/**
+	 * If true, hides the built-in calendar header (navigation + view toggle).
+	 */
 	noHeader?: boolean;
+
+	/**
+	 * z-index used for the event popover component.
+	 */
 	popoverZIndex?: number;
+
+	/**
+	 * Calendar views available to the user (e.g. 'month', 'week', 'day', 'year').
+	 * Defaults to all supported views.
+	 */
 	views?: CalendarView[];
+
+	/**
+	 * Fired when an existing event is clicked.
+	 */
 	onEventClick?: (props: EventClickArgs<T>) => void;
+
+	/**
+	 * Fired when a new event is created (e.g. via drag or click).
+	 */
 	onEventCreate?: (props: EventEditProps) => void;
+
+	/**
+	 * Fired when an event is rescheduled (e.g. via drag).
+	 */
 	onEventReschedule?: (props: EventEditProps) => void;
+
+	/**
+	 * Custom render function for the event popover.
+	 */
 	renderPopover?: (props: EventsCalendarPopoverProps) => ReactNode;
+
+	/**
+	 * Custom render function for a context menu (e.g. right-click on event).
+	 */
 	renderContextMenu?: (props: EventsCalendarContextMenuProps) => ReactNode;
 }
 

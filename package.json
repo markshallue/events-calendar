@@ -5,7 +5,7 @@
 	"description": "A flexible, responsive, and feature-rich calendar component for modern React applications.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/markshallue/events-calendar.git"
+		"url": "git+https://github.com/markshallue/events-calendar.git"
 	},
 	"license": "MIT",
 	"keywords": [
