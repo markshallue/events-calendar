@@ -1,7 +1,6 @@
 import { Dayjs } from 'dayjs';
-
-import { CalendarEvent } from '~/types';
 import { isBetween } from './isBetween';
+import { CalendarEvent } from '~/types';
 
 /**
  * Filters a list of calendar events to include only those that occur on a given date.
@@ -16,5 +15,5 @@ import { isBetween } from './isBetween';
  * @returns An array of events that occur on the specified date.
  */
 export function filterByDate<T extends CalendarEvent>(data: T[], date: Dayjs): T[] {
-	return data.filter(({ start, end }) => isBetween(date, start, end));
+  return data.filter(({ start, end }) => isBetween(date, start, end));
 }

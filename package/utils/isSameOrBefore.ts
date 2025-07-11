@@ -8,5 +8,5 @@ import { Dayjs } from 'dayjs';
  * @returns `true` if `a` is the same as or before `b`, otherwise `false`
  */
 export function isSameOrBefore(a: Dayjs, b: Dayjs): boolean {
-	return a.isBefore(b, 'd') || a.isSame(b, 'd');
+  return a.isBefore(b, 'd') || a.isSame(b, 'd');
 }

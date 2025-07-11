@@ -1,7 +1,7 @@
 'use client';
 
-import { EventsCalendar, useEventsCalendar } from '~/index';
 import events from '@/data/events.json';
+import { EventsCalendar, useEventsCalendar } from '~/index';
 
 export const responsiveExampleCode = `
 import { EventsCalendar, useEventsCalendar } from 'events-calendar';
@@ -20,12 +20,14 @@ export function ResponsiveExample() {
 `;
 
 export function ResponsiveExample() {
-	// Optional: set initial calendar date
-	const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
+  // Optional: set initial calendar date
+  const calendar = useEventsCalendar({ initialDate: '01-Aug-2024' });
 
-	return (
-		<div style={{ height: '550px', resize: 'vertical', border: '1px solid #f00', overflow: 'auto' }}>
-			<EventsCalendar calendar={calendar} events={events} />
-		</div>
-	);
+  return (
+    <div
+      style={{ height: '550px', resize: 'vertical', border: '1px solid #f00', overflow: 'auto' }}
+    >
+      <EventsCalendar calendar={calendar} events={events} />
+    </div>
+  );
 }

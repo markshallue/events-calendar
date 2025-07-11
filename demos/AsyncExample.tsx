@@ -3,11 +3,9 @@
 import { useState } from 'react';
 import { IconRefresh } from '@tabler/icons-react';
 import { Button } from '@mantine/core';
-
-import { EventsCalendar, RawCalendarEvent } from '~/index';
-
-import { getEvents } from '@/data/utils';
 import { CalendarWrapper } from '@/components';
+import { getEvents } from '@/data/utils';
+import { EventsCalendar, RawCalendarEvent } from '~/index';
 
 export const asyncExampleCode = `
 import { useState } from 'react';
@@ -47,28 +45,28 @@ export function AsyncExample() {
 `;
 
 export function AsyncExample() {
-	const [isFetching, setIsFetching] = useState(false);
-	const [events, setEvents] = useState<RawCalendarEvent[]>([]);
+  const [isFetching, setIsFetching] = useState(false);
+  const [events, setEvents] = useState<RawCalendarEvent[]>([]);
 
-	// Mock fetch from API
-	const fetchData = () => {
-		setIsFetching(true);
-		setEvents([]);
+  // Mock fetch from API
+  const fetchData = () => {
+    setIsFetching(true);
+    setEvents([]);
 
-		setTimeout(() => {
-			setEvents(getEvents());
-			setIsFetching(false);
-		}, 500);
-	};
+    setTimeout(() => {
+      setEvents(getEvents());
+      setIsFetching(false);
+    }, 500);
+  };
 
-	return (
-		<div>
-			<Button mb='md' color='indigo' leftSection={<IconRefresh size={20} />} onClick={fetchData}>
-				Fetch data
-			</Button>
-			<CalendarWrapper>
-				<EventsCalendar events={events} isFetching={isFetching} />
-			</CalendarWrapper>
-		</div>
-	);
+  return (
+    <div>
+      <Button mb="md" color="indigo" leftSection={<IconRefresh size={20} />} onClick={fetchData}>
+        Fetch data
+      </Button>
+      <CalendarWrapper>
+        <EventsCalendar events={events} isFetching={isFetching} />
+      </CalendarWrapper>
+    </div>
+  );
 }

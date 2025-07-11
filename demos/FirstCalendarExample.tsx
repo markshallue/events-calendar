@@ -15,5 +15,5 @@ export function FirstCalendarExample() {
 `;
 
 export function FirstCalendarExample() {
-	return <EventsCalendar events={[{ title: 'My first event!', start: new Date() }]} />;
+  return <EventsCalendar events={[{ title: 'My first event!', start: new Date() }]} />;
 }

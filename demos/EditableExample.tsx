@@ -1,17 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-
+import { ContextMenu, FormPopover } from '@/components';
+import initialEvents from '@/data/events.json';
+import fields from '@/data/form-fields.json';
+import groups from '@/data/groups.json';
+import { ExampleHandleSubmitArgs, exampleSubmitHandler } from '@/utils';
+import { useEventsCalendar } from '~/hooks';
 import { EventsCalendar } from '~/index';
 import { RawCalendarEvent } from '~/types';
-import { useEventsCalendar } from '~/hooks';
-
-import groups from '@/data/groups.json';
-import fields from '@/data/form-fields.json';
-import initialEvents from '@/data/events.json';
-
-import { ContextMenu, FormPopover } from '@/components';
-import { ExampleHandleSubmitArgs, exampleSubmitHandler } from '@/utils';
 
 export const editableExample = `
 import { useState } from 'react';
@@ -72,44 +69,45 @@ export function EditableExample() {
 `;
 
 export function EditableExample() {
-	const [events, setEvents] = useState<RawCalendarEvent[]>(initialEvents);
+  const [events, setEvents] = useState<RawCalendarEvent[]>(initialEvents);
 
-	// Get calendar instance
-	const calendar = useEventsCalendar({ initialDate: '01-Jul-2024' });
+  // Get calendar instance
+  const calendar = useEventsCalendar({ initialDate: '01-Jul-2024' });
 
-	const handleSubmit = (args: ExampleHandleSubmitArgs) => exampleSubmitHandler(args, events, setEvents);
+  const handleSubmit = (args: ExampleHandleSubmitArgs) =>
+    exampleSubmitHandler(args, events, setEvents);
 
-	return (
-		<EventsCalendar
-			calendar={calendar}
-			events={events}
-			onEventClick={({ openPopover, isDoubleClick, closePopover }) => {
-				if (isDoubleClick) {
-					closePopover();
-				} else {
-					openPopover();
-				}
-			}}
-			renderPopover={({ clickedEvent, onClose }) => (
-				<FormPopover
-					event={clickedEvent}
-					onClose={onClose}
-					groups={groups}
-					fields={fields}
-					handleSubmit={handleSubmit}
-					formType={'edit'}
-				/>
-			)}
-			renderContextMenu={({ event, onClose, openPopover, closeContextMenu }) => (
-				<ContextMenu
-					event={event}
-					onClose={onClose}
-					openPopover={openPopover}
-					closeContextMenu={closeContextMenu}
-					setPopoverType={() => null}
-					handleSubmit={handleSubmit}
-				/>
-			)}
-		/>
-	);
+  return (
+    <EventsCalendar
+      calendar={calendar}
+      events={events}
+      onEventClick={({ openPopover, isDoubleClick, closePopover }) => {
+        if (isDoubleClick) {
+          closePopover();
+        } else {
+          openPopover();
+        }
+      }}
+      renderPopover={({ clickedEvent, onClose }) => (
+        <FormPopover
+          event={clickedEvent}
+          onClose={onClose}
+          groups={groups}
+          fields={fields}
+          handleSubmit={handleSubmit}
+          formType={'edit'}
+        />
+      )}
+      renderContextMenu={({ event, onClose, openPopover, closeContextMenu }) => (
+        <ContextMenu
+          event={event}
+          onClose={onClose}
+          openPopover={openPopover}
+          closeContextMenu={closeContextMenu}
+          setPopoverType={() => null}
+          handleSubmit={handleSubmit}
+        />
+      )}
+    />
+  );
 }

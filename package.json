@@ -46,6 +46,8 @@
 		"build:package": "rm -rf dist && tsup --config scripts/tsup.esm.ts && tsup --config scripts/tsup.cjs.ts && tsup --config scripts/tsup.dts.ts && postcss package/styles*.css --dir dist",
 		"build:docs": "next build",
 		"build": "npm run build:package && npm run build:docs",
+		"prettier": "prettier --check \"**/*.{ts,tsx}\"",
+		"prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
 		"start": "next start",
 		"lint": "next lint",
 		"check": "tsc",
@@ -61,6 +63,7 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@ianvs/prettier-plugin-sort-imports": "^4.5.1",
 		"@mantine/carousel": "^8.1.1",
 		"@mantine/code-highlight": "^8.1.1",
 		"@mantine/core": "^8.1.1",

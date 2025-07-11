@@ -15,11 +15,11 @@ import { isSameOrBefore } from './isSameOrBefore';
  */
 
 export function hasOverlap(start1: Dayjs, end1: Dayjs, start2: Dayjs, end2: Dayjs) {
-	// return (
-	// 	isBetween(start1, start2, end2) || // range 1 starts within range 2
-	// 	isBetween(start2, start1, end1) || // range 2 starts within range 1
-	// 	isBetween(end2, start1, end1) // range 2 ends within range 1
-	// );
+  // return (
+  // 	isBetween(start1, start2, end2) || // range 1 starts within range 2
+  // 	isBetween(start2, start1, end1) || // range 2 starts within range 1
+  // 	isBetween(end2, start1, end1) // range 2 ends within range 1
+  // );
 
-	return isSameOrBefore(start1, end2) && isSameOrBefore(start2, end1);
+  return isSameOrBefore(start1, end2) && isSameOrBefore(start2, end1);
 }
