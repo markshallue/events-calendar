@@ -8,12 +8,12 @@ import { EventsCalendar } from 'events-calendar';
 export function FirstCalendarExample() {
     return (
         <div style={{ height: '560px', border: '1px solid #ccc' }}>
-            <EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />
+            <EventsCalendar events={[{ title: 'My first event!', start: new Date() }]} />
         </div>
     );
 }
 `;
 
 export function FirstCalendarExample() {
-	return <EventsCalendar events={[{ title: 'My first event!', end: new Date() }]} />;
+	return <EventsCalendar events={[{ title: 'My first event!', start: new Date() }]} />;
 }

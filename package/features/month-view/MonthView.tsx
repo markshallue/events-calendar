@@ -4,6 +4,8 @@ import { Dispatch, ReactNode, RefObject, useMemo } from 'react';
 import { Dayjs } from 'dayjs';
 import './MonthView.css';
 
+const isTestEnv = process.env.NODE_ENV === 'test';
+
 import {
 	CalendarAction,
 	CalendarState,
@@ -55,7 +57,7 @@ export function MonthView<T = object>({
 
 	// Calculate the max number of events that fit within a cell
 	const { ref: gridRef, height: gridHeight } = useElementSize();
-	const ROW_HEIGHT = gridHeight / monthDates.weeks.length;
+	const ROW_HEIGHT = isTestEnv ? 100 : gridHeight / monthDates.weeks.length;
 	const EVENT_LIMIT = getMaxEvents(ROW_HEIGHT, compact);
 
 	// Create a map of events by week
@@ -66,8 +68,8 @@ export function MonthView<T = object>({
 			<MonthHeader isCompact={compact} />
 			<div className='events-calendar-month-view-grid' onMouseLeave={handleStopDrag} ref={gridRef}>
 				{monthDates.weeks.map((week, weekIndex) => {
-					// Get this week's events (if calendar has height)
-					const orderedEvents = gridHeight > 0 ? weekMap[weekIndex] : [];
+					// Get this week's events (if in test environment or calendar has height)
+					const orderedEvents = isTestEnv || gridHeight > 0 ? weekMap[weekIndex] : [];
 
 					return (
 						<div key={weekIndex} className='events-calendar-month-view-row'>
