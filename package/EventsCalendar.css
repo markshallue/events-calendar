@@ -28,7 +28,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	:root:not([data-ec-color-scheme='light']):not([data-mantine-color-scheme='dark']) {
+	:root:not([data-ec-color-scheme='light']):not([data-mantine-color-scheme='light']):not([data-mantine-color-scheme='dark']) {
 		--ec-default-background: #3a3a3a;
 		--ec-gray-0: #242424;
 		--ec-gray-1: #353535;
