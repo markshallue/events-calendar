@@ -56,6 +56,11 @@ export interface EventsCalendarProps<T extends RawCalendarEventBase = RawCalenda
   noHeader?: boolean;
 
   /**
+   * z-index used for the overflow popover that appears when clicking "+N more".
+   */
+  overflowPopoverZIndex?: number;
+
+  /**
    * z-index used for the event popover component.
    */
   popoverZIndex?: number;
@@ -98,6 +103,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
   enableDragCreation = false,
   enableRescheduling = false,
   events = [],
+  overflowPopoverZIndex = 2,
   popoverZIndex = 101,
   isFetching = false,
   noHeader = false,
@@ -217,6 +223,7 @@ export function EventsCalendar<T extends RawCalendarEvent = RawCalendarEventBase
           placeholderRef={placeholderRef}
           renderContextMenu={renderContextMenu}
           enableRescheduling={enableRescheduling}
+          zIndex={overflowPopoverZIndex}
         />
       </div>
     </div>

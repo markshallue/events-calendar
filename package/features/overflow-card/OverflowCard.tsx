@@ -24,6 +24,7 @@ interface OverflowCardProps<T> {
   renderContextMenu?: (props: EventsCalendarContextMenuProps) => ReactNode;
   state: CalendarState;
   enableRescheduling: boolean;
+  zIndex?: number;
 }
 
 /* 
@@ -40,6 +41,7 @@ export function OverflowCard<T>({
   renderContextMenu,
   state,
   enableRescheduling,
+  zIndex,
 }: OverflowCardProps<T>) {
   const date = tryDate(state.overflowAnchor?.dataset.date);
 
@@ -48,7 +50,7 @@ export function OverflowCard<T>({
   const orderedEvents = arrangeWeekEvents(filterByDate(events, date));
 
   return (
-    <EventsCalendarPopover zIndex={2} anchor={state.overflowAnchor} isOpen={state.overflowIsOpen}>
+    <EventsCalendarPopover zIndex={zIndex} anchor={state.overflowAnchor} isOpen={state.overflowIsOpen}>
       <div className="events-calendar-overflow-card">
         <span className="events-calendar-overflow-card-label">{date.format('dddd, MMMM D')}</span>
         {!orderedEvents.length && (
